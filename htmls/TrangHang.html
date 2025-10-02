@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top sản phẩm bán chạy</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet">
+    <link rel="stylesheet" href="/css/trangchu.css">
+    <link rel="stylesheet" href="/css/tranghang.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="head1">
+            <ul class="head1top">
+                <li class="head1top_list head1top_list1"> Nhập ANHTHUXINHDEP để giảm 100k </li >
+                <li class="head1top_list"> Mua online nhận tại cửa hàng gần nhất </li >
+                <li class="head1top_list"> Freeship toàn quốc hóa đơn trên 299k </li >
+            </ul>
+        </div>
+        <div class="head2">
+            <div>
+                <img class="logo-trangchu" src="/images/logo.jpg" alt="logo">
+            </div>
+            <div class="head2--list">
+                <form action="" id="search-box">
+                    <buttom class="search-bottom"> <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1"/> </buttom>
+                    <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm">
+                    <button class=" search-bottom "><img class="search-bottom-vid"  src="/images/scan-image.gif" alt="" srcset=""></button>
+                    <div class="search-box-items">
+                        <ul class="box-items">
+                            <p id="box-items--title">TÌM KIẾM NHIỀU NHẤT</p>
+                            <li><a href="" class="box-items--list"></a> Kem chống nắng </li>
+                            <li><a href="" class="box-items--list"></a> Toner </li>
+                            <li><a href="" class="box-items--list"></a> Cushion </li>
+                            <li><a href="" class="box-items--list"></a> Son </li>
+                            <li><a href="" class="box-items--list"></a> Mặt nạ </li>
+                            <li><a href="" class="box-items--list"></a> Sữa rửa mặt </li>
+                            <li><a href="" class="box-items--list"></a> Phấn phủ </li>
+                            <li><a href="" class="box-items--list"></a> Mascara </li>
+                            <li><a href="" class="box-items--list"></a> Serum </li>
+                            <li><a href="" class="box-items--list"></a> Sữa dưỡng thể </li>
+                            <li><a href="" class="box-items--list"></a> Toner pad </li>
+                        </ul>
+                    </div>
+                </form>
+                <div id="store">
+                    <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store"/>
+                    <a href=""><p>Hệ thống cửa hàng</p></a>
+                </div>
+                <div id="news">
+                    <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon"/>
+                    <a href=""><p>Tạp chí làm đẹp</p>
+                </div>
+                <div id="login">
+                    <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle"/>
+                    <a href="/htmls/Login.html"><p>Đăng nhập</p></a>
+                    <img width="25" height="25" src="https://img.icons8.com/ios/50/like--v1.png" alt="like--v1"/>
+                    <img width="25" height="25" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1"/>
+                </div>
+            </div>
+        </div>
+        <!-- Thanh điều hướng -->
+        <nav class="navbar">
+            <a href="" class="nav-items navbar-items1">Thương hiệu  </a>
+            <a href="" class="nav-items navbar-items2">Khuyến mãi hot</a>
+            <a href="" class="nav-items navbar-items3">Trang điểm</a>
+            <a href="" class="nav-items navbar-items4">Sản phẩm cao cấp</a>
+            <a href="" class="nav-items navbar-items5">Chăm sóc da</a>
+            <a href="" class="nav-items navbar-items6">Chăm sóc cá nhân</a>
+            <a href="" class="nav-items navbar-items7">Chăm sóc cơ thể</a>
+        </nav>
+    </header>
+    <div class="Title">
+        <div>
+         <a href="trangchu.html">Trang chủ </a>
+         <a href="TrangHang.html">> Top sản phầm bán chạy</a>
+         <div>
+            <h1>Top sản phẩm bán chạy</h1>
+         </div>
+        </div>
+        <div>
+            <form action="" id="search-box-duoi">
+                <buttom class="search-bottom"> <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1"/> </buttom>
+                <input id="search-text" type="text" placeholder="Tìm kiếm trong bộ sưu tập">
+            </form>
+        </div>
+        
+
+    </div>
+    <div class="ALL">
+ <div class="Menu">
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown('giaSanPhamDropdown')">
+            Giá sản phẩm <span><i class="arrow"></i></span>
+        </div>
+        <div class="dropdown-content" id="giaSanPhamDropdown">
+            <label><input class="checkbox" type="checkbox"> Dưới 500.000₫</label>
+            <label><input class="checkbox" type="checkbox"> 500.000₫ - 1.000.000₫</label>
+            <label><input class="checkbox" type="checkbox"> 1.000.000₫ - 1.500.000₫</label>
+            <label><input class="checkbox" type="checkbox"> 1.500.000₫ - 2.000.000₫</label>
+            <label><input class="checkbox" type="checkbox"> Trên 2.000.000₫</label>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown('danhMucDropdown')">
+            Danh mục <span><i class="arrow"></i></span>
+        </div>
+        <div class="dropdown-content" id="danhMucDropdown">
+            <input type="text" placeholder="Tìm" class="search">
+            <label><input class="checkbox" type="checkbox"> Chăm sóc cá nhân (9)</label>
+            <label><input class="checkbox" type="checkbox"> Kem dưỡng mặt (11)</label>
+            <label><input class="checkbox" class="checkbox" type="checkbox"> Sữa rửa mặt (15)</label>
+            <label><input class="checkbox" type="checkbox"> Serum (10)</label>
+            <label><input class="checkbox" type="checkbox"> Tẩy trang (7)</label>
+            <a href="#" class="more-link">Xem thêm</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown('thuongHieuDropdown')">
+            Thương hiệu <span><i class="arrow"></i></span>
+        </div>
+        <div class="dropdown-content" id="thuongHieuDropdown">
+            <input type="text" placeholder="Tìm" class="search">
+            <label><input class="checkbox" type="checkbox"> AHC (3)</label>
+            <label><input class="checkbox" type="checkbox"> CNP (12)</label>
+            <label><input class="checkbox" type="checkbox"> COSRX (19)</label>
+            <label><input class="checkbox" type="checkbox"> THE FACE SHOP (08)</label>
+            <label><input class="checkbox" type="checkbox"> THE LAB (1)</label>
+            <a href="#" class="more-link">Xem thêm</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown('loaiSanPhamDropdown')">
+            Loại sản phẩm <span><i class="arrow"></i></span>
+        </div>
+        <div class="dropdown-content" id="loaiSanPhamDropdown">
+            <input type="text" placeholder="Tìm" class="search">
+            <label><input class="checkbox" type="checkbox"> Mặt Nạ Ngủ (1)</label>
+            <label><input class="checkbox" type="checkbox"> Nước Cân Bằng (12)</label>
+            <label><input class="checkbox" type="checkbox"> Nước Tẩy Trang (6)</label>
+            <label><input class="checkbox" type="checkbox"> Sữa Rửa Mặt (8)</label>
+            <label><input class="checkbox" type="checkbox"> Tinh Chất (25)</label>
+            <a href="#" class="more-link">Xem thêm</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown('dungTichDropdown')">
+            Dung tích <span><i class="arrow"></i></span>
+        </div>
+        <div class="dropdown-content" id="dungTichDropdown">
+            <input type="text" placeholder="Tìm" class="search">
+            <label><input class="checkbox" type="checkbox"> 100ml (1)</label>
+            <label><input class="checkbox" type="checkbox"> 50ml (12)</label>
+            <label><input class="checkbox" type="checkbox"> 110ml (1)</label>
+            <label><input class="checkbox" type="checkbox"> 30ml (1)</label>
+            <label><input class="checkbox" type="checkbox"> 150ml (12)</label>
+            <a href="#" class="more-link">Xem thêm</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown('muiHuongDropdown')">
+            Mùi hương <span><i class="arrow"></i></span>
+        </div>
+        <div class="dropdown-content" id="muiHuongDropdown">
+            <input type="text" placeholder="Tìm" class="search">
+            <label><input class="checkbox" type="checkbox"> Bouncy (1)</label>
+            <label><input class="checkbox" type="checkbox"> Urbanc (1)</label>
+            <label><input class="checkbox" type="checkbox"> Iconic (1)</label>
+            <label><input class="checkbox" type="checkbox"> Rose (1)</label>
+            <label><input class="checkbox" type="checkbox"> Cherry Blossom (1)</label>
+            <a href="#" class="more-link">Xem thêm</a>
+        </div>
+    </div>
+</div>
+
+<!-- Phần sản phẩm  -->
+<div class="Best_seller-wrapper FLS-wrapper">
+    <div class="Best_seller-item Best_seller-item1 Best_seller-item_copy">
+        <img src="/images/sp1.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Kem Chống Nắng Nâng Tông Da CNP Laboratory Tone-Up Protection Sun Spf42 Pa+++ 50Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item2 Best_seller-item_copy">
+        <img src="/images/sp2.1.webp" alt="">
+        <h3>COSRX</h3>
+        <p>Sữa Rửa Mặt Chăm Sóc Da Mụn Cosrx Ac Collection Calming Foam Cleanser 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item3 Best_seller-item_copy">
+        <img src="/images/sp3.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Nước Thần Keo Ong Cấp Ẩm, Phục Hồi Da CNP Propolis Treatment Ampoule Essence 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del> </p>
+    </div>
+    <div class="Best_seller-item Best_seller-item4 Best_seller-item_copy">
+        <img src="/images/sp4.1.webp" alt="">
+        <h3>EVIAN</h3>
+        <p>Xịt Khoáng Cấp Ẩm, Làm Dịu Da Evian Brumisateur Natural Mineral Water Facial Spray</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item1 Best_seller-item_copy">
+        <img src="/images/sp1.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Kem Chống Nắng Nâng Tông Da CNP Laboratory Tone-Up Protection Sun Spf42 Pa+++ 50Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item2 Best_seller-item_copy">
+        <img src="/images/sp2.1.webp" alt="">
+        <h3>COSRX</h3>
+        <p>Sữa Rửa Mặt Chăm Sóc Da Mụn Cosrx Ac Collection Calming Foam Cleanser 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item3 Best_seller-item_copy">
+        <img src="/images/sp3.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Nước Thần Keo Ong Cấp Ẩm, Phục Hồi Da CNP Propolis Treatment Ampoule Essence 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del> </p>
+    </div>
+    <div class="Best_seller-item Best_seller-item4 Best_seller-item_copy">
+        <img src="/images/sp4.1.webp" alt="">
+        <h3>EVIAN</h3>
+        <p>Xịt Khoáng Cấp Ẩm, Làm Dịu Da Evian Brumisateur Natural Mineral Water Facial Spray</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item1 Best_seller-item_copy">
+        <img src="/images/sp1.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Kem Chống Nắng Nâng Tông Da CNP Laboratory Tone-Up Protection Sun Spf42 Pa+++ 50Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item2 Best_seller-item_copy">
+        <img src="/images/sp2.1.webp" alt="">
+        <h3>COSRX</h3>
+        <p>Sữa Rửa Mặt Chăm Sóc Da Mụn Cosrx Ac Collection Calming Foam Cleanser 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item3 Best_seller-item_copy">
+        <img src="/images/sp3.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Nước Thần Keo Ong Cấp Ẩm, Phục Hồi Da CNP Propolis Treatment Ampoule Essence 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del> </p>
+    </div>
+    <div class="Best_seller-item Best_seller-item4 Best_seller-item_copy">
+        <img src="/images/sp4.1.webp" alt="">
+        <h3>EVIAN</h3>
+        <p>Xịt Khoáng Cấp Ẩm, Làm Dịu Da Evian Brumisateur Natural Mineral Water Facial Spray</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item1 Best_seller-item_copy">
+        <img src="/images/sp1.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Kem Chống Nắng Nâng Tông Da CNP Laboratory Tone-Up Protection Sun Spf42 Pa+++ 50Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item2 Best_seller-item_copy">
+        <img src="/images/sp2.1.webp" alt="">
+        <h3>COSRX</h3>
+        <p>Sữa Rửa Mặt Chăm Sóc Da Mụn Cosrx Ac Collection Calming Foam Cleanser 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item3 Best_seller-item_copy">
+        <img src="/images/sp3.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Nước Thần Keo Ong Cấp Ẩm, Phục Hồi Da CNP Propolis Treatment Ampoule Essence 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del> </p>
+    </div>
+    <div class="Best_seller-item Best_seller-item4 Best_seller-item_copy">
+        <img src="/images/sp4.1.webp" alt="">
+        <h3>EVIAN</h3>
+        <p>Xịt Khoáng Cấp Ẩm, Làm Dịu Da Evian Brumisateur Natural Mineral Water Facial Spray</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item1 Best_seller-item_copy">
+        <img src="/images/sp1.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Kem Chống Nắng Nâng Tông Da CNP Laboratory Tone-Up Protection Sun Spf42 Pa+++ 50Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item2 Best_seller-item_copy">
+        <img src="/images/sp2.1.webp" alt="">
+        <h3>COSRX</h3>
+        <p>Sữa Rửa Mặt Chăm Sóc Da Mụn Cosrx Ac Collection Calming Foam Cleanser 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+    <div class="Best_seller-item Best_seller-item3 Best_seller-item_copy">
+        <img src="/images/sp3.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Nước Thần Keo Ong Cấp Ẩm, Phục Hồi Da CNP Propolis Treatment Ampoule Essence 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del> </p>
+    </div>
+    <div class="Best_seller-item Best_seller-item4 Best_seller-item_copy">
+        <img src="/images/sp4.1.webp" alt="">
+        <h3>EVIAN</h3>
+        <p>Xịt Khoáng Cấp Ẩm, Làm Dịu Da Evian Brumisateur Natural Mineral Water Facial Spray</p>
+        <p class="price">100.000Đ <del>500.000Đ</del></p>
+    </div>
+       <div class="Best_seller-item Best_seller-item3 Best_seller-item_copy">
+        <img src="/images/sp3.1.webp" alt="">
+        <h3>CNP</h3>
+        <p>Nước Thần Keo Ong Cấp Ẩm, Phục Hồi Da CNP Propolis Treatment Ampoule Essence 150Ml</p>
+        <p class="price">100.000Đ <del>500.000Đ</del> </p>
+    </div>
+</div>
+</div>
+<br> 
+<br>
+<br>
+ <!-- Nhận bảng tin -->
+ <div class="NhanBanTin">
+    <div class="NhanBanTin-left">
+        <div class="tieude">NHẬN BẢN TIN LÀM ĐẸP</div>
+        <div class="tieudecon">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</div>
+    </div>
+    <div class="NhanBanTin-right">
+        <input type="text" placeholder="Điền Email của bạn">
+        <button type="button" class="btn-subscribe"><span>Theo dõi</span></button>
+    </div>
+ </div>
+<footer>
+    <div class="item item-1">
+        <h4>Follow Us</h4>
+
+        <div class="icon">
+            <img src="/images/logo.jpg" alt="">
+            <br>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="item">
+        <h4>VỀ ANH THƯ</h4>
+        <ul>
+            <li><a href="#">Câu chuyện thương hiệu</a></li>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+            <li><a href="#">Chính sách và quy định chung</a></li>
+            <li><a href="#">Chính sách và giao nhận thanh toán</a></li>
+            <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+            <li><a href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+        </ul>
+    </div>
+    <div class="item">
+        <h4>MY BEAUTY BOX</h4>
+        <ul>
+            <li><a href="#">Quyền lợi thành viên</a></li>
+            <li><a href="#">Thông tin thành viên</a></li>
+            <li><a href="#">Theo dõi đơn hàng</a></li>
+            <li><a href="#">Hướng dẫn mua hàng online</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="/js/tranghang.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang đăng nhập</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Đăng kí tài khoản</h1>
+            <div class="social-container">
+              <a href="https://www.facebook.com/anhthuw.197" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/a.thuw_/" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <span>Đăng ký để nhận ưu đãi đặc biệt</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Đăng ký</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Đăng nhập</h1>
+            <div class="social-container">
+              <a href="https://www.facebook.com/anhthuw.197" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/a.thuw_/" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <span>Hoặc đăng nhập với</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Quên mật khẩu ?</a>
+            <button><a href="/trangchu.html"> Đăng nhập</a></button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Chào mừng bạn trở lại!</h1>
+              <p>Để duy trì kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn.
+              </p>
+              <button class="ghost" id="signIn">Đăng nhập</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Chào bạn!</h1>
+              <p>Vui lòng nhập thông tin cá nhân để đồng hành cùng chúng tôi</p>
+              <button class="ghost" id="signUp">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="/js/login.js"></script>
+</html>
