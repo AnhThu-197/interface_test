@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch sử đơn làm</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/NhanVien/dashboard.css" />
+    <link rel="stylesheet" href="../../css/NhanVien/lichsudonlam.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <buttom class="search-bottom">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </buttom>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-bottom">
+              <img class="search-bottom-vid" src="../../images/scan-image.gif" alt="" srcset="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Nguyễn Văn A</p>
+            </a>
+            <div class="cart-container">
+              <a href="../GioHang.html">
+                <img class="cart-icon" width="25" height="25" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1" />
+                <span class="cart-badge">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="employee-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Trang quản lý nhân viên</a> &gt;
+        <span>Lịch sử đơn làm</span>
+      </div>
+
+      <div class="employee-container">
+        <div class="employee-sidebar">
+          <div class="sidebar-header">
+            <div class="employee-avatar">
+              <img src="../../images/user.jpg" alt="Nguyễn Hoàng Anh Thư" />
+            </div>
+            <div class="employee-info">
+              <h3>Nguyễn Hoàng Anh Thư</h3>
+              <p>Nhân viên - Sinh viên UTE</p>
+              <span class="employee-id">ID: NV232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+              </li>
+              <li>
+                <a href="DangKyThamGia.html"><i class="fas fa-user-plus"></i> Đăng ký tham gia sản xuất</a>
+              </li>
+              <li>
+                <a href="QuyDinhLamViec.html"><i class="fas fa-book"></i> Quy định làm việc</a>
+              </li>
+              <li>
+                <a href="RutTien.html"><i class="fas fa-hand-holding-usd"></i> Quy trình làm việc</a>
+              </li>
+              <li>
+                <a href="DanhSachDonLam.html"><i class="fas fa-list"></i> Danh sách đơn làm</a>
+              </li>
+              <li>
+                <a href="DangKyDonLam.html"><i class="fas fa-edit"></i> Đăng ký đơn làm</a>
+              </li>
+              <li>
+                <a href="DangKySanPhamMoi.html"><i class="fas fa-plus-circle"></i> Đăng ký sản phẩm mới</a>
+              </li>
+              <li>
+                <a href="NopSanPham.html"><i class="fas fa-upload"></i> Nộp sản phẩm</a>
+              </li>
+              <li>
+                <a href="LichSuSanPham.html"><i class="fas fa-history"></i> Lịch sử sản phẩm nộp</a>
+              </li>
+              <li class="active">
+                <a href="LichSuDonLam.html"><i class="fas fa-clipboard-list"></i> Lịch sử đơn làm</a>
+              </li>
+              <li>
+                <a href="ThuNhap.html"><i class="fas fa-money-bill-wave"></i> Xem thu nhập</a>
+              </li>
+              <li>
+                <a href="LichSuGiaoDich.html"><i class="fas fa-exchange-alt"></i> Lịch sử giao dịch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="employee-content">
+          <div class="page-title">
+            <h1>Lịch sử đơn làm</h1>
+          </div>
+
+          <div class="order-history-filters">
+            <!-- <div class="search-filter">
+              <input type="text" id="searchInput" placeholder="Tìm kiếm theo tên sản phẩm hoặc mã đơn..." />
+              <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div> -->
+            <div class="filter-selects">
+              <div class="filter-item">
+                <label for="statusFilter">Trạng thái:</label>
+                <select id="statusFilter">
+                  <option value="all">Tất cả</option>
+                  <option value="inProgress">Đang thực hiện</option>
+                  <option value="completed">Đã hoàn thành</option>
+                  <option value="canceled">Đã hủy</option>
+                </select>
+              </div>
+              <div class="filter-item">
+                <label for="dateFilter">Thời gian:</label>
+                <select id="dateFilter">
+                  <option value="all">Tất cả thời gian</option>
+                  <option value="thisMonth">Tháng này</option>
+                  <option value="lastMonth">Tháng trước</option>
+                  <option value="lastThreeMonths">3 tháng gần đây</option>
+                  <option value="thisYear">Năm nay</option>
+                </select>
+              </div>
+              <!-- <div class="filter-item">
+                <label for="sortOrder">Sắp xếp:</label>
+                <select id="sortOrder">
+                  <option value="newest">Mới nhất</option>
+                  <option value="oldest">Cũ nhất</option>
+                  <option value="priceHigh">Giá trị cao đến thấp</option>
+                  <option value="priceLow">Giá trị thấp đến cao</option>
+                </select>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="order-history-summary">
+            <div class="summary-card">
+              <div class="summary-icon">
+                <i class="fas fa-spinner"></i>
+              </div>
+              <div class="summary-content">
+                <h3>3</h3>
+                <p>Đang thực hiện</p>
+              </div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-icon completed">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="summary-content">
+                <h3>12</h3>
+                <p>Đã hoàn thành</p>
+              </div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-icon canceled">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="summary-content">
+                <h3>1</h3>
+                <p>Đã hủy</p>
+              </div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-icon total">
+                <i class="fas fa-clipboard-list"></i>
+              </div>
+              <div class="summary-content">
+                <h3>16</h3>
+                <p>Tổng đơn làm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-history-section">
+            <div class="history-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Mã đơn</th>
+                    <th>Sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Đơn giá</th>
+                    <th>Tổng giá trị</th>
+                    <th>Ngày đăng ký</th>
+                    <th>Trạng thái</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DL001</td>
+                    <td>
+                      <div class="product-info">
+                        <img src="../../images/handmade10.jpg" alt="Túi thủ công mỹ nghệ" />
+                        <div>
+                          <div class="product-name">Phong Bì "Tháng Sáu Rực Rỡ"</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>7/10</td>
+                    <td>70.000₫</td>
+                    <td>700.000₫</td>
+                    <td>01/06/2023</td>
+                    <td><span class="status-badge status-in-progress">Đang thực hiện</span></td>
+                    <td>
+                      <a href="/htmls/NhanVien/ChiTietDonLam.html"><button class="action-btn view-btn" data-id="DL001"><i class="fas fa-eye"></i></button></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>DL003</td>
+                    <td>
+                      <div class="product-info">
+                        <img src="../../images/handmade11.jpg" alt="Thiệp thủ công handmade" />
+                        <div>
+                          <div class="product-name">Hộp Quà "Tình Yêu Nhẹ Nhàng"</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>12/15</td>
+                    <td>55.000₫</td>
+                    <td>825.000₫</td>
+                    <td>25/05/2023</td>
+                    <td><span class="status-badge status-in-progress">Đang thực hiện</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="DL003"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>DL004</td>
+                    <td>
+                      <div class="product-info">
+                        <img src="../../images/handmade1.jpg" alt="Móc khóa handmade" />
+                        <div>
+                          <div class="product-name">Khay Gốm Nghệ Thuật "Thiên Nhiên & Giấc Mơ"</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>21/30</td>
+                    <td>35.000₫</td>
+                    <td>1.050.000₫</td>
+                    <td>15/05/2023</td>
+                    <td><span class="status-badge status-in-progress">Đang thực hiện</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="DL004"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>DL002</td>
+                    <td>
+                      <div class="product-info">
+                        <img src="../../images/handmade3.jpg" alt="Vòng tay handmade" />
+                        <div>
+                          <div class="product-name">Hộp Đèn Chiếu Mơ Mộng</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>25/25</td>
+                    <td>45.000₫</td>
+                    <td>1.125.000₫</td>
+                    <td>10/05/2023</td>
+                    <td><span class="status-badge status-canceled">Đã hủy</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="DL002"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>DL005</td>
+                    <td>
+                      <div class="product-info">
+                        <img src="../../images/handmade5.jpg" alt="Túi thủ công mỹ nghệ" />
+                        <div>
+                          <div class="product-name">Đĩa CD Trang Trí "Hoa Thiên Nhiên"</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>10/10</td>
+                    <td>70.000₫</td>
+                    <td>700.000₫</td>
+                    <td>01/05/2023</td>
+                    <td><span class="status-badge status-completed">Đã hoàn thành</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="DL005"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>DL006</td>
+                    <td>
+                      <div class="product-info">
+                        <img src="../../images/handmade7.jpg" alt="Thiệp thủ công handmade" />
+                        <div>
+                          <div class="product-name">Chai Nghệ Thuật "Hương Sắc Thiên Nhiên"</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>15/15</td>
+                    <td>55.000₫</td>
+                    <td>825.000₫</td>
+                    <td>20/04/2023</td>
+                    <td><span class="status-badge status-completed">Đã hoàn thành</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="DL006"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="pagination">
+              <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+
+          <div class="order-detail-modal" id="orderDetailModal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>Chi tiết đơn làm</h3>
+                <button class="close-modal-btn">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="order-info">
+                  <div class="order-status">
+                    <span class="status-badge status-in-progress">Đang thực hiện</span>
+                  </div>
+                  <div class="info-section">
+                    <h4>Thông tin cơ bản</h4>
+                    <div class="info-grid">
+                      <div class="info-item">
+                        <div class="info-label">Mã đơn:</div>
+                        <div class="info-value">DL001</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Tên sản phẩm:</div>
+                        <div class="info-value">Túi thủ công mỹ nghệ</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Loại sản phẩm:</div>
+                        <div class="info-value">Túi thủ công</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Đơn giá:</div>
+                        <div class="info-value">70.000₫</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Số lượng đăng ký:</div>
+                        <div class="info-value">10 sản phẩm</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Số lượng đã nộp:</div>
+                        <div class="info-value">7 sản phẩm</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Tổng giá trị đơn:</div>
+                        <div class="info-value">700.000₫</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Ngày đăng ký:</div>
+                        <div class="info-value">01/06/2023</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Hạn nộp:</div>
+                        <div class="info-value">30/06/2023</div>
+                      </div>
+                      <div class="info-item">
+                        <div class="info-label">Địa điểm làm việc:</div>
+                        <div class="info-value">Tại nhà</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-section">
+                    <h4>Thông tin nộp sản phẩm</h4>
+                    <div class="submission-history">
+                      <div class="submission-item">
+                        <div class="submission-date">
+                          <i class="fas fa-calendar-alt"></i> 07/06/2023
+                        </div>
+                        <div class="submission-details">
+                          <div class="submission-title">Nộp sản phẩm lần 1</div>
+                          <div class="submission-info">
+                            <p><strong>Số lượng:</strong> 7 sản phẩm</p>
+                            <p><strong>Phương thức:</strong> Nộp trực tiếp</p>
+                            <p><strong>Trạng thái:</strong> <span class="status-text pending">Chờ kiểm tra</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-section">
+                    <h4>Tiến độ thực hiện</h4>
+                    <div class="progress-container">
+                      <div class="progress-info">
+                        <div class="progress-text">70% hoàn thành</div>
+                        <div class="progress-text">7/10 sản phẩm</div>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-value" style="width: 70%;"></div>
+                      </div>
+                      <div class="time-remaining">
+                        <i class="fas fa-clock"></i> Thời gian còn lại: 23 ngày
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-section">
+                    <h4>Ghi chú</h4>
+                    <div class="notes-content">
+                      <p>Đơn làm đang được thực hiện đúng tiến độ. Dự kiến hoàn thành đúng hạn.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" id="closeDetailBtn">Đóng</button>
+                <button class="btn btn-primary" id="viewSubmitBtn">Nộp thêm sản phẩm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/dropdown.js"></script>
+
+    <script>
+      // Search functionality
+      document.getElementById('searchInput').addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const tableRows = document.querySelectorAll('.history-table tbody tr');
+        
+        tableRows.forEach(row => {
+          const productName = row.querySelector('.product-name').textContent.toLowerCase();
+          const orderId = row.querySelector('td:first-child').textContent.toLowerCase();
+          
+          if (productName.includes(searchTerm) || orderId.includes(searchTerm)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+      
+      // Filter by status
+      document.getElementById('statusFilter').addEventListener('change', function() {
+        const selectedStatus = this.value;
+        const tableRows = document.querySelectorAll('.history-table tbody tr');
+        
+        tableRows.forEach(row => {
+          const statusBadge = row.querySelector('.status-badge');
+          
+          if (selectedStatus === 'all') {
+            row.style.display = '';
+          } else if (selectedStatus === 'inProgress' && statusBadge.classList.contains('status-in-progress')) {
+            row.style.display = '';
+          } else if (selectedStatus === 'completed' && statusBadge.classList.contains('status-completed')) {
+            row.style.display = '';
+          } else if (selectedStatus === 'canceled' && statusBadge.classList.contains('status-canceled')) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+      
+      // Filter by date (simplified for demo)
+      document.getElementById('dateFilter').addEventListener('change', function() {
+        const selectedDate = this.value;
+        // In a real application, this would filter based on actual dates
+        // For the demo, we'll just show/hide random rows
+        
+        const tableRows = document.querySelectorAll('.history-table tbody tr');
+        
+        if (selectedDate === 'all') {
+          tableRows.forEach(row => {
+            row.style.display = '';
+          });
+        } else if (selectedDate === 'thisMonth') {
+          // Show only the most recent rows (0-2)
+          tableRows.forEach((row, index) => {
+            row.style.display = index < 3 ? '' : 'none';
+          });
+        } else if (selectedDate === 'lastMonth') {
+          // Show only rows 3-4
+          tableRows.forEach((row, index) => {
+            row.style.display = (index >= 3 && index < 5) ? '' : 'none';
+          });
+        } else if (selectedDate === 'lastThreeMonths') {
+          // Show all rows
+          tableRows.forEach(row => {
+            row.style.display = '';
+          });
+        } else if (selectedDate === 'thisYear') {
+          // Show all rows
+          tableRows.forEach(row => {
+            row.style.display = '';
+          });
+        }
+      });
+      
+      // Sort functionality (simplified for demo)
+      document.getElementById('sortOrder').addEventListener('change', function() {
+        const selectedSort = this.value;
+        // In a real application, this would sort the table rows
+        // For the demo, we'll just log the selected sort option
+        console.log('Selected sort:', selectedSort);
+      });
+      
+      // View details modal
+      const viewButtons = document.querySelectorAll('.view-btn');
+      
+      viewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const orderId = this.getAttribute('data-id');
+          window.location.href = `ChiTietDonLam.html?id=${orderId}`;
+        });
+      });
+      
+      // Close modal on X button click
+      const closeButton = document.querySelector('.close-modal-btn');
+      const closeDetailBtn = document.getElementById('closeDetailBtn');
+      const viewSubmitBtn = document.getElementById('viewSubmitBtn');
+      
+      closeButton.addEventListener('click', function() {
+        document.getElementById('orderDetailModal').style.display = 'none';
+      });
+      
+      // Close modal on "Close" button click
+      closeDetailBtn.addEventListener('click', function() {
+        document.getElementById('orderDetailModal').style.display = 'none';
+      });
+      
+      // Handle "Nộp thêm sản phẩm" button click
+      viewSubmitBtn.addEventListener('click', function() {
+        window.location.href = 'NopSanPham.html';
+      });
+      
+      // Close modal on click outside the modal content
+      window.addEventListener('click', function(event) {
+        if (event.target === document.getElementById('orderDetailModal')) {
+          document.getElementById('orderDetailModal').style.display = 'none';
+        }
+      });
+      
+      // Pagination handling
+      const paginationButtons = document.querySelectorAll('.pagination-btn');
+      
+      paginationButtons.forEach(button => {
+        if (!button.disabled) {
+          button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            paginationButtons.forEach(btn => {
+              btn.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // In a real application, this would load the next page of data
+            // For the demo, we'll just console log the page number
+            console.log('Load page:', this.textContent);
+          });
+        }
+      });
+    </script>
+  </body>
+</html> 

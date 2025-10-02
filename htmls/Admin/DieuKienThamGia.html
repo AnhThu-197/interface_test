@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Điều Kiện Tham Gia Sản Xuất</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/Admin/admin-base.css" />
+    <link rel="stylesheet" href="../../css/Admin/dieukienthamgia.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Quản trị viên</p>
+            </a>
+            <div class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Tổng quan</a> &gt;
+        <span>Điều kiện tham gia sản xuất</span>
+      </div>
+
+      <div class="admin-container">
+        <div class="admin-sidebar">
+          <div class="sidebar-header">
+            <div class="admin-avatar">
+              <img src="../../images/admin.jpg" alt="Admin" />
+            </div>
+            <div class="admin-info">
+              <h3>Nguyễn Thư</h3>
+              <p>Hội Sinh Viên UTE</p>
+              <span class="admin-id">ID: ADMIN232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <div class="menu-section">
+              <h4>TỔNG QUAN</h4>
+              <ul>
+                <li>
+                  <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+                </li>
+                <li>
+                  <a href="ThongKe.html"><i class="fas fa-chart-bar"></i> Báo cáo - Thống kê</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ SẢN PHẨM</h4>
+              <ul>
+                <li>
+                  <a href="QuanLySanPham.html"><i class="fas fa-box"></i> Cập nhật sản phẩm</a>
+                </li>
+                <li>
+                  <a href="QuanLyNguyenLieu.html"><i class="fas fa-cubes"></i> Cập nhật nguyên liệu</a>
+                </li>
+                <li>
+                  <a href="QuanLyPhieuNhap.html"><i class="fas fa-clipboard-list"></i> Cập nhật phiếu nhập</a>
+                </li>
+                <li>
+                  <a href="QuanLyNhaCungCap.html"><i class="fas fa-truck"></i> Cập nhật nhà cung cấp</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ ĐƠN HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyDonHang.html"><i class="fas fa-shopping-cart"></i> Cập nhật trạng thái đơn hàng</a>
+                </li>
+                <li>
+                  <a href="VanChuyen.html"><i class="fas fa-shipping-fast"></i> Cài đặt vận chuyển</a>
+                </li>
+                <li>
+                  <a href="QuanLyDonLam.html"><i class="fas fa-tasks"></i> Cập nhật đơn làm</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ NHÂN VIÊN</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyNhanVien.html"><i class="fas fa-users"></i> Cập nhật nhân viên</a>
+                </li>
+                <li class="active">
+                  <a href="DieuKienThamGia.html"><i class="fas fa-user-check"></i> Cập nhật điều kiện tham gia</a>
+                </li>
+                <li>
+                  <a href="QuyTrinh.html"><i class="fas fa-sitemap"></i> Cập nhật quy trình làm việc</a>
+                </li>
+                <li>
+                  <a href="QuyDinh.html"><i class="fas fa-book"></i> Cập nhật quy định làm việc</a>
+                </li>
+                <li>
+                  <a href="ThanhToan.html"><i class="fas fa-money-bill-wave"></i> Thanh toán tiền công</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>KHÁC</h4>
+              <ul>
+                <li>
+                  <a href="DoiTac.html"><i class="fas fa-handshake"></i> Quản lý đối tác</a>
+                </li>
+                <li>
+                  <a href="TaiChinh.html"><i class="fas fa-chart-line"></i> Theo dõi tài chính</a>
+                </li>
+                <li>
+                  <a href="DanhGia.html"><i class="fas fa-star"></i> Phản hồi đánh giá</a>
+                </li>
+                <li>
+                  <a href="TaiKhoan.html"><i class="fas fa-user-cog"></i> Cập nhật tài khoản</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-content">
+          <div class="page-title">
+            <h1>Điều Kiện Tham Gia Sản Xuất</h1>
+            <div class="action-buttons">
+              <button class="admin-btn" id="add-condition-btn"><i class="fas fa-plus"></i> Thêm điều kiện mới</button>
+              <!-- <button class="admin-btn admin-btn-secondary"><i class="fas fa-file-export"></i> Xuất danh sách</button> -->
+            </div>
+          </div>
+
+          <!-- Tabs navigation -->
+          <div class="condition-tabs">
+            <button class="condition-tab active" data-tab="all">Tất cả điều kiện</button>
+            <button class="condition-tab" data-tab="active">Đang áp dụng</button>
+            <button class="condition-tab" data-tab="upcoming">Sắp áp dụng</button>
+            <button class="condition-tab" data-tab="inactive">Không áp dụng</button>
+          </div>
+
+          <!-- Filters section -->
+          <!-- <div class="condition-filters">
+            <div class="filter-group">
+              <label for="condition-type">Loại điều kiện:</label>
+              <select id="condition-type" class="admin-form-control">
+                <option value="">Tất cả loại</option>
+                <option value="basic">Điều kiện cơ bản</option>
+                <option value="skill">Kỹ năng sản xuất</option>
+                <option value="legal">Yêu cầu pháp lý</option>
+                <option value="experience">Kinh nghiệm</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="product-category">Danh mục sản phẩm:</label>
+              <select id="product-category" class="admin-form-control">
+                <option value="">Tất cả danh mục</option>
+                <option value="textile">Dệt may</option>
+                <option value="leather">Đồ da</option>
+                <option value="wood">Mộc</option>
+                <option value="ceramic">Gốm sứ</option>
+                <option value="paper">Giấy</option>
+              </select>
+            </div>
+            <div class="filter-group search-box">
+              <label for="condition-search">Tìm kiếm:</label>
+              <div class="search-input-container">
+                <input type="text" id="condition-search" placeholder="Tìm điều kiện..." class="admin-form-control">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <div class="filter-group filter-actions">
+              <button class="admin-btn admin-btn-sm apply-filter"><i class="fas fa-filter"></i> Lọc</button>
+              <button class="admin-btn admin-btn-secondary admin-btn-sm reset-filter"><i class="fas fa-sync-alt"></i> Đặt lại</button>
+            </div>
+          </div> -->
+
+          <!-- Conditions table -->
+          <div class="conditions-table-container">
+            <table class="admin-table conditions-table">
+              <thead>
+                <tr>
+                  <th width="5%">
+                    <input type="checkbox" id="select-all-conditions">
+                  </th>
+                  <th width="5%">ID</th>
+                  <th width="25%">Tên điều kiện</th>
+                  <th width="15%">Loại</th>
+                  <th width="15%">Danh mục sản phẩm</th>
+                  <th width="15%">Ngày cập nhật</th>
+                  <th width="10%">Trạng thái</th>
+                  <th width="10%">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" class="condition-checkbox"></td>
+                  <td>DK001</td>
+                  <td>Đủ 18 tuổi trở lên</td>
+                  <td>Điều kiện cơ bản</td>
+                  <td>Tất cả danh mục</td>
+                  <td>15/06/2023</td>
+                  <td><span class="status-badge status-active">Đang áp dụng</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="condition-checkbox"></td>
+                  <td>DK002</td>
+                  <td>Có kinh nghiệm dệt thủ công 1 năm</td>
+                  <td>Kinh nghiệm</td>
+                  <td>Dệt may</td>
+                  <td>17/06/2023</td>
+                  <td><span class="status-badge status-active">Đang áp dụng</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="condition-checkbox"></td>
+                  <td>DK003</td>
+                  <td>Có giấy chứng nhận nghề thủ công</td>
+                  <td>Yêu cầu pháp lý</td>
+                  <td>Tất cả danh mục</td>
+                  <td>18/06/2023</td>
+                  <td><span class="status-badge status-upcoming">Sắp áp dụng</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="condition-checkbox"></td>
+                  <td>DK004</td>
+                  <td>Kỹ năng làm đồ thủ công từ gỗ</td>
+                  <td>Kỹ năng sản xuất</td>
+                  <td>Mộc</td>
+                  <td>20/06/2023</td>
+                  <td><span class="status-badge status-active">Đang áp dụng</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="condition-checkbox"></td>
+                  <td>DK005</td>
+                  <td>Yêu cầu tiêm chủng Covid-19</td>
+                  <td>Yêu cầu pháp lý</td>
+                  <td>Tất cả danh mục</td>
+                  <td>01/04/2023</td>
+                  <td><span class="status-badge status-inactive">Không áp dụng</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Bulk actions -->
+          <!-- <div class="bulk-actions">
+            <div class="selected-count">0 điều kiện được chọn</div>
+            <div class="bulk-action-buttons">
+              <select class="admin-form-control bulk-action-select">
+                <option value="">Thao tác nhóm</option>
+                <option value="activate">Kích hoạt</option>
+                <option value="deactivate">Vô hiệu hóa</option>
+                <option value="delete">Xóa</option>
+              </select>
+              <button class="admin-btn apply-bulk-action">Áp dụng</button>
+            </div>
+          </div> -->
+
+          <!-- Pagination -->
+          <div class="pagination-container">
+            <!-- <div class="items-per-page">
+              <span>Hiển thị</span>
+              <select id="items-per-page-select">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+              </select>
+              <span>mục mỗi trang</span>
+            </div> -->
+            <div class="pagination">
+              <button class="pagination-btn prev" disabled><i class="fas fa-chevron-left"></i></button>
+              <button class="pagination-btn page active">1</button>
+              <button class="pagination-btn page">2</button>
+              <button class="pagination-btn page">3</button>
+              <span class="pagination-ellipsis">...</span>
+              <button class="pagination-btn page">10</button>
+              <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal for adding or editing condition -->
+    <div class="admin-modal" id="condition-modal">
+      <div class="admin-modal-content">
+        <div class="admin-modal-header">
+          <h3 class="admin-modal-title">Thêm điều kiện tham gia mới</h3>
+          <button class="admin-modal-close">&times;</button>
+        </div>
+        <div class="admin-modal-body">
+          <form id="condition-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="condition-id">Mã điều kiện:</label>
+                <input type="text" id="condition-id" class="admin-form-control" placeholder="Tự động tạo nếu để trống">
+              </div>
+              <div class="form-group">
+                <label for="condition-name">Tên điều kiện: <span class="required">*</span></label>
+                <input type="text" id="condition-name" class="admin-form-control" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="condition-type-select">Loại điều kiện: <span class="required">*</span></label>
+                <select id="condition-type-select" class="admin-form-control" required>
+                  <option value="">-- Chọn loại điều kiện --</option>
+                  <option value="basic">Điều kiện cơ bản</option>
+                  <option value="skill">Kỹ năng sản xuất</option>
+                  <option value="legal">Yêu cầu pháp lý</option>
+                  <option value="experience">Kinh nghiệm</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="product-category-select">Áp dụng cho danh mục: <span class="required">*</span></label>
+                <select id="product-category-select" class="admin-form-control" required>
+                  <option value="all">Tất cả danh mục</option>
+                  <option value="textile">Dệt may</option>
+                  <option value="leather">Đồ da</option>
+                  <option value="wood">Mộc</option>
+                  <option value="ceramic">Gốm sứ</option>
+                  <option value="paper">Giấy</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="condition-description">Mô tả chi tiết: <span class="required">*</span></label>
+              <textarea id="condition-description" class="admin-form-control" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="verification-method">Phương thức xác minh:</label>
+                <select id="verification-method" class="admin-form-control">
+                  <option value="document">Tài liệu</option>
+                  <option value="certification">Chứng chỉ</option>
+                  <option value="test">Kiểm tra</option>
+                  <option value="interview">Phỏng vấn</option>
+                  <option value="reference">Tham khảo</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="condition-status">Trạng thái:</label>
+                <select id="condition-status" class="admin-form-control">
+                  <option value="active">Đang áp dụng</option>
+                  <option value="upcoming">Sắp áp dụng</option>
+                  <option value="inactive">Không áp dụng</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="effective-date">Ngày bắt đầu áp dụng:</label>
+                <input type="date" id="effective-date" class="admin-form-control">
+              </div>
+              <div class="form-group">
+                <label for="end-date">Ngày kết thúc (không bắt buộc):</label>
+                <input type="date" id="end-date" class="admin-form-control">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="additional-notes">Ghi chú bổ sung:</label>
+              <textarea id="additional-notes" class="admin-form-control" rows="2"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="admin-modal-footer">
+          <button class="admin-btn admin-btn-secondary" id="cancel-btn">Hủy</button>
+          <button class="admin-btn" id="save-condition-btn">Lưu điều kiện</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/components/condition.js"></script>
+
+    <script>
+      // Tab Navigation
+      const conditionTabs = document.querySelectorAll('.condition-tab');
+      
+      conditionTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Remove active class from all tabs
+          conditionTabs.forEach(t => t.classList.remove('active'));
+          
+          // Add active class to clicked tab
+          this.classList.add('active');
+          
+          // Filter table based on the selected tab
+          const tabValue = this.getAttribute('data-tab');
+          filterConditions(tabValue);
+        });
+      });
+      
+      function filterConditions(tabValue) {
+        const rows = document.querySelectorAll('.conditions-table tbody tr');
+        
+        rows.forEach(row => {
+          const statusCell = row.querySelector('td:nth-child(7) .status-badge');
+          
+          if (tabValue === 'all') {
+            row.style.display = '';
+          } else if (tabValue === 'active' && statusCell.classList.contains('status-active')) {
+            row.style.display = '';
+          } else if (tabValue === 'upcoming' && statusCell.classList.contains('status-upcoming')) {
+            row.style.display = '';
+          } else if (tabValue === 'inactive' && statusCell.classList.contains('status-inactive')) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      }
+      
+      // Checkbox "Select All" functionality
+      const selectAllConditions = document.getElementById('select-all-conditions');
+      const conditionCheckboxes = document.querySelectorAll('.condition-checkbox');
+      
+      selectAllConditions.addEventListener('change', function() {
+        conditionCheckboxes.forEach(checkbox => {
+          checkbox.checked = this.checked;
+        });
+        
+        updateSelectedCount();
+      });
+      
+      conditionCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          updateSelectedCount();
+          
+          // Check if all checkboxes are checked
+          const allChecked = [...conditionCheckboxes].every(cb => cb.checked);
+          selectAllConditions.checked = allChecked;
+        });
+      });
+      
+      function updateSelectedCount() {
+        const selectedCount = [...conditionCheckboxes].filter(cb => cb.checked).length;
+        document.querySelector('.selected-count').textContent = `${selectedCount} điều kiện được chọn`;
+      }
+      
+      // Modal Functionality
+      const modal = document.getElementById('condition-modal');
+      const addConditionBtn = document.getElementById('add-condition-btn');
+      const cancelBtn = document.getElementById('cancel-btn');
+      const closeModalBtn = document.querySelector('.admin-modal-close');
+      const editBtns = document.querySelectorAll('.edit-btn');
+      
+      // Open modal when "Add Condition" button is clicked
+      addConditionBtn.addEventListener('click', function() {
+        // Reset form
+        document.getElementById('condition-form').reset();
+        document.querySelector('.admin-modal-title').textContent = 'Thêm điều kiện tham gia mới';
+        
+        // Show modal
+        modal.style.display = 'block';
+      });
+      
+      // Close modal when Cancel button is clicked
+      cancelBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+      
+      // Close modal when X button is clicked
+      closeModalBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+      
+      // Close modal when clicking outside modal content
+      window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+      
+      // Edit button functionality
+      editBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Change modal title
+          document.querySelector('.admin-modal-title').textContent = 'Chỉnh sửa điều kiện tham gia';
+          
+          // Get the row data
+          const row = this.closest('tr');
+          const id = row.cells[1].textContent;
+          const name = row.cells[2].textContent;
+          const type = row.cells[3].textContent;
+          const category = row.cells[4].textContent;
+          
+          // Populate form with data
+          document.getElementById('condition-id').value = id;
+          document.getElementById('condition-name').value = name;
+          
+          // Set condition type based on text content
+          const typeSelect = document.getElementById('condition-type-select');
+          Array.from(typeSelect.options).forEach(option => {
+            if (option.text === type) {
+              typeSelect.value = option.value;
+            }
+          });
+          
+          // Set category based on text content
+          const categorySelect = document.getElementById('product-category-select');
+          Array.from(categorySelect.options).forEach(option => {
+            if (option.text === category) {
+              categorySelect.value = option.value;
+            }
+          });
+          
+          // Set status based on badge
+          const statusBadge = row.querySelector('.status-badge');
+          const statusSelect = document.getElementById('condition-status');
+          
+          if (statusBadge.classList.contains('status-active')) {
+            statusSelect.value = 'active';
+          } else if (statusBadge.classList.contains('status-upcoming')) {
+            statusSelect.value = 'upcoming';
+          } else if (statusBadge.classList.contains('status-inactive')) {
+            statusSelect.value = 'inactive';
+          }
+          
+          // Show modal
+          modal.style.display = 'block';
+        });
+      });
+    </script>
+  </body>
+</html> 

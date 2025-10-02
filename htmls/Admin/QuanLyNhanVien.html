@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Nhân Viên</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/Admin/admin-base.css" />
+    <link rel="stylesheet" href="../../css/Admin/nhanvien.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Quản trị viên</p>
+            </a>
+            <div class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Tổng quan</a> &gt;
+        <span>Quản lý nhân viên</span>
+      </div>
+
+      <div class="admin-container">
+        <div class="admin-sidebar">
+          <div class="sidebar-header">
+            <div class="admin-avatar">
+              <img src="../../images/admin.jpg" alt="Admin" />
+            </div>
+            <div class="admin-info">
+              <h3>Nguyễn Thư</h3>
+              <p>Hội Sinh Viên UTE</p>
+              <span class="admin-id">ID: ADMIN232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <div class="menu-section">
+              <h4>TỔNG QUAN</h4>
+              <ul>
+                <li>
+                  <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+                </li>
+                <li>
+                  <a href="ThongKe.html"><i class="fas fa-chart-bar"></i> Báo cáo - Thống kê</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ SẢN PHẨM</h4>
+              <ul>
+                <li>
+                  <a href="QuanLySanPham.html"><i class="fas fa-box"></i> Cập nhật sản phẩm</a>
+                </li>
+                <li>
+                  <a href="QuanLyNguyenLieu.html"><i class="fas fa-cubes"></i> Cập nhật nguyên liệu</a>
+                </li>
+                <li>
+                  <a href="QuanLyPhieuNhap.html"><i class="fas fa-clipboard-list"></i> Cập nhật phiếu nhập</a>
+                </li>
+                <li>
+                  <a href="QuanLyNhaCungCap.html"><i class="fas fa-truck"></i> Cập nhật nhà cung cấp</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ ĐƠN HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyDonHang.html"><i class="fas fa-shopping-cart"></i> Cập nhật trạng thái đơn hàng</a>
+                </li>
+                <li>
+                  <a href="VanChuyen.html"><i class="fas fa-shipping-fast"></i> Cài đặt vận chuyển</a>
+                </li>
+                <li>
+                  <a href="QuanLyDonLam.html"><i class="fas fa-tasks"></i> Cập nhật đơn làm</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ NHÂN VIÊN</h4>
+              <ul>
+                <li class="active">
+                  <a href="QuanLyNhanVien.html"><i class="fas fa-users"></i> Cập nhật nhân viên</a>
+                </li>
+                <li>
+                  <a href="DieuKienThamGia.html"><i class="fas fa-user-check"></i> Cập nhật điều kiện tham gia</a>
+                </li>
+                <li>
+                  <a href="QuyTrinh.html"><i class="fas fa-sitemap"></i> Cập nhật quy trình làm việc</a>
+                </li>
+                <li>
+                  <a href="QuyDinh.html"><i class="fas fa-book"></i> Cập nhật quy định làm việc</a>
+                </li>
+                <li>
+                  <a href="ThanhToan.html"><i class="fas fa-money-bill-wave"></i> Thanh toán tiền công</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>KHÁC</h4>
+              <ul>
+                <li>
+                  <a href="DoiTac.html"><i class="fas fa-handshake"></i> Quản lý đối tác</a>
+                </li>
+                <li>
+                  <a href="TaiChinh.html"><i class="fas fa-chart-line"></i> Theo dõi tài chính</a>
+                </li>
+                <li>
+                  <a href="DanhGia.html"><i class="fas fa-star"></i> Phản hồi đánh giá</a>
+                </li>
+                <li>
+                  <a href="TaiKhoan.html"><i class="fas fa-user-cog"></i> Cập nhật tài khoản</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-content">
+          <div class="page-title">
+            <h1>Quản Lý Nhân Viên</h1>
+            <div class="action-buttons">
+              <!-- <button class="admin-btn" id="add-employee-btn"><i class="fas fa-plus"></i> Thêm nhân viên mới</button> -->
+              <!-- <button class="admin-btn admin-btn-secondary"><i class="fas fa-file-export"></i> Xuất danh sách</button> -->
+            </div>
+          </div>
+
+          <!-- Tabs navigation -->
+          <!-- <div class="employee-tabs">
+            <button class="employee-tab active" data-tab="all">Tất cả nhân viên</button>
+            <button class="employee-tab" data-tab="technical">Kỹ thuật viên</button>
+            <button class="employee-tab" data-tab="support">Hỗ trợ khách hàng</button>
+            <button class="employee-tab" data-tab="warehouse">Nhân viên kho</button>
+            <button class="employee-tab" data-tab="shipping">Vận chuyển</button>
+          </div> -->
+
+          <!-- Filters section -->
+          <div class="employee-filters">
+            <!-- <div class="filter-group">
+              <label for="department">Phòng ban:</label>
+              <select id="department" class="admin-form-control">
+                <option value="">Tất cả phòng ban</option>
+                <option value="technical">Kỹ thuật</option>
+                <option value="customer-support">Hỗ trợ khách hàng</option>
+                <option value="warehouse">Kho hàng</option>
+                <option value="shipping">Vận chuyển</option>
+                <option value="marketing">Marketing</option>
+              </select>
+            </div> -->
+            <div class="filter-group search-box">
+              <label for="employee-search">Tìm kiếm:</label>
+              <div class="search-input-container">
+                <input type="text" id="employee-search" placeholder="Tìm theo ID, tên, email..." class="admin-form-control">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <div class="filter-group">
+              <label for="work-status">Trạng thái:</label>
+              <select id="work-status" class="admin-form-control">
+                <option value="">Tất cả trạng thái</option>
+                <option value="active">Đang làm việc</option>
+                <option value="onleave">Đang nghỉ phép</option>
+                <option value="suspended">Tạm ngưng</option>
+                <option value="terminated">Đã nghỉ việc</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Employee Statistics -->
+          <div class="employee-stats">
+            <div class="stat-card">
+              <div class="status-terminated stat-icon"><i class="fas fa-users"></i></div>
+              <div class="stat-info">
+                <h3>Tổng nhân viên</h3>
+                <p class="stat-value">42</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="status-active stat-icon"><i class="fas fa-user-check"></i></div>
+              <div class="stat-info">
+                <h3>Đang làm việc</h3>
+                <p class="stat-value">36</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="status-leave stat-icon"><i class="fas fa-user-clock"></i></div>
+              <div class="stat-info">
+                <h3>Đang nghỉ phép</h3>
+                <p class="stat-value">4</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="status-suspended stat-icon"><i class="fas fa-user-times"></i></div>
+              <div class="stat-info">
+                <h3>Đã nghỉ việc</h3>
+                <p class="stat-value">2</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Employees table -->
+          <div class="employees-table-container">
+            <table class="admin-table employees-table">
+              <thead>
+                <tr>
+                  <th width="5%">
+                    <input type="checkbox" id="select-all-employees">
+                  </th>
+                  <th width="7%">ID</th>
+                  <th width="15%">Họ và tên</th>
+                  <th width="10%">Số điện thoại</th>
+                  <th width="10%">Ngày vào làm</th>
+                  <th width="10%">Trạng thái</th>
+                  <th width="18%">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" class="employee-checkbox"></td>
+                  <td>NV001</td>
+                  <td>Nguyễn Văn An</td>
+                  <td>0912345678</td>
+                  <td>15/03/2022</td>
+                  <td><span class="status-badge status-active">Đang làm việc</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn schedule-btn" title="Lịch làm việc"><i class="fas fa-calendar-alt"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="employee-checkbox"></td>
+                  <td>NV002</td>
+                  <td>Trần Thị Bình</td>
+                  <td>0923456789</td>
+                  <td>20/05/2022</td>
+                  <td><span class="status-badge status-active">Đang làm việc</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn schedule-btn" title="Lịch làm việc"><i class="fas fa-calendar-alt"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="employee-checkbox"></td>
+                  <td>NV003</td>
+                  <td>Lê Văn Chính</td>
+                  <td>0934567890</td>
+                  <td>10/01/2023</td>
+                  <td><span class="status-badge status-leave">Đang nghỉ phép</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn schedule-btn" title="Lịch làm việc"><i class="fas fa-calendar-alt"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="employee-checkbox"></td>
+                  <td>NV004</td>
+                  <td>Đỗ Thị Dung</td>
+                  <td>0945678901</td>
+                  <td>05/07/2022</td>
+                  <td><span class="status-badge status-active">Đang làm việc</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn schedule-btn" title="Lịch làm việc"><i class="fas fa-calendar-alt"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="employee-checkbox"></td>
+                  <td>NV005</td>
+                  <td>Phan Văn Em</td>
+                  <td>0956789012</td>
+                  <td>15/09/2022</td>
+                  <td><span class="status-badge status-active">Đang làm việc</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn schedule-btn" title="Lịch làm việc"><i class="fas fa-calendar-alt"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="employee-checkbox"></td>
+                  <td>NV006</td>
+                  <td>Hoàng Thị Giang</td>
+                  <td>0967890123</td>
+                  <td>03/11/2022</td>
+                  <td><span class="status-badge status-suspended">Tạm ngưng</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn schedule-btn" title="Lịch làm việc"><i class="fas fa-calendar-alt"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="employee-checkbox"></td>
+                  <td>NV007</td>
+                  <td>Ngô Văn Huy</td>
+                  <td>0978901234</td>
+                  <td>20/01/2023</td>
+                  <td><span class="status-badge status-active">Đang làm việc</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn schedule-btn" title="Lịch làm việc"><i class="fas fa-calendar-alt"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="employee-checkbox"></td>
+                  <td>NV008</td>
+                  <td>Vũ Thị Lan</td>
+                  <td>0989012345</td>
+                  <td>17/02/2023</td>
+                  <td><span class="status-badge status-terminated">Đã nghỉ việc</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn schedule-btn" title="Lịch làm việc"><i class="fas fa-calendar-alt"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination-container">
+            <!-- <div class="pagination-info">Hiển thị 1-8 của 42 nhân viên</div> -->
+            <div class="pagination">
+              <!-- <button class="pagination-btn" disabled><i class="fas fa-angle-double-left"></i></button> -->
+              <button class="pagination-btn" disabled><i class="fas fa-angle-left"></i></button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">4</button>
+              <button class="pagination-btn">5</button>
+              <button class="pagination-btn"><i class="fas fa-angle-right"></i></button>
+              <!-- <button class="pagination-btn"><i class="fas fa-angle-double-right"></i></button> -->
+            </div>
+            <!-- <div class="pagination-options">
+              <label for="rows-per-page">Hiển thị:</label>
+              <select id="rows-per-page" class="admin-form-control">
+                <option value="8">8</option>
+                <option value="16">16</option>
+                <option value="24">24</option>
+                <option value="32">32</option>
+              </select>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Add Employee Modal -->
+    <div class="modal" id="add-employee-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Thêm Nhân Viên Mới</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="add-employee-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employee-name">Họ và tên <span class="required">*</span></label>
+                <input type="text" id="employee-name" class="admin-form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="employee-id">Mã nhân viên <span class="required">*</span></label>
+                <input type="text" id="employee-id" class="admin-form-control" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- <div class="form-group">
+                <label for="employee-department">Phòng ban <span class="required">*</span></label>
+                <select id="employee-department" class="admin-form-control" required>
+                  <option value="">Chọn phòng ban</option>
+                  <option value="technical">Kỹ thuật</option>
+                  <option value="customer-support">Hỗ trợ khách hàng</option>
+                  <option value="warehouse">Kho hàng</option>
+                  <option value="shipping">Vận chuyển</option>
+                  <option value="marketing">Marketing</option>
+                </select>
+              </div> -->
+              <!-- <div class="form-group">
+                <label for="employee-position">Vị trí <span class="required">*</span></label>
+                <select id="employee-position" class="admin-form-control" required>
+                  <option value="">Chọn vị trí</option>
+                  <option value="manager">Quản lý</option>
+                  <option value="team-lead">Trưởng nhóm</option>
+                  <option value="staff">Nhân viên</option>
+                  <option value="intern">Thực tập sinh</option>
+                </select>
+              </div> -->
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employee-email">Email <span class="required">*</span></label>
+                <input type="email" id="employee-email" class="admin-form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="employee-phone">Số điện thoại <span class="required">*</span></label>
+                <input type="tel" id="employee-phone" class="admin-form-control" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employee-start-date">Ngày vào làm <span class="required">*</span></label>
+                <input type="date" id="employee-start-date" class="admin-form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="employee-status">Trạng thái <span class="required">*</span></label>
+                <select id="employee-status" class="admin-form-control" required>
+                  <option value="active">Đang làm việc</option>
+                  <option value="onleave">Đang nghỉ phép</option>
+                  <option value="suspended">Tạm ngưng</option>
+                  <option value="terminated">Đã nghỉ việc</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employee-salary">Lương cơ bản (VNĐ) <span class="required">*</span></label>
+                <input type="number" id="employee-salary" class="admin-form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="employee-tax-code">Mã số thuế</label>
+                <input type="text" id="employee-tax-code" class="admin-form-control" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employee-address">Địa chỉ <span class="required">*</span></label>
+                <textarea id="employee-address" class="admin-form-control" rows="2" required></textarea>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="employee-notes">Ghi chú</label>
+                <textarea id="employee-notes" class="admin-form-control" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="admin-btn admin-btn-secondary close-modal-btn">Hủy</button>
+              <button type="submit" class="admin-btn">Thêm nhân viên</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- View Employee Modal -->
+    <div class="modal" id="view-employee-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Thông Tin Nhân Viên</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="employee-profile">
+            <div class="employee-header">
+              <div class="employee-avatar">
+                <img src="../../images/avt4.webp" alt="Employee Avatar">
+              </div>
+              <div class="employee-basic-info">
+                <h3>Nguyễn Triều Tiên</h3>
+                <p class="employee-position">Nhân viên</p>
+                <p class="employee-id">ID: NV001</p>
+                <span class="status-badge status-active">Đang làm việc</span>
+              </div>
+            </div>
+            
+            <div class="employee-info-section">
+              <h4>Thông tin liên hệ</h4>
+              <div class="info-grid">
+                <div class="info-item">
+                  <label>Điện thoại:</label>
+                  <p>0912345678</p>
+                </div>
+                <div class="info-item">
+                  <label>Email:</label>
+                  <p>nguyenvanan@example.com</p>
+                </div>
+                <div class="info-item">
+                  <label>Địa chỉ:</label>
+                  <p>123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="employee-info-section">
+              <h4>Thông tin công việc</h4>
+              <div class="info-grid">
+                <!-- <div class="info-item">
+                  <label>Phòng ban:</label>
+                  <p>Kỹ thuật</p>
+                </div>
+                <div class="info-item">
+                  <label>Vị trí:</label>
+                  <p>Trưởng nhóm</p>
+                </div> -->
+                <div class="info-item">
+                  <label>Ngày vào làm:</label>
+                  <p>15/03/2022</p>
+                </div>
+                <div class="info-item">
+                  <label>Quản lý trực tiếp:</label>
+                  <p>Anh Thư (Hội sinh viên)</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="employee-info-section">
+              <h4>Thông tin tài chính</h4>
+              <div class="info-grid">
+                <div class="info-item">
+                  <label>Lương trung bình:</label>
+                  <p>3,500,000 VNĐ</p>
+                </div>
+                <!-- <div class="info-item">
+                  <label>Mã số thuế:</label>
+                  <p>8765432109</p>
+                </div> -->
+                <div class="info-item">
+                  <label>Số tài khoản:</label>
+                  <p>0123456789 (VCB)</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="employee-info-section">
+              <h4>Thông tin khác</h4>
+              <div class="info-grid">
+                <div class="info-item full-width">
+                  <label>Ghi chú:</label>
+                  <p>Nhân viên xuất sắc của quý 2/2023. Đã hoàn thành khóa đào tạo nâng cao về kỹ năng quản lý nhóm.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-actions">
+            <button class="admin-btn admin-btn-secondary close-modal-btn">Đóng</button>
+            <button class="admin-btn edit-employee-btn"><i class="fas fa-edit"></i> Chỉnh sửa</button>
+            <button class="admin-btn admin-btn-danger"><i class="fas fa-user-times"></i> Thôi việc</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Employee Modal -->
+    <div class="modal" id="edit-employee-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Chỉnh Sửa Thông Tin Nhân Viên</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="edit-employee-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="edit-employee-name">Họ và tên</label>
+                <input type="text" id="edit-employee-name" class="admin-form-control readonly-field" readonly />
+              </div>
+              <div class="form-group">
+                <label for="edit-employee-id">Mã nhân viên</label>
+                <input type="text" id="edit-employee-id" class="admin-form-control" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="edit-employee-department">Phòng ban <span class="required">*</span></label>
+                <select id="edit-employee-department" class="admin-form-control" required>
+                  <option value="">Chọn phòng ban</option>
+                  <option value="technical">Kỹ thuật</option>
+                  <option value="customer-support">Hỗ trợ khách hàng</option>
+                  <option value="warehouse">Kho hàng</option>
+                  <option value="shipping">Vận chuyển</option>
+                  <option value="marketing">Marketing</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="edit-employee-position">Vị trí <span class="required">*</span></label>
+                <select id="edit-employee-position" class="admin-form-control" required>
+                  <option value="">Chọn vị trí</option>
+                  <option value="manager">Quản lý</option>
+                  <option value="team-lead">Trưởng nhóm</option>
+                  <option value="staff">Nhân viên</option>
+                  <option value="intern">Thực tập sinh</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="edit-employee-email">Email</label>
+                <input type="email" id="edit-employee-email" class="admin-form-control readonly-field" readonly />
+              </div>
+              <div class="form-group">
+                <label for="edit-employee-phone">Số điện thoại</label>
+                <input type="tel" id="edit-employee-phone" class="admin-form-control readonly-field" readonly />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="edit-employee-dob">Ngày sinh</label>
+                <input type="date" id="edit-employee-dob" class="admin-form-control readonly-field" readonly />
+              </div>
+              <div class="form-group">
+                <label for="edit-employee-start-date">Ngày bắt đầu làm việc</label>
+                <input type="date" id="edit-employee-start-date" class="admin-form-control" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="edit-employee-address">Địa chỉ</label>
+                <textarea id="edit-employee-address" class="admin-form-control"></textarea>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="edit-employee-status">Trạng thái <span class="required">*</span></label>
+                <select id="edit-employee-status" class="admin-form-control" required>
+                  <option value="active">Đang làm việc</option>
+                  <option value="on-leave">Nghỉ phép</option>
+                  <option value="suspended">Tạm đình chỉ</option>
+                  <option value="terminated">Đã nghỉ việc</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="edit-employee-notes">Ghi chú</label>
+                <textarea id="edit-employee-notes" class="admin-form-control" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="admin-btn admin-btn-secondary close-modal-btn">Hủy</button>
+              <button type="submit" class="admin-btn">Lưu thay đổi</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/components/employees.js"></script>
+  </body>
+</html> 

@@ -1,0 +1,753 @@
+/* CSS Quản Lý Quy Trình */
+
+/* Danh mục quy trình */
+.process-categories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding: 5px 0;
+  scrollbar-width: none;
+}
+
+.process-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tab {
+  padding: 10px 15px;
+  background-color: #f5f5f7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.category-tab i {
+  font-size: 16px;
+  color: #666;
+}
+
+.category-tab span {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.category-tab:hover {
+  background-color: #e9ecef;
+}
+
+.category-tab.active {
+  background-color: #000;
+}
+
+.category-tab.active i,
+.category-tab.active span {
+  color: #fff;
+}
+
+/* Tìm kiếm & Lọc */
+.process-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 12px;
+  padding-right: 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background-color: #000;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #333;
+}
+
+.filter-options {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-options select,
+.filter-options button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.filter-options button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.filter-options button:hover {
+  background-color: #f5f5f7;
+}
+
+/* Lưới quy trình */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.process-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.process-title h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.process-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.process-badge.active {
+  background-color: #e6f7ee;
+  color: #28a745;
+}
+
+.process-badge.draft {
+  background-color: #e6f0ff;
+  color: #0072c6;
+}
+
+.process-badge.archived {
+  background-color: #f5f5f7;
+  color: #6c757d;
+}
+
+.card-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.action-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  background-color: #f5f5f7;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-btn:hover {
+  background-color: #e6f0ff;
+  color: #000;
+}
+
+.more-btn:hover {
+  background-color: #f5f5f7;
+  color: #000;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.process-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #666;
+}
+
+.info-item i {
+  font-size: 14px;
+  color: #000;
+}
+
+.admin-btn{
+    padding: 10px 16px;
+    background-color: #ddd;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+  }
+
+.page-title {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Các bước quy trình */
+.process-steps {
+  padding: 10px 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.process-steps::-webkit-scrollbar {
+  width: 4px;
+}
+
+.process-steps::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.process-steps::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #eee;
+}
+
+.step:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  background-color: #eaeaeacc;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex-grow: 1;
+}
+
+.step-content h4 {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.step-content p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.step-more {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.view-more-btn {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.view-more-btn:hover {
+  text-decoration: underline;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-top: 1px solid #eee;
+  background-color: #f8f9fa;
+}
+
+.view-full-btn, .print-btn, .publish-btn, .restore-btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.view-full-btn:hover, .print-btn:hover {
+  background-color: #f5f5f7;
+}
+
+.publish-btn {
+  background-color: #e6f7ee;
+  color: #28a745;
+  border: 1px solid #bee5eb;
+}
+
+.publish-btn:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.restore-btn {
+  background-color: #e6f0ff;
+  color: #000;
+  border: 1px solid #b8daff;
+}
+
+.restore-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Modal chi tiết quy trình */
+#processDetailModal .admin-modal-content {
+  max-width: 900px;
+}
+
+#processDetailModal .admin-modal-title {
+  margin-top: 10px;
+}
+
+#processDetailModal .admin-modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f5f5f7;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px 10px 10px 0;
+}
+
+.process-detail-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.process-basic-info,
+.process-meta-info {
+  padding: 20px;
+  background-color: #eaeaeacc;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.process-detail-steps {
+  margin-top: 30px;
+}
+
+.process-detail-steps h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.step-detail {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.step-detail-number {
+  width: 36px;
+  height: 36px;
+  background-color: #eaeaeacc;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.step-detail-content {
+  flex-grow: 1;
+}
+
+.step-detail-content h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.step-detail-content p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Phân trang */
+.pagination-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.items-per-page {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.items-per-page select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination-btn.page.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.pagination-btn:hover:not(.active):not([disabled]) {
+  background-color: #f5f5f7;
+}
+
+.pagination-btn[disabled] {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Điều chỉnh responsive */
+@media (max-width: 1200px) {
+  .process-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  .process-detail-header {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .process-filters {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .search-box {
+    max-width: 100%;
+  }
+  
+  .filter-options {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pagination-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .page-title .action-buttons {
+    width: 100%;
+  }
+  
+  .card-footer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .card-footer button {
+    flex: 1 0 calc(50% - 10px);
+  }
+}
+
+/* Process Edit Modal Styles */
+.admin-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.admin-modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.admin-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-modal-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+}
+
+.admin-modal-body {
+  margin-bottom: 20px;
+}
+
+.admin-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.required {
+  color: #dc3545;
+}
+
+.admin-form-control {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.admin-form-control:focus {
+  border-color: #000;
+  outline: none;
+}
+
+textarea.admin-form-control {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Step Input Styles */
+.step-input {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.step-input-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  background-color: #eaeaeacc;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.remove-step-btn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.remove-step-btn:hover {
+  color: #c82333;
+}
+
+.step-input input,
+.step-input textarea {
+  margin-bottom: 10px;
+}
+
+.step-input textarea {
+  min-height: 60px;
+}
+
+#add-step-btn {
+  margin-top: 10px;
+} 

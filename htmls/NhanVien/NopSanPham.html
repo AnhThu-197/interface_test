@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nộp sản phẩm</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/NhanVien/dashboard.css" />
+    <link rel="stylesheet" href="../../css/NhanVien/nopsanpham.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <buttom class="search-bottom">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </buttom>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-bottom">
+              <img class="search-bottom-vid" src="../../images/scan-image.gif" alt="" srcset="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Nguyễn Văn A</p>
+            </a>
+            <div class="cart-container">
+              <a href="../GioHang.html">
+                <img class="cart-icon" width="25" height="25" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1" />
+                <span class="cart-badge">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="employee-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Trang quản lý nhân viên</a> &gt;
+        <span>Nộp sản phẩm</span>
+      </div>
+
+      <div class="employee-container">
+        <div class="employee-sidebar">
+          <div class="sidebar-header">
+            <div class="employee-avatar">
+              <img src="../../images/user.jpg" alt="Nguyễn Hoàng Anh Thư" />
+            </div>
+            <div class="employee-info">
+              <h3>Nguyễn Hoàng Anh Thư</h3>
+              <p>Nhân viên - Sinh viên UTE</p>
+              <span class="employee-id">ID: NV232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+              </li>
+              <li>
+                <a href="DangKyThamGia.html"><i class="fas fa-user-plus"></i> Đăng ký tham gia sản xuất</a>
+              </li>
+              <li>
+                <a href="QuyDinhLamViec.html"><i class="fas fa-book"></i> Quy định làm việc</a>
+              </li>
+              <li>
+                <a href="RutTien.html"><i class="fas fa-hand-holding-usd"></i> Quy trình làm việcviệc</a>
+              </li>
+              <li>
+                <a href="DanhSachDonLam.html"><i class="fas fa-list"></i> Danh sách đơn làm</a>
+              </li>
+              <li>
+                <a href="DangKyDonLam.html"><i class="fas fa-edit"></i> Đăng ký đơn làm</a>
+              </li>
+              <li>
+                <a href="DangKySanPhamMoi.html"><i class="fas fa-plus-circle"></i> Đăng ký sản phẩm mới</a>
+              </li>
+              <li class="active">
+                <a href="NopSanPham.html"><i class="fas fa-upload"></i> Nộp sản phẩm</a>
+              </li>
+              <li>
+                <a href="LichSuSanPham.html"><i class="fas fa-history"></i> Lịch sử sản phẩm nộp</a>
+              </li>
+              <li>
+                <a href="LichSuDonLam.html"><i class="fas fa-clipboard-list"></i> Lịch sử đơn làm</a>
+              </li>
+              <li>
+                <a href="ThuNhap.html"><i class="fas fa-money-bill-wave"></i> Xem thu nhập</a>
+              </li>
+              <li>
+                <a href="LichSuGiaoDich.html"><i class="fas fa-exchange-alt"></i> Lịch sử giao dịch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="employee-content">
+          <div class="page-title">
+            <h1>Nộp sản phẩm</h1>
+          </div>
+
+          <div class="submission-intro">
+            <div class="intro-card">
+              <div class="intro-icon">
+                <i class="fas fa-upload"></i>
+              </div>
+              <div class="intro-content">
+                <h2>Hoàn thành và nộp sản phẩm</h2>
+                <p>Sử dụng trang này để nộp các sản phẩm bạn đã hoàn thành. Đảm bảo kiểm tra kỹ chất lượng sản phẩm trước khi nộp để tránh bị trả lại và chậm trễ thanh toán.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-selection-section">
+            <div class="section-header">
+              <h2>Chọn đơn làm để nộp sản phẩm</h2>
+            </div>
+            <div class="product-selection-content">
+              <div class="selection-instructions">
+                <p>Bạn hiện có <span class="highlight">3 đơn làm</span> đang thực hiện. Vui lòng chọn đơn làm bạn muốn nộp sản phẩm:</p>
+              </div>
+              <div class="product-list">
+                <div class="product-item">
+                  <div class="product-radio">
+                    <input type="radio" id="product1" name="product" value="DL001" />
+                    <label for="product1" class="radio-label"></label>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-image">
+                      <img src="../../images/handmade2.jpg" alt="Túi thủ công mỹ nghệ" />
+                    </div>
+                    <div class="product-details">
+                      <h3>Hộp Quà "Lời Chúc Tốt Lành"</h3>
+                      <div class="product-meta">
+                        <span class="product-id">Mã đơn: DL001</span>
+                        <span class="product-quantity">Số lượng đăng ký: 10 sản phẩm</span>
+                        <span class="product-deadline">Hạn nộp: 30/06/2023</span>
+                      </div>
+                      <!-- <div class="product-progress">
+                        <div class="progress-label">Tiến độ: 70%</div>
+                        <div class="progress-bar">
+                          <div class="progress-value" style="width: 70%;"></div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <div class="product-radio">
+                    <input type="radio" id="product2" name="product" value="DL003" />
+                    <label for="product2" class="radio-label"></label>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-image">
+                      <img src="../../images/handmade4.jpg" alt="Thiệp thủ công handmade" />
+                    </div>
+                    <div class="product-details">
+                      <h3>Hộp Đèn "Đêm Đầy Sao"</h3>
+                      <div class="product-meta">
+                        <span class="product-id">Mã đơn: DL003</span>
+                        <span class="product-quantity">Số lượng đăng ký: 15 sản phẩm</span>
+                        <span class="product-deadline">Hạn nộp: 29/06/2023</span>
+                      </div>
+                      <!-- <div class="product-progress">
+                        <div class="progress-label">Tiến độ: 20%</div>
+                        <div class="progress-bar">
+                          <div class="progress-value" style="width: 20%;"></div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-item">
+                  <div class="product-radio">
+                    <input type="radio" id="product3" name="product" value="DL004" />
+                    <label for="product3" class="radio-label"></label>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-image">
+                      <img src="../../images/handmade6.jpg" alt="Móc khóa handmade" />
+                    </div>
+                    <div class="product-details">
+                      <h3>Lọ Hoa Cọ Trang Điểm Hoa Tulip</h3>
+                      <div class="product-meta">
+                        <span class="product-id">Mã đơn: DL004</span>
+                        <span class="product-quantity">Số lượng đăng ký: 30 sản phẩm</span>
+                        <span class="product-deadline">Hạn nộp: 25/06/2023</span>
+                      </div>
+                      <!-- <div class="product-progress warning">
+                        <div class="progress-label">Tiến độ: 70% <span class="deadline-warning">(Sắp đến hạn)</span></div>
+                        <div class="progress-bar">
+                          <div class="progress-value" style="width: 70%;"></div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="submission-form-section" id="submissionForm" style="display: none;">
+            <div class="section-header">
+              <h2>Thông tin nộp sản phẩm</h2>
+            </div>
+            <div class="submission-form">
+              <form id="productSubmissionForm">
+                <div class="form-notice">
+                  <i class="fas fa-info-circle"></i>
+                  <p>Vui lòng điền đầy đủ thông tin dưới đây. Sản phẩm của bạn sẽ được kiểm tra trong vòng 24-48 giờ sau khi nộp.</p>
+                </div>
+
+                <div class="form-section">
+                  <h3>Thông tin cơ bản</h3>
+                  <div class="form-group">
+                    <label for="productName">Tên sản phẩm</label>
+                    <input type="text" id="productName" name="productName" value="Túi thủ công mỹ nghệ" readonly />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="orderCode">Mã đơn</label>
+                      <input type="text" id="orderCode" name="orderCode" value="DL001" readonly />
+                    </div>
+                    <div class="form-group">
+                      <label for="totalQuantity">Số lượng đăng ký</label>
+                      <input type="text" id="totalQuantity" name="totalQuantity" value="10 sản phẩm" readonly />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="deadline">Hạn nộp</label>
+                      <input type="text" id="deadline" name="deadline" value="30/06/2023" readonly />
+                    </div>
+                    <!-- <div class="form-group">
+                      <label for="submitQuantity">Số lượng nộp <span class="required">*</span></label>
+                      <input type="number" id="submitQuantity" name="submitQuantity" min="1" max="10" value="7" required />
+                      <div class="form-hint">Bạn có thể nộp từng phần hoặc toàn bộ số lượng đăng ký</div>
+                    </div> -->
+                  </div>
+                </div>
+
+                <div class="form-section">
+                  <h3>Hình ảnh sản phẩm</h3>
+                  <div class="form-group">
+                    <label for="productImages">Hình ảnh sản phẩm đã hoàn thành <span class="required">*</span></label>
+                    <div class="file-upload-container">
+                      <div class="file-upload-button">
+                        <input type="file" id="productImages" name="productImages" accept="image/*" multiple required />
+                        <label for="productImages" class="upload-btn">
+                          <i class="fas fa-upload"></i> Tải lên hình ảnh
+                        </label>
+                      </div>
+                      <div class="file-info">Tải lên ít nhất 3 hình ảnh cho mỗi sản phẩm từ các góc khác nhau (định dạng JPG, PNG, WEBP)</div>
+                    </div>
+                    <div class="image-preview" id="imagePreview"></div>
+                  </div>
+                </div>
+
+                <div class="form-section">
+                  <!-- <h3>Thông tin giao nhận</h3>
+                  <div class="form-group">
+                    <label for="deliveryMethod">Phương thức giao hàng <span class="required">*</span></label>
+                    <select id="deliveryMethod" name="deliveryMethod" required>
+                      <option value="">Chọn phương thức giao hàng</option>
+                      <option value="inPerson">Nộp trực tiếp tại xưởng</option>
+                      <option value="pickup">Đặt lịch đến lấy hàng</option>
+                      <option value="delivery">Gửi qua dịch vụ vận chuyển</option>
+                    </select>
+                  </div> -->
+
+                  <div id="inPersonDetails" class="delivery-details" style="display: none;">
+                    <div class="form-group">
+                      <label for="inPersonDate">Ngày nộp hàng <span class="required">*</span></label>
+                      <input type="date" id="inPersonDate" name="inPersonDate" />
+                    </div>
+                    <div class="form-group">
+                      <label for="inPersonTime">Thời gian dự kiến <span class="required">*</span></label>
+                      <select id="inPersonTime" name="inPersonTime">
+                        <option value="">Chọn thời gian</option>
+                        <option value="morning">Buổi sáng (9:00 - 11:30)</option>
+                        <option value="afternoon">Buổi chiều (13:30 - 16:30)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div id="pickupDetails" class="delivery-details" style="display: none;">
+                    <div class="form-group">
+                      <label for="pickupAddress">Địa chỉ lấy hàng <span class="required">*</span></label>
+                      <input type="text" id="pickupAddress" name="pickupAddress" placeholder="Nhập địa chỉ đầy đủ để nhân viên đến lấy hàng" />
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="pickupDate">Ngày lấy hàng <span class="required">*</span></label>
+                        <input type="date" id="pickupDate" name="pickupDate" />
+                      </div>
+                      <div class="form-group">
+                        <label for="pickupTime">Thời gian lấy hàng <span class="required">*</span></label>
+                        <select id="pickupTime" name="pickupTime">
+                          <option value="">Chọn thời gian</option>
+                          <option value="morning">Buổi sáng (9:00 - 11:30)</option>
+                          <option value="afternoon">Buổi chiều (13:30 - 16:30)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="pickupPhone">Số điện thoại liên hệ <span class="required">*</span></label>
+                      <input type="tel" id="pickupPhone" name="pickupPhone" placeholder="Số điện thoại khi nhân viên đến lấy hàng" />
+                    </div>
+                  </div>
+
+                  <div id="deliveryDetails" class="delivery-details" style="display: none;">
+                    <div class="form-group">
+                      <label for="deliveryTrackingCode">Mã vận đơn <span class="required">*</span></label>
+                      <input type="text" id="deliveryTrackingCode" name="deliveryTrackingCode" placeholder="Nhập mã vận đơn từ đơn vị vận chuyển" />
+                    </div>
+                    <div class="form-group">
+                      <label for="deliveryCompany">Đơn vị vận chuyển <span class="required">*</span></label>
+                      <select id="deliveryCompany" name="deliveryCompany">
+                        <option value="">Chọn đơn vị vận chuyển</option>
+                        <option value="viettelpost">Viettel Post</option>
+                        <option value="ghn">Giao hàng nhanh</option>
+                        <option value="jt">J&T Express</option>
+                        <option value="other">Khác</option>
+                      </select>
+                    </div>
+                    <div class="form-group" id="otherCompanyGroup" style="display: none;">
+                      <label for="otherCompany">Đơn vị vận chuyển khác <span class="required">*</span></label>
+                      <input type="text" id="otherCompany" name="otherCompany" placeholder="Nhập tên đơn vị vận chuyển" />
+                    </div>
+                    <div class="form-group">
+                      <label for="estimatedDelivery">Ngày dự kiến đến <span class="required">*</span></label>
+                      <input type="date" id="estimatedDelivery" name="estimatedDelivery" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-section">
+                  <h3>Ghi chú bổ sung</h3>
+                  <div class="form-group">
+                    <label for="additionalNotes">Ghi chú về sản phẩm (nếu có)</label>
+                    <textarea id="additionalNotes" name="additionalNotes" rows="4" placeholder="Nhập thông tin bổ sung về sản phẩm, lưu ý khi kiểm tra, hoặc các thông tin khác"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-section terms-section">
+                  <div class="form-group terms-group">
+                    <div class="checkbox-item">
+                      <input type="checkbox" id="qualityAgreement" name="qualityAgreement" required />
+                      <label for="qualityAgreement">Tôi xác nhận sản phẩm đã được kiểm tra kỹ lưỡng và đáp ứng các tiêu chuẩn chất lượng theo yêu cầu <span class="required">*</span></label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="button" class="btn btn-back" id="cancelSubmission">Hủy</button>
+                  <button type="submit" class="btn btn-submit">Nộp sản phẩm</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="no-product-selected" id="noProductSelected">
+            <p>Vui lòng chọn đơn làm từ danh sách trên để tiếp tục.</p>
+            <button class="btn btn-primary" id="viewCompletedSubmissions">Xem lịch sử nộp sản phẩm</button>
+          </div>
+
+          <div class="submission-confirmation-modal" id="confirmationModal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Nộp sản phẩm thành công!</h3>
+                <button class="close-modal-btn">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>Bạn đã nộp thành công 7 sản phẩm "Túi thủ công mỹ nghệ".</p>
+                <p>Mã đơn: DL001</p>
+                <p>Sản phẩm của bạn sẽ được kiểm tra trong vòng 24-48 giờ. Bạn sẽ nhận được thông báo khi quá trình kiểm tra hoàn tất.</p>
+                
+                <div class="modal-actions">
+                  <a href="Dashboard.html" class="btn btn-secondary">Về trang tổng quan</a>
+                  <a href="LichSuSanPham.html" class="btn btn-primary">Xem lịch sử nộp sản phẩm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/dropdown.js"></script>
+
+    <script>
+      // Product selection
+      const productItems = document.querySelectorAll('.product-item input[type="radio"]');
+      const submissionForm = document.getElementById('submissionForm');
+      const noProductSelected = document.getElementById('noProductSelected');
+      
+      productItems.forEach(item => {
+        item.addEventListener('change', function() {
+          if (this.checked) {
+            submissionForm.style.display = 'block';
+            noProductSelected.style.display = 'none';
+            
+            // Update form with selected product info
+            const productId = this.value;
+            updateFormWithProductInfo(productId);
+          }
+        });
+      });
+      
+      function updateFormWithProductInfo(productId) {
+        // In a real application, this would fetch product details from backend
+        // For demonstration, we'll just set values based on the selected product
+        
+        if (productId === 'DL001') {
+          document.getElementById('productName').value = 'Túi thủ công mỹ nghệ';
+          document.getElementById('orderCode').value = 'DL001';
+          document.getElementById('totalQuantity').value = '10 sản phẩm';
+          document.getElementById('deadline').value = '30/06/2023';
+          document.getElementById('submitQuantity').setAttribute('max', '10');
+          document.getElementById('submitQuantity').value = '7';
+        } else if (productId === 'DL003') {
+          document.getElementById('productName').value = 'Thiệp thủ công handmade';
+          document.getElementById('orderCode').value = 'DL003';
+          document.getElementById('totalQuantity').value = '15 sản phẩm';
+          document.getElementById('deadline').value = '29/06/2023';
+          document.getElementById('submitQuantity').setAttribute('max', '15');
+          document.getElementById('submitQuantity').value = '3';
+        } else if (productId === 'DL004') {
+          document.getElementById('productName').value = 'Móc khóa handmade';
+          document.getElementById('orderCode').value = 'DL004';
+          document.getElementById('totalQuantity').value = '30 sản phẩm';
+          document.getElementById('deadline').value = '25/06/2023';
+          document.getElementById('submitQuantity').setAttribute('max', '30');
+          document.getElementById('submitQuantity').value = '21';
+        }
+      }
+      
+      // Cancel button
+      document.getElementById('cancelSubmission').addEventListener('click', function() {
+        submissionForm.style.display = 'none';
+        noProductSelected.style.display = 'block';
+        
+        // Uncheck all radio buttons
+        productItems.forEach(item => {
+          item.checked = false;
+        });
+      });
+      
+      // View completed submissions button
+      document.getElementById('viewCompletedSubmissions').addEventListener('click', function() {
+        window.location.href = 'LichSuSanPham.html';
+      });
+      
+      // Delivery method selection
+      document.getElementById('deliveryMethod').addEventListener('change', function() {
+        const method = this.value;
+        const allDetails = document.querySelectorAll('.delivery-details');
+        
+        // Hide all details sections first
+        allDetails.forEach(section => {
+          section.style.display = 'none';
+          
+          // Remove required attribute from all fields
+          const requiredInputs = section.querySelectorAll('input, select');
+          requiredInputs.forEach(input => {
+            input.removeAttribute('required');
+          });
+        });
+        
+        // Show selected method details
+        if (method) {
+          const selectedDetails = document.getElementById(`${method}Details`);
+          if (selectedDetails) {
+            selectedDetails.style.display = 'block';
+            
+            // Add required attribute to visible fields
+            const requiredInputs = selectedDetails.querySelectorAll('input, select');
+            requiredInputs.forEach(input => {
+              if (input.parentElement.style.display !== 'none') {
+                input.setAttribute('required', 'true');
+              }
+            });
+          }
+        }
+      });
+      
+      // Show "Other" field if "Other" is selected for delivery company
+      document.getElementById('deliveryCompany').addEventListener('change', function() {
+        const otherCompanyGroup = document.getElementById('otherCompanyGroup');
+        if (this.value === 'other') {
+          otherCompanyGroup.style.display = 'block';
+          document.getElementById('otherCompany').setAttribute('required', 'true');
+        } else {
+          otherCompanyGroup.style.display = 'none';
+          document.getElementById('otherCompany').removeAttribute('required');
+        }
+      });
+      
+      // Image preview
+      document.getElementById('productImages').addEventListener('change', function(e) {
+        const imagePreview = document.getElementById('imagePreview');
+        imagePreview.innerHTML = '';
+        
+        for (let i = 0; i < this.files.length; i++) {
+          const file = this.files[i];
+          if (!file.type.match('image.*')) {
+            continue;
+          }
+          
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            const previewContainer = document.createElement('div');
+            previewContainer.className = 'preview-item';
+            
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            img.title = file.name;
+            
+            const removeBtn = document.createElement('button');
+            removeBtn.className = 'remove-btn';
+            removeBtn.innerHTML = '<i class="fas fa-times"></i>';
+            removeBtn.addEventListener('click', function() {
+              previewContainer.remove();
+            });
+            
+            previewContainer.appendChild(img);
+            previewContainer.appendChild(removeBtn);
+            imagePreview.appendChild(previewContainer);
+          };
+          
+          reader.readAsDataURL(file);
+        }
+      });
+      
+      // Set min dates for date inputs to today
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById('inPersonDate').setAttribute('min', today);
+      document.getElementById('pickupDate').setAttribute('min', today);
+      document.getElementById('estimatedDelivery').setAttribute('min', today);
+      
+      // Form submission
+      document.getElementById('productSubmissionForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('confirmationModal').style.display = 'flex';
+      });
+      
+      // Close modal
+      document.querySelector('.close-modal-btn').addEventListener('click', function() {
+        document.getElementById('confirmationModal').style.display = 'none';
+      });
+    </script>
+  </body>
+</html> 

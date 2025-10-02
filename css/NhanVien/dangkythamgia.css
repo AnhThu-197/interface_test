@@ -1,0 +1,549 @@
+/* CSS for DangKyThamGia.html */
+
+.required {
+    color: #f44336;
+  }
+
+/* Registration Intro */
+.registration-intro {
+  margin-bottom: 30px;
+}
+
+.intro-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.intro-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 28px;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.intro-content h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.intro-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Requirements & Benefits Sections */
+.requirements-section,
+.benefits-section {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.requirements-content,
+.benefits-content {
+  padding: 20px;
+}
+
+.requirement-list,
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.requirement-item,
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.requirement-icon,
+.benefit-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 18px;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.requirement-text h3,
+.benefit-text h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.requirement-text p,
+.benefit-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Registration Form Section */
+.registration-form-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.registration-form {
+  padding: 20px;
+}
+
+.form-notice {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form-notice i {
+  color: #2196f3;
+  margin-right: 10px;
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.form-notice p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.form-section {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+}
+
+.form-section h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.form-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="url"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-group input[readonly] {
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 30px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Checkbox and Radio Styles */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-item label {
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+/* Schedule Grid */
+.schedule-grid {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.schedule-header, 
+.schedule-row {
+  display: grid;
+  grid-template-columns: 120px repeat(7, 1fr);
+}
+
+.schedule-header {
+  background-color: #f9f9f9;
+  font-weight: 500;
+}
+
+.schedule-cell {
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+.schedule-cell:first-child {
+  text-align: left;
+}
+
+.schedule-cell input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+/* Terms Agreement */
+.terms-group {
+  margin-bottom: 30px;
+}
+
+.terms-group a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.terms-group a:hover {
+  text-decoration: underline;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  border: none;
+}
+
+.btn-back {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-back:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-submit {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-submit:hover {
+  background-color: #444;
+}
+
+/* Confirmation Modal */
+.registration-confirmation-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header i {
+  font-size: 24px;
+  color: #4caf50;
+  margin-right: 10px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.close-modal-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #999;
+  line-height: 1;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body p {
+  margin: 0 0 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .requirement-list,
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .intro-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .schedule-grid {
+    overflow-x: auto;
+  }
+  
+  .schedule-header, 
+  .schedule-row {
+    width: 800px;
+  }
+  
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
+
+/* File Upload Styles */
+.form-description {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.upload-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-upload-container {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  border: 2px dashed #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-upload-container:hover {
+  border-color: #000000;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.file-upload-container input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.file-upload-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.file-upload-preview i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.file-upload-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.file-upload-preview.has-image i,
+.file-upload-preview.has-image span {
+  display: none;
+}
+
+/* Responsive adjustments for file upload */
+@media (max-width: 768px) {
+  .form-row .upload-group {
+    margin-bottom: 20px;
+  }
+  
+  .file-upload-container {
+    height: 140px;
+  }
+  
+  .file-upload-preview i {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .file-upload-container {
+    height: 120px;
+  }
+} 

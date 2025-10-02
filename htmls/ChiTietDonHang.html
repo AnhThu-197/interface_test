@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết đơn hàng</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../css/chitietdonhang.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../trangchu.html">
+            <img class="logo-trangchu" src="../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <buttom class="search-bottom">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </buttom>
+            <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" />
+            <button class="search-bottom">
+              <img class="search-bottom-vid" src="../images/scan-image.gif" alt="" srcset="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="Login.html">
+              <p>Đăng nhập</p>
+            </a>
+            <div class="cart-container">
+              <a href="GioHang.html">
+                <img class="cart-icon" width="25" height="25" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1" />
+                <span class="cart-badge">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="order-breadcrumb">
+        <a href="../trangchu.html">Trang chủ</a> &gt;
+        <a href="ThongTinCaNhan.html">Tài khoản</a> &gt;
+        <a href="DonHang.html">Đơn hàng của tôi</a> &gt;
+        <span>Chi tiết đơn hàng</span>
+      </div>
+
+      <div class="order-detail-container">
+        <div class="order-header">
+          <div class="order-info">
+            <h1>Chi tiết đơn hàng #ORD-123456</h1>
+            <p class="order-date">Ngày đặt hàng: 25/05/2023</p>
+          </div>
+          <div class="order-status">
+            <span class="status-badge processing">Đang xử lý</span>
+          </div>
+        </div>
+
+        <div class="order-section">
+          <div class="section-title">
+            <i class="fas fa-truck"></i>
+            <h2>Thông tin vận chuyển</h2>
+          </div>
+          <div class="order-section-content shipping-info">
+            <div class="shipping-method">
+              <h3>Phương thức vận chuyển</h3>
+              <p>Giao hàng tiêu chuẩn (2-3 ngày)</p>
+            </div>
+            <div class="shipping-address">
+              <h3>Địa chỉ giao hàng</h3>
+              <p class="recipient">Nguyễn Hoàng Anh Thư</p>
+              <p>0987654321</p>
+              <p>23 Lê Lợi, Phường Thạch Thang, Quận Hải Châu, Thành phố Đà Nẵng</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-section">
+          <div class="section-title">
+            <i class="fas fa-credit-card"></i>
+            <h2>Thông tin thanh toán</h2>
+          </div>
+          <div class="order-section-content payment-info">
+            <div class="payment-method">
+              <h3>Phương thức thanh toán</h3>
+              <p>Thanh toán khi nhận hàng (COD)</p>
+            </div>
+            <div class="payment-status">
+              <h3>Trạng thái thanh toán</h3>
+              <p class="status unpaid">Chưa thanh toán</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-section">
+          <div class="section-title">
+            <i class="fas fa-box"></i>
+            <h2>Sản phẩm đã đặt</h2>
+          </div>
+          <div class="order-section-content">
+            <table class="order-items">
+              <thead>
+                <tr>
+                  <th>Sản phẩm</th>
+                  <th>Giá</th>
+                  <th>Số lượng</th>
+                  <th>Tổng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="order-item">
+                  <td class="product-info">
+                    <img src="../images/handmade9.jpg" alt="Sản phẩm 1" class="product-thumbnail" />
+                    <div class="product-details">
+                      <div class="product-name">Túi thủ công mỹ nghệ cao cấp</div>
+                      <div class="product-variant">Màu: Be / Size: M</div>
+                    </div>
+                  </td>
+                  <td class="product-price">250.000₫</td>
+                  <td class="product-quantity">2</td>
+                  <td class="product-total">500.000₫</td>
+                </tr>
+                <tr class="order-item">
+                  <td class="product-info">
+                    <img src="../images/handmade10.jpg" alt="Sản phẩm 2" class="product-thumbnail" />
+                    <div class="product-details">
+                      <div class="product-name">Thiệp chúc mừng</div>
+                      <div class="product-variant">Màu: Hồng Pastel</div>
+                    </div>
+                  </td>
+                  <td class="product-price">50.000₫</td>
+                  <td class="product-quantity">1</td>
+                  <td class="product-total">50.000₫</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="order-section">
+          <div class="section-title">
+            <i class="fas fa-receipt"></i>
+            <h2>Tổng đơn hàng</h2>
+          </div>
+          <div class="order-section-content order-summary">
+            <div class="summary-row">
+              <div class="summary-label">Tạm tính</div>
+              <div class="summary-value">1.050.000₫</div>
+            </div>
+            <div class="summary-row">
+              <div class="summary-label">Phí vận chuyển</div>
+              <div class="summary-value">30.000₫</div>
+            </div>
+            <div class="summary-row">
+              <div class="summary-label">Giảm giá</div>
+              <div class="summary-value">-50.000₫</div>
+            </div>
+            <div class="summary-row total">
+              <div class="summary-label">Tổng cộng</div>
+              <div class="summary-value">1.030.000₫</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-section">
+          <div class="section-title">
+            <i class="fas fa-history"></i>
+            <h2>Lịch sử đơn hàng</h2>
+          </div>
+          <div class="order-section-content">
+            <div class="order-timeline">
+              <div class="timeline-item current">
+                <div class="timeline-icon">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-date">25/05/2023 - 14:30</div>
+                  <div class="timeline-title">Đơn hàng đã được xác nhận</div>
+                  <div class="timeline-description">Đơn hàng của bạn đã được xác nhận và đang chờ xử lý</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-box"></i>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-date">25/05/2023 - 10:15</div>
+                  <div class="timeline-title">Đơn hàng đã được tạo</div>
+                  <div class="timeline-description">Đơn hàng của bạn đã được tạo thành công</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-actions">
+          <a href="HuyDonHang.html" class="btn btn-cancel">Hủy đơn hàng</a>
+          <a href="DoiTraDonHang.html" class="btn btn-return">Yêu cầu đổi/trả</a>
+          <a href="DonHang.html" class="btn btn-back">Đánh giá</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../js/utils/dataLoader.js"></script>
+    <script src="../js/utils/productUtils.js"></script>
+    <script src="../js/utils/cart.js"></script>
+    <script src="../js/utils/searchUtils.js"></script>
+    <script src="../js/utils/message.js"></script>
+    <script src="../js/utils/auth.js"></script>
+    <script src="../js/utils/dropdown.js"></script>
+  </body>
+</html> 

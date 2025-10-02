@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông báo</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../css/thongbao.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../trangchu.html">
+            <img class="logo-trangchu" src="../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="Login.html">
+              <p>Nguyễn Văn A</p>
+            </a>
+            <div class="cart-container">
+              <a href="GioHang.html">
+                <img class="cart-icon" width="25" height="25" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1" />
+                <span class="cart-badge">3</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="profile-container">
+        <div class="profile-sidebar">
+          <div class="user-avatar-container">
+            <img src="../images/user.jpg" alt="User Avatar" class="user-avatar" />
+            <div class="change-avatar-btn">
+              <i class="fas fa-camera"></i>
+            </div>
+          </div>
+          <div class="user-name">Nguyễn Hoàng Anh Thư</div>
+          <div class="user-status">Thành viên Bạc</div>
+          <div class="user-membership">
+            <div class="membership-progress">
+              <div class="progress-bar">
+                <div class="progress" style="width: 65%"></div>
+              </div>
+              <div class="progress-labels">
+                <span>Bạc</span>
+                <span>Vàng</span>
+              </div>
+            </div>
+            <div class="membership-points">
+              <span class="points-value">650</span>
+              <span class="points-label">điểm</span>
+              <span class="points-needed">(Cần thêm 350 điểm để lên hạng Vàng)</span>
+            </div>
+          </div>
+          <nav class="profile-nav">
+            <ul>
+              <li>
+                <a href="ThongTinCaNhan.html">
+                  <i class="fas fa-user"></i>
+                  <span>Thông tin cá nhân</span>
+                </a>
+              </li>
+              <li>
+                <a href="CapNhatThongTin.html">
+                  <i class="fas fa-edit"></i>
+                  <span>Cập nhật thông tin</span>
+                </a>
+              </li>
+              <li>
+                <a href="DoiMatKhau.html">
+                  <i class="fas fa-lock"></i>
+                  <span>Đổi mật khẩu</span>
+                </a>
+              </li>
+              <li>
+                <a href="DonHang.html">
+                  <i class="fas fa-shopping-bag"></i>
+                  <span>Lịch sử đơn hàng</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="ThongBao.html">
+                  <i class="fas fa-bell"></i>
+                  <span>Thông báo</span>
+                  <span class="notification-badge">5</span>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="#">
+                  <i class="fas fa-heart"></i>
+                  <span>Sản phẩm yêu thích</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-star"></i>
+                  <span>Đánh giá của tôi</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-tag"></i>
+                  <span>Mã giảm giá</span>
+                </a>
+              </li> -->
+              <li>
+                <a href="#" class="logout-btn">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>Đăng xuất</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="profile-content">
+          <div class="content-header">
+            <h2>Thông báo của tôi</h2>
+            <div class="notification-actions">
+              <!-- <button class="mark-all-read-btn">
+                <i class="fas fa-check-double"></i>
+                Đánh dấu tất cả đã đọc
+              </button> -->
+              <!-- <button class="settings-btn">
+                <i class="fas fa-cog"></i>
+                Cài đặt thông báo
+              </button> -->
+            </div>
+          </div>
+
+          <!-- <div class="notification-tabs">
+            <button class="tab-btn active" data-tab="all">Tất cả <span class="count">(12)</span></button>
+            <button class="tab-btn" data-tab="unread">Chưa đọc <span class="count">(5)</span></button>
+            <button class="tab-btn" data-tab="order">Đơn hàng <span class="count">(3)</span></button>
+            <button class="tab-btn" data-tab="promotion">Khuyến mãi <span class="count">(4)</span></button>
+            <button class="tab-btn" data-tab="system">Hệ thống <span class="count">(5)</span></button>
+          </div> -->
+
+          <div class="notification-list">
+            <!-- Today notifications -->
+            <div class="notification-date-group">
+              <div class="date-header">Hôm nay</div>
+
+              <div class="notification-item unread order">
+                <div class="notification-icon order">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Đơn hàng #VN123456 đã được giao thành công</h3>
+                    <span class="notification-time">1 giờ trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Đơn hàng #VN123456 của bạn đã được giao thành công. Vui lòng xác nhận và đánh giá sản phẩm!
+                  </p>
+                  <div class="notification-actions">
+                    <a href="DonHang.html" class="notification-btn">Xem đơn hàng</a>
+                    <a href="XemDanhGia.html" class="notification-btn">Đánh giá</a>
+                  </div>
+                </div>
+                <div class="notification-options">
+                  <button class="mark-read-btn"><i class="fas fa-check"></i></button>
+                  <!-- <button class="delete-btn"><i class="fas fa-trash"></i></button> -->
+                </div>
+              </div>
+
+              <!-- <div class="notification-item unread promotion">
+                <div class="notification-icon promotion">
+                  <i class="fas fa-percent"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Flash Sale 50% chỉ còn 2 giờ!</h3>
+                    <span class="notification-time">3 giờ trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Cơ hội cuối cùng! Flash Sale giảm giá đến 50% cho tất cả sản phẩm chăm sóc da chỉ còn 2 giờ nữa. Nhanh tay mua ngay!
+                  </p>
+                  <div class="notification-actions">
+                    <a href="../trangchu.html" class="notification-btn">Mua ngay</a>
+                  </div>
+                </div>
+                <div class="notification-options">
+                  <button class="mark-read-btn"><i class="fas fa-check"></i></button>
+                  <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+              </div> -->
+            </div>
+
+            <!-- Yesterday notifications -->
+            <div class="notification-date-group">
+              <div class="date-header">Hôm qua</div>
+
+              <div class="notification-item unread order">
+                <div class="notification-icon order">
+                  <i class="fas fa-truck"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Đơn hàng #VN123456 đang được vận chuyển</h3>
+                    <span class="notification-time">1 ngày trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Đơn hàng #VN123456 của bạn đang được vận chuyển và dự kiến sẽ được giao vào ngày 15/06/2023. Bạn có thể theo dõi trạng thái đơn hàng tại đây.
+                  </p>
+                  <div class="notification-actions">
+                    <a href="DonHang.html" class="notification-btn">Theo dõi đơn hàng</a>
+                  </div>
+                </div>
+                <div class="notification-options">
+                  <button class="mark-read-btn"><i class="fas fa-check"></i></button>
+                  <!-- <button class="delete-btn"><i class="fas fa-trash"></i></button> -->
+                </div>
+              </div>
+
+              <div class="notification-item read system">
+                <div class="notification-icon system">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Đăng nhập mới vào tài khoản của bạn</h3>
+                    <span class="notification-time">1 ngày trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Chúng tôi phát hiện một đăng nhập mới vào tài khoản của bạn từ thiết bị ở TP. Hồ Chí Minh. Nếu đó không phải là bạn, vui lòng bảo mật tài khoản ngay.
+                  </p>
+                  <div class="notification-actions">
+                    <a href="DoiMatKhau.html" class="notification-btn">Bảo mật tài khoản</a>
+                  </div>
+                </div>
+                <div class="notification-options">
+                  <!-- <button class="delete-btn"><i class="fas fa-trash"></i></button> -->
+                </div>
+              </div>
+
+              <!-- <div class="notification-item unread promotion">
+                <div class="notification-icon promotion">
+                  <i class="fas fa-gift"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Mã giảm giá 20% cho sinh nhật của bạn!</h3>
+                    <span class="notification-time">1 ngày trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Chúc mừng sinh nhật! Nhân dịp sinh nhật của bạn, chúng tôi tặng bạn mã giảm giá 20% cho tất cả các sản phẩm. Mã: HAPPYBD20
+                  </p>
+                  <div class="notification-actions">
+                    <a href="../trangchu.html" class="notification-btn">Mua ngay</a>
+                    <button class="copy-code-btn">Sao chép mã</button>
+                  </div>
+                </div>
+                <div class="notification-options">
+                  <button class="mark-read-btn"><i class="fas fa-check"></i></button>
+                  <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+              </div> -->
+            </div>
+
+            <!-- This week notifications -->
+            <!-- <div class="notification-date-group">
+              <div class="date-header">Tuần này</div>
+
+              <div class="notification-item read system">
+                <div class="notification-icon system">
+                  <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Cập nhật thông tin tài khoản thành công</h3>
+                    <span class="notification-time">2 ngày trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Thông tin tài khoản của bạn đã được cập nhật thành công. Nếu bạn không thực hiện thay đổi này, vui lòng liên hệ ngay với chúng tôi.
+                  </p>
+                </div>
+                <div class="notification-options">
+                  <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+              </div> -->
+
+              <!-- <div class="notification-item read promotion">
+                <div class="notification-icon promotion">
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Bộ sưu tập mới đã ra mắt!</h3>
+                    <span class="notification-time">3 ngày trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Bộ sưu tập mùa hè đã chính thức ra mắt! Khám phá ngay các sản phẩm mới nhất với thiết kế độc đáo và chất lượng hàng đầu.
+                  </p>
+                  <div class="notification-actions">
+                    <a href="../trangchu.html" class="notification-btn">Khám phá ngay</a>
+                  </div>
+                </div>
+                <div class="notification-options">
+                  <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+              </div> -->
+
+              <!-- <div class="notification-item read order">
+                <div class="notification-icon order">
+                  <i class="fas fa-box"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Đơn hàng #VN123455 đã được xác nhận</h3>
+                    <span class="notification-time">4 ngày trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Đơn hàng #VN123455 của bạn đã được xác nhận và đang được chuẩn bị. Chúng tôi sẽ thông báo cho bạn khi đơn hàng được giao cho đơn vị vận chuyển.
+                  </p>
+                  <div class="notification-actions">
+                    <a href="DonHang.html" class="notification-btn">Xem đơn hàng</a>
+                  </div>
+                </div>
+                <div class="notification-options">
+                  <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Older notifications -->
+            <div class="notification-date-group">
+              <div class="date-header">Trước đó</div>
+
+              <div class="notification-item read system">
+                <div class="notification-icon system">
+                  <i class="fas fa-medal"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Bạn đã được nâng hạng thành viên Bạc!</h3>
+                    <span class="notification-time">2 tuần trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Chúc mừng! Bạn đã được nâng hạng thành viên Bạc. Giờ đây bạn sẽ được hưởng nhiều ưu đãi hơn như: giảm giá 5% cho mọi đơn hàng, tích điểm x2 và nhiều quyền lợi khác.
+                  </p>
+                  <!-- <div class="notification-actions">
+                    <a href="#" class="notification-btn">Xem quyền lợi</a>
+                  </div> -->
+                </div>
+                <div class="notification-options">
+                  <!-- <button class="delete-btn"><i class="fas fa-trash"></i></button> -->
+                </div>
+              </div>
+
+              <!-- <div class="notification-item read promotion">
+                <div class="notification-icon promotion">
+                  <i class="fas fa-percent"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Ưu đãi Black Friday!</h3>
+                    <span class="notification-time">1 tháng trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Black Friday đã đến! Giảm giá đến 70% cho tất cả sản phẩm. Chương trình chỉ diễn ra trong 3 ngày từ 24/11 đến 26/11.
+                  </p>
+                </div>
+                <div class="notification-options">
+                  <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                </div>
+              </div> -->
+
+              <div class="notification-item read system">
+                <div class="notification-icon system">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="notification-content">
+                  <div class="notification-header">
+                    <h3 class="notification-title">Chào mừng bạn đến với Handmade Shop!</h3>
+                    <span class="notification-time">3 tháng trước</span>
+                  </div>
+                  <p class="notification-message">
+                    Chào mừng bạn đến với Handmade Shop! Chúng tôi rất vui khi bạn gia nhập cộng đồng của chúng tôi. Khám phá ngay các sản phẩm tuyệt vời và ưu đãi độc quyền dành cho thành viên mới.
+                  </p>
+                  <!-- <div class="notification-actions">
+                    <a href="../trangchu.html" class="notification-btn">Khám phá ngay</a>
+                  </div> -->
+                </div>
+                <div class="notification-options">
+                  <!-- <button class="delete-btn"><i class="fas fa-trash"></i></button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <button class="page-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn">5</button>
+            <button class="page-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notification Settings Modal -->
+      <div class="notification-settings-modal" id="notification-settings-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Cài đặt thông báo</h3>
+            <button class="close-modal-btn"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="settings-section">
+              <h4>Nhận thông báo qua</h4>
+              <div class="settings-options">
+                <label class="checkbox-container">
+                  <input type="checkbox" name="notif_email" checked />
+                  <span class="checkmark"></span>
+                  <span class="option-label">Email</span>
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" name="notif_sms" checked />
+                  <span class="checkmark"></span>
+                  <span class="option-label">SMS</span>
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" name="notif_push" checked />
+                  <span class="checkmark"></span>
+                  <span class="option-label">Thông báo đẩy</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="settings-section">
+              <h4>Loại thông báo</h4>
+              <div class="notification-type">
+                <div class="type-header">
+                  <div class="type-title">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Đơn hàng</span>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" name="notif_order" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="type-options">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_order_confirm" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Xác nhận đơn hàng</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_order_shipping" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Đang vận chuyển</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_order_delivered" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Đã giao hàng</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_order_cancelled" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Đơn hàng bị hủy</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="notification-type">
+                <div class="type-header">
+                  <div class="type-title">
+                    <i class="fas fa-percent"></i>
+                    <span>Khuyến mãi</span>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" name="notif_promotion" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="type-options">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_promo_sale" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Giảm giá</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_promo_coupon" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Mã giảm giá</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_promo_new" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Sản phẩm mới</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="notification-type">
+                <div class="type-header">
+                  <div class="type-title">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Hệ thống</span>
+                  </div>
+                  <label class="switch">
+                    <input type="checkbox" name="notif_system" checked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="type-options">
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_sys_account" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Tài khoản</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_sys_security" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Bảo mật</span>
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" name="notif_sys_updates" checked />
+                    <span class="checkmark"></span>
+                    <span class="option-label">Cập nhật và tin tức</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="cancel-btn">Hủy</button>
+            <button class="save-btn">Lưu thay đổi</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="DonHang.html">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../js/utils/dataLoader.js"></script>
+    <script src="../js/utils/productUtils.js"></script>
+    <script src="../js/utils/cart.js"></script>
+    <script src="../js/utils/searchUtils.js"></script>
+    <script src="../js/utils/message.js"></script>
+    <script src="../js/utils/auth.js"></script>
+    <script src="../js/utils/dropdown.js"></script>
+    <script src="../js/components/thongbao.js"></script>
+  </body>
+</html> 

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Phiếu Nhập</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/Admin/admin-base.css" />
+    <link rel="stylesheet" href="../../css/Admin/quanlyphieunhap.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Quản trị viên</p>
+            </a>
+            <div class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Tổng quan</a> &gt;
+        <span>Quản lý phiếu nhập</span>
+      </div>
+
+      <div class="admin-container">
+        <div class="admin-sidebar">
+          <div class="sidebar-header">
+            <div class="admin-avatar">
+              <img src="../../images/admin.jpg" alt="Admin" />
+            </div>
+            <div class="admin-info">
+              <h3>Nguyễn Thư</h3>
+              <p>Hội Sinh Viên</p>
+              <span class="admin-id">ID: ADMIN232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <div class="menu-section">
+              <h4>TỔNG QUAN</h4>
+              <ul>
+                <li>
+                  <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+                </li>
+                <li>
+                  <a href="ThongKe.html"><i class="fas fa-chart-bar"></i> Báo cáo - Thống kê</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ SẢN PHẨM</h4>
+              <ul>
+                <li>
+                  <a href="QuanLySanPham.html"><i class="fas fa-box"></i> Cập nhật sản phẩm</a>
+                </li>
+                <li>
+                  <a href="QuanLyNguyenLieu.html"><i class="fas fa-cubes"></i> Cập nhật nguyên liệu</a>
+                </li>
+                <li class="active">
+                  <a href="QuanLyPhieuNhap.html"><i class="fas fa-clipboard-list"></i> Cập nhật phiếu nhập</a>
+                </li>
+                <li>
+                  <a href="QuanLyNhaCungCap.html"><i class="fas fa-truck"></i> Cập nhật nhà cung cấp</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ ĐƠN HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyDonHang.html"><i class="fas fa-shopping-cart"></i> Cập nhật trạng thái đơn hàng</a>
+                </li>
+                <li>
+                  <a href="VanChuyen.html"><i class="fas fa-shipping-fast"></i> Cài đặt vận chuyển</a>
+                </li>
+                <li>
+                  <a href="QuanLyDonLam.html"><i class="fas fa-tasks"></i> Cập nhật đơn làm</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ NHÂN VIÊN</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyNhanVien.html"><i class="fas fa-users"></i> Cập nhật nhân viên</a>
+                </li>
+                <li>
+                  <a href="DieuKienThamGia.html"><i class="fas fa-user-check"></i> Cập nhật điều kiện tham gia</a>
+                </li>
+                <li>
+                  <a href="QuyTrinh.html"><i class="fas fa-sitemap"></i> Cập nhật quy trình làm việc</a>
+                </li>
+                <li>
+                  <a href="QuyDinh.html"><i class="fas fa-book"></i> Cập nhật quy định làm việc</a>
+                </li>
+                <li>
+                  <a href="ThanhToan.html"><i class="fas fa-money-bill-wave"></i> Thanh toán tiền công</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>KHÁC</h4>
+              <ul>
+                <li>
+                  <a href="DoiTac.html"><i class="fas fa-handshake"></i> Quản lý đối tác</a>
+                </li>
+                <li>
+                  <a href="TaiChinh.html"><i class="fas fa-chart-line"></i> Theo dõi tài chính</a>
+                </li>
+                <li>
+                  <a href="DanhGia.html"><i class="fas fa-star"></i> Phản hồi đánh giá</a>
+                </li>
+                <li>
+                  <a href="TaiKhoan.html"><i class="fas fa-user-cog"></i> Cập nhật tài khoản</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-content">
+          <div class="page-title">
+            <h1>Quản Lý Phiếu Nhập</h1>
+            <div class="action-buttons">
+              <button class="admin-btn"><i class="fas fa-plus"></i> Tạo phiếu nhập mới</button>
+              <!-- <button class="admin-btn admin-btn-secondary"><i class="fas fa-download"></i> Xuất danh sách</button> -->
+            </div>
+          </div>
+
+          <div class="filter-bar">
+            <div class="filter-group">
+              <label for="date-range">Thời gian:</label>
+              <div class="date-range">
+                <input type="date" id="start-date" name="start-date" class="admin-form-control">
+                <span>đến</span>
+                <input type="date" id="end-date" name="end-date" class="admin-form-control">
+                <button class="admin-btn admin-btn-secondary apply-filter"><i class="fas fa-filter"></i> Lọc</button>
+              </div>
+            </div>
+            <div class="filter-group">
+              <label for="supplier-filter">Nhà cung cấp:</label>
+              <select id="supplier-filter" class="admin-form-control">
+                <option value="">Tất cả nhà cung cấp</option>
+                <option value="ncc1">Công ty TNHH Vải Phương Nam</option>
+                <option value="ncc2">Công ty Nguyên liệu Handmade Việt</option>
+                <option value="ncc3">Doanh nghiệp tư nhân Lan Anh</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="status-filter">Trạng thái:</label>
+              <select id="status-filter" class="admin-form-control">
+                <option value="">Tất cả trạng thái</option>
+                <option value="pending">Chờ duyệt</option>
+                <option value="approved">Đã duyệt</option>
+                <option value="received">Đã nhận hàng</option>
+                <option value="cancelled">Đã hủy</option>
+              </select>
+            </div>
+            <!-- <div class="filter-group search-box">
+              <label for="search-import">Tìm kiếm:</label>
+              <div class="search-input-container">
+                <input type="text" id="search-import" placeholder="Nhập mã phiếu nhập..." class="admin-form-control">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+              </div>
+            </div> -->
+          </div>
+          
+          <div class="import-forms-table-container">
+            <table class="admin-table import-forms-table">
+              <thead>
+                <tr>
+                  <th width="5%">
+                    <input type="checkbox" id="select-all">
+                  </th>
+                  <th width="10%">Mã phiếu</th>
+                  <th width="15%">Nhà cung cấp</th>
+                  <th width="15%">Ngày lập</th>
+                  <th width="15%">Ngày nhận</th>
+                  <th width="15%">Tổng tiền</th>
+                  <th width="10%">Trạng thái</th>
+                  <th width="15%">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" class="form-checkbox"></td>
+                  <td>PN001</td>
+                  <td>Công ty TNHH Vải Phương Nam</td>
+                  <td>15/06/2023</td>
+                  <td>18/06/2023</td>
+                  <td>12.500.000₫</td>
+                  <td><span class="status-badge status-success">Đã nhận hàng</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="form-checkbox"></td>
+                  <td>PN002</td>
+                  <td>Công ty Nguyên liệu Handmade Việt</td>
+                  <td>16/06/2023</td>
+                  <td>-</td>
+                  <td>8.750.000₫</td>
+                  <td><span class="status-badge status-pending">Chờ duyệt</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="form-checkbox"></td>
+                  <td>PN003</td>
+                  <td>Doanh nghiệp tư nhân Lan Anh</td>
+                  <td>16/06/2023</td>
+                  <td>-</td>
+                  <td>5.200.000₫</td>
+                  <td><span class="status-badge status-warning">Đã duyệt</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="form-checkbox"></td>
+                  <td>PN004</td>
+                  <td>Công ty TNHH Vải Phương Nam</td>
+                  <td>17/06/2023</td>
+                  <td>-</td>
+                  <td>15.800.000₫</td>
+                  <td><span class="status-badge status-danger">Đã hủy</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="form-checkbox"></td>
+                  <td>PN005</td>
+                  <td>Công ty Nguyên liệu Handmade Việt</td>
+                  <td>17/06/2023</td>
+                  <td>20/06/2023</td>
+                  <td>9.350.000₫</td>
+                  <td><span class="status-badge status-success">Đã nhận hàng</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="pagination-container">
+            <!-- <div class="items-per-page">
+              <span>Hiển thị</span>
+              <select id="items-per-page-select">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+              </select>
+              <span>mục mỗi trang</span>
+            </div> -->
+            <div class="pagination">
+              <button class="pagination-btn prev" disabled><i class="fas fa-chevron-left"></i></button>
+              <button class="pagination-btn page active">1</button>
+              <button class="pagination-btn page">2</button>
+              <button class="pagination-btn page">3</button>
+              <span class="pagination-ellipsis">...</span>
+              <button class="pagination-btn page">10</button>
+              <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+          
+          <!-- Form Preview Modal (hidden by default) -->
+          <!-- <div class="admin-modal" id="importFormModal">
+            <div class="admin-modal-content">
+              <div class="admin-modal-header">
+                <h3 class="admin-modal-title">Chi tiết phiếu nhập #PN001</h3>
+                <button class="admin-modal-close">&times;</button>
+              </div>
+              <div class="admin-modal-body">
+                <div class="import-form-details">
+                  <div class="form-header">
+                    <div class="supplier-info">
+                      <h4>Thông tin nhà cung cấp</h4>
+                      <p><strong>Tên:</strong> Công ty TNHH Vải Phương Nam</p>
+                      <p><strong>Mã số thuế:</strong> 0123456789</p>
+                      <p><strong>Địa chỉ:</strong> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</p>
+                      <p><strong>Số điện thoại:</strong> 028 1234 5678</p>
+                    </div>
+                    <div class="form-basic-info">
+                      <h4>Thông tin phiếu nhập</h4>
+                      <p><strong>Mã phiếu:</strong> PN001</p>
+                      <p><strong>Ngày lập:</strong> 15/06/2023</p>
+                      <p><strong>Ngày duyệt:</strong> 16/06/2023</p>
+                      <p><strong>Ngày nhận hàng:</strong> 18/06/2023</p>
+                      <p><strong>Người lập phiếu:</strong> Admin</p>
+                    </div>
+                  </div>
+                  
+                  <div class="form-materials">
+                    <h4>Danh sách nguyên liệu</h4>
+                    <table class="admin-table details-table">
+                      <thead>
+                        <tr>
+                          <th width="5%">STT</th>
+                          <th width="10%">Mã NL</th>
+                          <th width="30%">Tên nguyên liệu</th>
+                          <th width="15%">Đơn vị</th>
+                          <th width="10%">Số lượng</th>
+                          <th width="15%">Đơn giá</th>
+                          <th width="15%">Thành tiền</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>NL001</td>
+                          <td>Vải Cotton Màu Trắng</td>
+                          <td>Mét</td>
+                          <td>100</td>
+                          <td>45.000₫</td>
+                          <td>4.500.000₫</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>NL007</td>
+                          <td>Vải Tuyn Màu Hồng</td>
+                          <td>Mét</td>
+                          <td>50</td>
+                          <td>60.000₫</td>
+                          <td>3.000.000₫</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>NL012</td>
+                          <td>Vải Lụa Màu Đen</td>
+                          <td>Mét</td>
+                          <td>50</td>
+                          <td>100.000₫</td>
+                          <td>5.000.000₫</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="5"></td>
+                          <td><strong>Tổng tiền:</strong></td>
+                          <td><strong>12.500.000₫</strong></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  
+                  <div class="form-notes">
+                    <h4>Ghi chú</h4>
+                    <p>Giao hàng vào giờ hành chính. Kiểm tra kỹ chất lượng vải trước khi nhập kho.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="admin-modal-footer">
+                <button class="admin-btn admin-btn-secondary modal-close-btn">Đóng</button>
+                <button class="admin-btn print-form-btn"><i class="fas fa-print"></i> In phiếu nhập</button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- New Import Form Modal -->
+          <div class="admin-modal" id="newImportFormModal">
+            <div class="admin-modal-content" style="max-width: 900px;">
+              <div class="admin-modal-header">
+                <h3 class="admin-modal-title">Tạo phiếu nhập mới</h3>
+                <button class="admin-modal-close">&times;</button>
+              </div>
+              <div class="admin-modal-body">
+                <form id="newImportForm" class="import-form">
+                  <div class="form-section">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="supplier">Nhà cung cấp <span class="required">*</span></label>
+                        <select id="supplier" name="supplier" class="admin-form-control" required>
+                          <option value="">-- Chọn nhà cung cấp --</option>
+                          <option value="ncc1">Công ty TNHH Vải Phương Nam</option>
+                          <option value="ncc2">Công ty Nguyên liệu Handmade Việt</option>
+                          <option value="ncc3">Doanh nghiệp tư nhân Lan Anh</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="import-date">Ngày lập phiếu <span class="required">*</span></label>
+                        <input type="date" id="import-date" name="import-date" class="admin-form-control" readonly>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-section">
+                    <h4>Danh sách nguyên liệu</h4>
+                    <div class="materials-table-container">
+                      <table class="admin-table materials-table">
+                        <thead>
+                          <tr>
+                            <th width="5%">STT</th>
+                            <th width="35%">Tên nguyên liệu</th>
+                            <th width="15%">Đơn vị</th>
+                            <th width="15%">Số lượng</th>
+                            <th width="15%">Đơn giá</th>
+                            <th width="15%">Thành tiền</th>
+                            <th width="5%"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="materialsList">
+                          <tr class="material-row">
+                            <td>1</td>
+                            <td>
+                              <select class="material-name admin-form-control" required>
+                                <option value="">-- Chọn nguyên liệu --</option>
+                                <option value="NL001">Vải Cotton Màu Trắng</option>
+                                <option value="NL002">Vải Cotton Màu Đen</option>
+                                <option value="NL003">Vải Lụa Màu Trắng</option>
+                                <option value="NL004">Vải Lụa Màu Đen</option>
+                                <option value="NL005">Chỉ May Màu Trắng</option>
+                                <option value="NL006">Chỉ May Màu Đen</option>
+                                <option value="NL007">Vải Tuyn Màu Hồng</option>
+                                <option value="NL008">Nút Áo Nhựa</option>
+                                <option value="NL009">Nút Áo Kim Loại</option>
+                                <option value="NL010">Khóa Kéo Nhựa</option>
+                                <option value="NL011">Khóa Kéo Kim Loại</option>
+                                <option value="NL012">Vải Lụa Màu Đen</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" class="material-unit admin-form-control" readonly>
+                            </td>
+                            <td>
+                              <input type="text" class="material-quantity admin-form-control" min="1" required>
+                            </td>
+                            <td>
+                              <input type="text" class="material-price admin-form-control" required>
+                            </td>
+                            <td>
+                              <input type="text" class="material-total admin-form-control" readonly>
+                            </td>
+                            <td>
+                              <button type="button" class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="button" class="admin-btn admin-btn-secondary" id="addMaterialRow">
+                        <i class="fas fa-plus"></i> Thêm nguyên liệu
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-section">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="total-amount">Tổng tiền</label>
+                        <input type="text" id="total-amount" class="admin-form-control" readonly>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="admin-modal-footer">
+                <button class="admin-btn admin-btn-secondary modal-close-btn">Hủy</button>
+                <button class="admin-btn" id="saveImportForm">Lưu phiếu nhập</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Edit Import Form Modal -->
+          <div class="admin-modal" id="editImportFormModal">
+            <div class="admin-modal-content" style="max-width: 900px;">
+              <div class="admin-modal-header">
+                <h3 class="admin-modal-title">Sửa phiếu nhập</h3>
+                <button class="admin-modal-close">&times;</button>
+              </div>
+              <div class="admin-modal-body">
+                <form id="editImportForm" class="import-form">
+                  <div class="form-section">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="edit-import-id">Mã phiếu nhập</label>
+                        <input type="text" id="edit-import-id" name="edit-import-id" class="admin-form-control" readonly>
+                      </div>
+                      <div class="form-group">
+                        <label for="edit-supplier">Nhà cung cấp <span class="required">*</span></label>
+                        <select id="edit-supplier" name="edit-supplier" class="admin-form-control" required>
+                          <option value="">-- Chọn nhà cung cấp --</option>
+                          <option value="ncc1">Công ty TNHH Vải Phương Nam</option>
+                          <option value="ncc2">Công ty Nguyên liệu Handmade Việt</option>
+                          <option value="ncc3">Doanh nghiệp tư nhân Lan Anh</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="edit-import-date">Ngày lập phiếu</label>
+                        <input type="date" id="edit-import-date" name="edit-import-date" class="admin-form-control" readonly>
+                      </div>
+                      <div class="form-group">
+                        <label for="edit-status">Trạng thái</label>
+                        <select id="edit-status" name="edit-status" class="admin-form-control" required>
+                          <option value="pending">Chờ duyệt</option>
+                          <option value="approved">Đã duyệt</option>
+                          <option value="received">Đã nhận hàng</option>
+                          <option value="cancelled">Đã hủy</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="edit-receive-date">Ngày nhận hàng</label>
+                        <input type="date" id="edit-receive-date" name="edit-receive-date" class="admin-form-control">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-section">
+                    <h4>Danh sách nguyên liệu</h4>
+                    <div class="materials-table-container">
+                      <table class="admin-table materials-table">
+                        <thead>
+                          <tr>
+                            <th width="5%">STT</th>
+                            <th width="35%">Tên nguyên liệu</th>
+                            <th width="15%">Đơn vị</th>
+                            <th width="15%">Số lượng</th>
+                            <th width="15%">Đơn giá</th>
+                            <th width="15%">Thành tiền</th>
+                            <th width="5%"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="editMaterialsList">
+                          <tr class="material-row">
+                            <td>1</td>
+                            <td>
+                              <select class="material-name admin-form-control" required>
+                                <option value="">-- Chọn nguyên liệu --</option>
+                                <option value="NL001">Vải Cotton Màu Trắng</option>
+                                <option value="NL002">Vải Cotton Màu Đen</option>
+                                <option value="NL003">Vải Lụa Màu Trắng</option>
+                                <option value="NL004">Vải Lụa Màu Đen</option>
+                                <option value="NL005">Chỉ May Màu Trắng</option>
+                                <option value="NL006">Chỉ May Màu Đen</option>
+                                <option value="NL007">Vải Tuyn Màu Hồng</option>
+                                <option value="NL008">Nút Áo Nhựa</option>
+                                <option value="NL009">Nút Áo Kim Loại</option>
+                                <option value="NL010">Khóa Kéo Nhựa</option>
+                                <option value="NL011">Khóa Kéo Kim Loại</option>
+                                <option value="NL012">Vải Lụa Màu Đen</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" class="material-unit admin-form-control" readonly>
+                            </td>
+                            <td>
+                              <input type="text" class="material-quantity admin-form-control" min="1" required>
+                            </td>
+                            <td>
+                              <input type="text" class="material-price admin-form-control" required>
+                            </td>
+                            <td>
+                              <input type="text" class="material-total admin-form-control" readonly>
+                            </td>
+                            <td>
+                              <button type="button" class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="button" class="admin-btn admin-btn-secondary" id="editAddMaterialRow">
+                        <i class="fas fa-plus"></i> Thêm nguyên liệu
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-section">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="edit-total-amount">Tổng tiền</label>
+                        <input type="text" id="edit-total-amount" class="admin-form-control" readonly>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="edit-notes">Ghi chú</label>
+                        <textarea id="edit-notes" name="edit-notes" class="admin-form-control" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="admin-modal-footer">
+                <button class="admin-btn admin-btn-secondary modal-close-btn">Hủy</button>
+                <button class="admin-btn" id="saveEditImportForm">Lưu thay đổi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/components/import-forms.js"></script>
+  </body>
+</html> 

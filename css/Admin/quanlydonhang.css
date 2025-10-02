@@ -1,0 +1,547 @@
+/* CSS Quản Lý Đơn Hàng */
+
+/* Thống kê đơn hàng */
+.order-stats {
+  display: flex;
+  gap: 15px;
+}
+
+.stat-item {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Tabs trạng thái */
+.status-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding: 0 5px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.status-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.status-tab {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f5f5f7;
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.status-tab:hover {
+  background-color: #e9ecef;
+}
+
+.status-tab.active {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Thanh lọc */
+.order-filters {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.filter-group select,
+.filter-group input {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.date-range span {
+  font-size: 13px;
+  color: #666;
+}
+
+.date-range input {
+  flex-grow: 1;
+}
+
+.search-input-container {
+  display: flex;
+  position: relative;
+}
+
+.search-input-container input {
+  flex-grow: 1;
+  padding-right: 40px;
+}
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 36px;
+  background-color: #000;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.search-btn:hover {
+  background-color: #000;
+}
+
+.filter-group:last-child {
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.apply-filter, .reset-filter {
+  height: 34px;
+  padding: 0 12px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* Bảng đơn hàng */
+.orders-table-container {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.orders-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f5f5f7;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.customer-phone {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 4px;
+}
+
+/* Trạng thái thanh toán */
+.payment-status {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.payment-method {
+  display: block;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.payment-paid {
+  color: #28a745;
+}
+
+.payment-pending {
+  color: #ffc107;
+}
+
+.payment-failed {
+  color: #dc3545;
+}
+
+/* Nhãn trạng thái */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status-pending {
+  background-color: #fff8e6;
+  color: #ffc107;
+}
+
+.status-processing {
+  background-color: #e6f0ff;
+  color: #0072c6;
+}
+
+.status-shipping {
+  background-color: #e6f9ff;
+  color: #17a2b8;
+}
+
+.status-delivered {
+  background-color: #e6f7ee;
+  color: #28a745;
+}
+
+.status-cancelled {
+  background-color: #feeeef;
+  color: #dc3545;
+}
+
+/* Nút thao tác */
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.action-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f5f5f7;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+
+.view-btn:hover {
+  background-color: #e6f0ff;
+  color: #0072c6;
+}
+
+.edit-btn:hover {
+  background-color: #e6f0ff;
+  color: #0072c6;
+}
+
+.print-btn:hover {
+  background-color: #e6f7ee;
+  color: #28a745;
+}
+
+.message-btn:hover {
+  background-color: #e6f9ff;
+  color: #17a2b8;
+}
+
+.truck-btn:hover {
+  background-color: #e6f7ee;
+  color: #28a745;
+}
+
+.restore-btn:hover {
+  background-color: #e6f0ff;
+  color: #0072c6;
+}
+
+/* Menu dropdown */
+.action-dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 180px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  z-index: 10;
+  display: none;
+  overflow: hidden;
+}
+
+.action-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f7;
+}
+
+.dropdown-content a i {
+  margin-right: 8px;
+  width: 16px;
+  text-align: center;
+}
+
+/* Thao tác hàng loạt */
+.bulk-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.selected-count {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.bulk-action-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.bulk-action-buttons select {
+  min-width: 150px;
+}
+
+/* Phân trang */
+.pagination-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.items-per-page {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.items-per-page select {
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination-btn.page.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.pagination-btn:hover:not(.active):not([disabled]) {
+  background-color: #f5f5f7;
+}
+
+.pagination-btn[disabled] {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Điều chỉnh responsive */
+@media (max-width: 1200px) {
+  .order-stats {
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    flex: 1;
+    min-width: 80px;
+  }
+  
+  .filter-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .orders-table th:nth-child(4),
+  .orders-table td:nth-child(4),
+  .orders-table th:nth-child(6),
+  .orders-table td:nth-child(6) {
+    display: none;
+  }
+  
+  .bulk-action-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .filter-bar {
+    grid-template-columns: 1fr;
+  }
+  
+  .date-range {
+    flex-wrap: wrap;
+  }
+  
+  .date-range input {
+    width: 100%;
+  }
+  
+  .orders-table th:nth-child(3),
+  .orders-table td:nth-child(3) {
+    display: none;
+  }
+  
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .pagination-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .bulk-actions {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .bulk-action-buttons {
+    width: 100%;
+  }
+  
+  .bulk-action-buttons select,
+  .bulk-action-buttons button {
+    flex: 1;
+  }
+} 

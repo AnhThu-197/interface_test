@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đổi mật khẩu</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../css/thongtincanhan.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../trangchu.html">
+            <img class="logo-trangchu" src="../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="Login.html">
+              <p>Nguyễn Văn A</p>
+            </a>
+            <div class="cart-container">
+              <a href="GioHang.html">
+                <img class="cart-icon" width="25" height="25" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1" />
+                <span class="cart-badge">3</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="profile-breadcrumb">
+        <a href="../trangchu.html">Trang chủ</a> > <a href="ThongTinCaNhan.html">Thông tin cá nhân</a> > Đổi mật khẩu
+      </div>
+
+      <div class="profile-container">
+        <div class="profile-sidebar">
+          <div class="user-avatar-container">
+            <img src="../images/user.jpg" alt="User Avatar" class="user-avatar" />
+            <div class="change-avatar-btn">
+              <i class="fas fa-camera"></i>
+            </div>
+          </div>
+          <div class="user-name">Nguyễn Hoàng Anh Thư</div>
+          <div class="user-status">Thành viên Bạc</div>
+          <div class="user-membership">
+            <div class="membership-progress">
+              <div class="progress-bar">
+                <div class="progress" style="width: 65%"></div>
+              </div>
+              <div class="progress-labels">
+                <span>Bạc</span>
+                <span>Vàng</span>
+              </div>
+            </div>
+            <div class="membership-points">
+              <span class="points-value">650</span>
+              <span class="points-label">điểm</span>
+              <span class="points-needed">(Cần thêm 350 điểm để lên hạng Vàng)</span>
+            </div>
+          </div>
+          <nav class="profile-nav">
+            <ul>
+              <li>
+                <a href="ThongTinCaNhan.html">
+                  <i class="fas fa-user"></i>
+                  <span>Thông tin cá nhân</span>
+                </a>
+              </li>
+              <li>
+                <a href="CapNhatThongTin.html">
+                  <i class="fas fa-edit"></i>
+                  <span>Cập nhật thông tin</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="DoiMatKhau.html">
+                  <i class="fas fa-lock"></i>
+                  <span>Đổi mật khẩu</span>
+                </a>
+              </li>
+              <li>
+                <a href="DonHang.html">
+                  <i class="fas fa-shopping-bag"></i>
+                  <span>Lịch sử đơn hàng</span>
+                </a>
+              </li>
+              <li>
+                <a href="ThongBao.html">
+                  <i class="fas fa-bell"></i>
+                  <span>Thông báo</span>
+                  <span class="notification-badge">5</span>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="#">
+                  <i class="fas fa-heart"></i>
+                  <span>Sản phẩm yêu thích</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-star"></i>
+                  <span>Đánh giá của tôi</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-tag"></i>
+                  <span>Mã giảm giá</span>
+                </a>
+              </li> -->
+              <li>
+                <a href="#" class="logout-btn">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>Đăng xuất</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="profile-content">
+          <div class="content-header">
+            <h2>Đổi mật khẩu</h2>
+          </div>
+
+          <div class="password-change-container">
+            <div class="password-security-info">
+              <div class="security-header">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Bảo mật tài khoản</h3>
+              </div>
+              <p>Để đảm bảo tính bảo mật, vui lòng không chia sẻ mật khẩu với người khác</p>
+              <div class="security-tips">
+                <h4>Mẹo tạo mật khẩu mạnh:</h4>
+                <ul>
+                  <li>Sử dụng ít nhất 8 ký tự</li>
+                  <li>Kết hợp chữ hoa, chữ thường, số và ký tự đặc biệt</li>
+                  <li>Không sử dụng thông tin cá nhân dễ đoán</li>
+                  <li>Không dùng cùng một mật khẩu cho nhiều tài khoản</li>
+                </ul>
+              </div>
+            </div>
+
+            <form class="password-change-form">
+              <div class="password-strength-meter" id="password-strength-container">
+                <div class="strength-title">Độ mạnh mật khẩu:</div>
+                <div class="strength-meter">
+                  <div class="strength-bar" id="strength-bar"></div>
+                </div>
+                <div class="strength-label" id="strength-label">Yếu</div>
+              </div>
+
+              <div class="form-group">
+                <label for="current-password">Mật khẩu hiện tại <span class="required">*</span></label>
+                <div class="password-input-container">
+                  <input type="password" id="current-password" name="current-password" required />
+                  <button type="button" class="toggle-password">
+                    <i class="far fa-eye-slash"></i>
+                  </button>
+                </div>
+                <div class="field-error" id="current-password-error"></div>
+                <a href="#" class="forgot-password-link">Quên mật khẩu?</a>
+              </div>
+
+              <div class="form-group">
+                <label for="new-password">Mật khẩu mới <span class="required">*</span></label>
+                <div class="password-input-container">
+                  <input type="password" id="new-password" name="new-password" required />
+                  <button type="button" class="toggle-password">
+                    <i class="far fa-eye-slash"></i>
+                  </button>
+                </div>
+                <div class="field-error" id="new-password-error"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="confirm-password">Xác nhận mật khẩu mới <span class="required">*</span></label>
+                <div class="password-input-container">
+                  <input type="password" id="confirm-password" name="confirm-password" required />
+                  <button type="button" class="toggle-password">
+                    <i class="far fa-eye-slash"></i>
+                  </button>
+                </div>
+                <div class="field-error" id="confirm-password-error"></div>
+              </div>
+
+              <!-- <div class="verify-methods">
+                <div class="verify-title">Xác thực thay đổi:</div>
+                <div class="verify-options">
+                  <label class="radio-container">
+                    <input type="radio" name="verify-method" value="email" checked />
+                    <span class="radio-label">Gửi mã xác thực qua email</span>
+                  </label>
+                  <label class="radio-container">
+                    <input type="radio" name="verify-method" value="sms" />
+                    <span class="radio-label">Gửi mã xác thực qua SMS</span>
+                  </label>
+                </div>
+              </div> -->
+
+              <div class="otp-verification" style="display: none;">
+                <div class="otp-header">
+                  <p>Vui lòng nhập mã xác thực đã gửi đến <span id="verification-destination">nguyenvana@email.com</span></p>
+                </div>
+                <div class="otp-inputs">
+                  <input type="text" maxlength="1" class="otp-input" />
+                  <input type="text" maxlength="1" class="otp-input" />
+                  <input type="text" maxlength="1" class="otp-input" />
+                  <input type="text" maxlength="1" class="otp-input" />
+                  <input type="text" maxlength="1" class="otp-input" />
+                  <input type="text" maxlength="1" class="otp-input" />
+                </div>
+                <div class="otp-actions">
+                  <span class="resend-timer">Gửi lại mã sau <span id="timer">60</span>s</span>
+                  <a href="#" class="resend-link disabled">Gửi lại mã</a>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="cancel-btn">Hủy</button>
+                <!-- <button type="button" class="send-verify-btn">Gửi mã xác thực</button> -->
+                <button type="submit" class="save-btn">Đổi mật khẩu</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="additional-security">
+            <h3>Bảo mật bổ sung</h3>
+            <div class="security-option">
+              <div class="security-option-info">
+                <div class="option-title">
+                  <i class="fas fa-key"></i>
+                  <span>Xác thực hai yếu tố</span>
+                </div>
+                <p class="option-description">Thêm một lớp bảo vệ bổ sung bằng cách yêu cầu mã xác thực mỗi khi đăng nhập vào tài khoản</p>
+              </div>
+              <button class="enable-btn">Kích hoạt</button>
+            </div>
+            <div class="security-option">
+              <div class="security-option-info">
+                <div class="option-title">
+                  <i class="fas fa-bell"></i>
+                  <span>Thông báo đăng nhập</span>
+                </div>
+                <p class="option-description">Nhận thông báo qua email hoặc SMS khi có đăng nhập mới vào tài khoản của bạn</p>
+              </div>
+              <button class="enable-btn">Kích hoạt</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="DonHang.html">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../js/utils/dataLoader.js"></script>
+    <script src="../js/utils/productUtils.js"></script>
+    <script src="../js/utils/cart.js"></script>
+    <script src="../js/utils/searchUtils.js"></script>
+    <script src="../js/utils/message.js"></script>
+    <script src="../js/utils/auth.js"></script>
+    <script src="../js/utils/dropdown.js"></script>
+    <script src="../js/components/doimatkhau.js"></script>
+  </body>
+</html> 

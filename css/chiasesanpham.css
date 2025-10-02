@@ -1,0 +1,597 @@
+/* CSS for ChiaSeSanPham.html */
+
+/* Breadcrumb Styles */
+.share-breadcrumb {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.share-breadcrumb a {
+  color: #333;
+  text-decoration: none;
+}
+
+.share-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.share-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Product Preview Section */
+.product-preview {
+  display: flex;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-image {
+  width: 250px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  margin: 0 0 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.current-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.original-price {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.discount-badge {
+  padding: 3px 8px;
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #f8ce0b;
+  margin-right: 10px;
+}
+
+.rating-value {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.review-count {
+  color: #666;
+  font-size: 14px;
+}
+
+.product-description {
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Share Options Section */
+.share-options {
+  margin-bottom: 30px;
+}
+
+.share-options h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.share-description {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Social Share Section */
+.social-share, 
+.messaging-share, 
+.email-share, 
+.copy-link, 
+.qr-code {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.social-share h4, 
+.messaging-share h4, 
+.email-share h4, 
+.copy-link h4, 
+.qr-code h4 {
+  margin: 0 0 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.social-buttons, 
+.messaging-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-btn, 
+.messaging-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.social-btn i, 
+.messaging-btn i, 
+.messaging-btn img {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.zalo-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.social-btn.facebook {
+  background-color: #3b5998;
+}
+
+.social-btn.twitter {
+  background-color: #1da1f2;
+}
+
+.social-btn.pinterest {
+  background-color: #bd081c;
+}
+
+.social-btn.instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-btn.linkedin {
+  background-color: #0077b5;
+}
+
+.social-btn:hover, 
+.messaging-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.messaging-btn.whatsapp {
+  background-color: #25d366;
+}
+
+.messaging-btn.telegram {
+  background-color: #0088cc;
+}
+
+.messaging-btn.messenger {
+  background-color: #0084ff;
+}
+
+.messaging-btn.viber {
+  background-color: #7360f2;
+}
+
+.messaging-btn.zalo {
+  background-color: #0068ff;
+}
+
+/* Email Share Section */
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-group input, 
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.email-submit-btn {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.email-submit-btn:hover {
+  background-color: #555;
+}
+
+/* Copy Link Section */
+.link-container {
+  display: flex;
+  gap: 10px;
+}
+
+.link-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #fff;
+  cursor: text;
+}
+
+.copy-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.copy-btn i {
+  margin-right: 5px;
+}
+
+.copy-btn:hover {
+  background-color: #555;
+}
+
+.copy-success {
+  margin-top: 10px;
+  color: #4caf50;
+  font-size: 14px;
+  display: none;
+}
+
+/* QR Code Section */
+.qr-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.qr-image {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.qr-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qr-download-btn, 
+.qr-print-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.qr-download-btn i, 
+.qr-print-btn i {
+  margin-right: 8px;
+}
+
+.qr-download-btn:hover, 
+.qr-print-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Share Rewards Section */
+.share-rewards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px dashed #ddd;
+}
+
+.rewards-info {
+  flex: 2;
+}
+
+.rewards-info h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.rewards-info p {
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.rewards-steps {
+  display: flex;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.step-arrow {
+  margin: 0 15px;
+  color: #999;
+  font-size: 20px;
+}
+
+.referral-code {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px dashed #ddd;
+  padding-left: 30px;
+}
+
+.referral-code h4 {
+  margin: 0 0 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.code {
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 16px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.copy-code-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.copy-code-btn:hover {
+  color: #555;
+}
+
+.code-expire {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Share Actions */
+.share-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.back-to-product-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.back-to-product-btn i {
+  margin-right: 8px;
+}
+
+.back-to-product-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn i {
+  margin-right: 8px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .product-preview {
+    flex-direction: column;
+  }
+  
+  .product-image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .share-rewards {
+    flex-direction: column;
+  }
+  
+  .referral-code {
+    border-left: none;
+    border-top: 1px dashed #ddd;
+    padding-left: 0;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-buttons, 
+  .messaging-buttons {
+    gap: 10px;
+  }
+  
+  .social-btn, 
+  .messaging-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  .qr-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .qr-image {
+    margin-bottom: 15px;
+  }
+  
+  .rewards-steps {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .step-arrow {
+    transform: rotate(90deg);
+    margin: 5px 0;
+  }
+  
+  .share-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .back-to-product-btn, 
+  .add-to-cart-btn {
+    width: 100%;
+    justify-content: center;
+  }
+} 

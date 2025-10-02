@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết đơn làm</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/NhanVien/dashboard.css" />
+    <link rel="stylesheet" href="../../css/NhanVien/chitietdonlam.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <buttom class="search-bottom">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </buttom>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-bottom">
+              <img class="search-bottom-vid" src="../../images/scan-image.gif" alt="" srcset="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Nguyễn Văn A</p>
+            </a>
+            <div class="cart-container">
+              <a href="../GioHang.html">
+                <img class="cart-icon" width="25" height="25" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1" />
+                <span class="cart-badge">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="employee-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Trang quản lý nhân viên</a> &gt;
+        <a href="LichSuDonLam.html">Lịch sử đơn làm</a> &gt;
+        <span>Chi tiết đơn làm</span>
+      </div>
+
+      <div class="employee-container">
+        <div class="employee-sidebar">
+          <div class="sidebar-header">
+            <div class="employee-avatar">
+              <img src="../../images/user.jpg" alt="Nguyễn Hoàng Anh Thư" />
+            </div>
+            <div class="employee-info">
+              <h3>Nguyễn Hoàng Anh Thư</h3>
+              <p>Nhân viên - Sinh viên UTE</p>
+              <span class="employee-id">ID: NV232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+              </li>
+              <li>
+                <a href="DangKyThamGia.html"><i class="fas fa-user-plus"></i> Đăng ký tham gia sản xuất</a>
+              </li>
+              <li>
+                <a href="QuyDinhLamViec.html"><i class="fas fa-book"></i> Quy định làm việc</a>
+              </li>
+              <li>
+                <a href="RutTien.html"><i class="fas fa-hand-holding-usd"></i> Quy trình làm việc</a>
+              </li>
+              <li>
+                <a href="DanhSachDonLam.html"><i class="fas fa-list"></i> Danh sách đơn làm</a>
+              </li>
+              <li>
+                <a href="DangKyDonLam.html"><i class="fas fa-edit"></i> Đăng ký đơn làm</a>
+              </li>
+              <li>
+                <a href="DangKySanPhamMoi.html"><i class="fas fa-plus-circle"></i> Đăng ký sản phẩm mới</a>
+              </li>
+              <li>
+                <a href="NopSanPham.html"><i class="fas fa-upload"></i> Nộp sản phẩm</a>
+              </li>
+              <li>
+                <a href="LichSuSanPham.html"><i class="fas fa-history"></i> Lịch sử sản phẩm nộp</a>
+              </li>
+              <li class="active">
+                <a href="LichSuDonLam.html"><i class="fas fa-clipboard-list"></i> Lịch sử đơn làm</a>
+              </li>
+              <li>
+                <a href="ThuNhap.html"><i class="fas fa-money-bill-wave"></i> Xem thu nhập</a>
+              </li>
+              <li>
+                <a href="LichSuGiaoDich.html"><i class="fas fa-exchange-alt"></i> Lịch sử giao dịch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="employee-content">
+          <div class="page-header">
+            <div class="page-title">
+              <h1>Chi tiết đơn làm</h1>
+              <span class="order-id">Mã đơn: DL001</span>
+            </div>
+            <div class="page-actions">
+              <!-- <button class="btn btn-secondary" onclick="window.location.href='LichSuDonLam.html'">
+                <i class="fas fa-arrow-left"></i> Quay lại
+              </button> -->
+              <button class="btn btn-danger" id="cancelOrderBtn">
+                <i class="fas fa-times-circle"></i> Hủy đơn làm
+              </button>
+              <button class="btn btn-primary" id="submitProductBtn">
+                <i class="fas fa-upload"></i> Nộp sản phẩm
+              </button>
+            </div>
+          </div>
+
+          <div class="order-detail-container">
+            <div class="order-status-section">
+              <div class="status-badge status-in-progress">
+                <i class="fas fa-spinner"></i> Đang thực hiện
+              </div>
+              <div class="progress-container">
+                <div class="progress-info">
+                  <div class="progress-text">70% hoàn thành</div>
+                  <div class="progress-text">7/10 sản phẩm</div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-value" style="width: 70%;"></div>
+                </div>
+                <div class="time-remaining">
+                  <i class="fas fa-clock"></i> Thời gian còn lại: 23 ngày
+                </div>
+              </div>
+            </div>
+
+            <div class="order-info-grid">
+              <div class="info-card">
+                <h3>Thông tin sản phẩm</h3>
+                <div class="product-details">
+                  <img src="../../images/handmade1.jpg" alt="Túi thủ công mỹ nghệ" />
+                  <div class="product-info">
+                    <h4>Bộ Khay Gốm Nghệ Thuật "Thiên Nhiên & Giấc Mơ"</h4>
+                    <p class="product-category">Loại: Đồ gốm</p>
+                    <p class="product-price">Đơn giá: 70.000₫</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <h3>Thông tin đơn hàng</h3>
+                <div class="info-list">
+                  <div class="info-item">
+                    <span class="info-label">Số lượng đăng ký:</span>
+                    <span class="info-value">10 sản phẩm</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Số lượng đã nộp:</span>
+                    <span class="info-value">7 sản phẩm</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Tổng giá trị đơn:</span>
+                    <span class="info-value">700.000₫</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Ngày đăng ký:</span>
+                    <span class="info-value">01/06/2023</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Hạn nộp:</span>
+                    <span class="info-value">30/06/2023</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <h3>Thông tin làm việc</h3>
+                <div class="info-list">
+                  <div class="info-item">
+                    <span class="info-label">Địa điểm làm việc:</span>
+                    <span class="info-value">Tại nhà</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Yêu cầu kỹ thuật:</span>
+                    <span class="info-value">Có kinh nghiệm làm túi thủ công</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">Hướng dẫn chi tiết:</span>
+                    <a href="#" class="info-link">Xem tài liệu hướng dẫn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="notes-section">
+              <h3>Ghi chú</h3>
+              <div class="notes-content">
+                <p>Đơn làm đang được thực hiện đúng tiến độ. Dự kiến hoàn thành đúng hạn.</p>
+              </div>
+            </div>
+            <div class="submission-history-section">
+              <h3>Lịch sử nộp sản phẩm</h3>
+              <div class="submission-timeline">
+                <div class="submission-item">
+                  <div class="submission-date">
+                    <i class="fas fa-calendar-alt"></i> 07/06/2023
+                  </div>
+                  <div class="submission-details">
+                    <div class="submission-title">Nộp sản phẩm lần 1</div>
+                    <div class="submission-info">
+                      <p><strong>Số lượng:</strong> 7 sản phẩm</p>
+                      <p><strong>Phương thức:</strong> Nộp trực tiếp</p>
+                      <p><strong>Trạng thái:</strong> <span class="status-text pending">Chờ kiểm tra</span></p>
+                      <p><strong>Ghi chú:</strong> Sản phẩm đã được nộp đúng hạn</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Modal Hủy đơn làm -->
+    <div id="cancelOrderModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Hủy đơn làm</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="cancelOrderForm">
+            <div class="form-group">
+              <label for="cancelReason">Lý do hủy đơn:</label>
+              <select id="cancelReason" required>
+                <option value="">Chọn lý do hủy đơn</option>
+                <option value="personal">Lý do cá nhân</option>
+                <option value="technical">Khó khăn kỹ thuật</option>
+                <option value="time">Không đủ thời gian</option>
+                <option value="other">Lý do khác</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cancelNote">Ghi chú thêm:</label>
+              <textarea id="cancelNote" rows="4" placeholder="Nhập ghi chú thêm (nếu có)"></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" id="closeCancelModal">Đóng</button>
+              <button type="submit" class="btn btn-danger">Xác nhận hủy đơn</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* Modal styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 50%;
+        max-width: 600px;
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .close {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .close:hover {
+        color: black;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .btn-danger:hover {
+        background-color: #c82333;
+      }
+    </style>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/dropdown.js"></script>
+
+    <script>
+      // Handle submit product button click
+      document.getElementById('submitProductBtn').addEventListener('click', function() {
+        window.location.href = 'NopSanPham.html';
+      });
+
+      // Get order ID from URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const orderId = urlParams.get('id');
+
+      // Update order ID in the page
+      if (orderId) {
+        document.querySelector('.order-id').textContent = `Mã đơn: ${orderId}`;
+      }
+
+      // Modal handling
+      const modal = document.getElementById('cancelOrderModal');
+      const cancelBtn = document.getElementById('cancelOrderBtn');
+      const closeBtn = document.querySelector('.close');
+      const closeCancelModalBtn = document.getElementById('closeCancelModal');
+      const cancelOrderForm = document.getElementById('cancelOrderForm');
+
+      // Open modal
+      cancelBtn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // Close modal
+      closeBtn.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      closeCancelModalBtn.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+      // Handle form submission
+      cancelOrderForm.onsubmit = function(e) {
+        e.preventDefault();
+        const reason = document.getElementById('cancelReason').value;
+        const note = document.getElementById('cancelNote').value;
+        
+        // Here you would typically send this data to your backend
+        console.log('Cancelling order:', { reason, note });
+        
+        // Show success message and redirect
+        alert('Đơn làm đã được hủy thành công!');
+        window.location.href = 'LichSuDonLam.html';
+      }
+    </script>
+  </body>
+</html> 

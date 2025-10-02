@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch sử giao dịch</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/NhanVien/dashboard.css" />
+    <link rel="stylesheet" href="../../css/NhanVien/lichsugiaodich.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <buttom class="search-bottom">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </buttom>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-bottom">
+              <img class="search-bottom-vid" src="../../images/scan-image.gif" alt="" srcset="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Nguyễn Văn A</p>
+            </a>
+            <div class="cart-container">
+              <a href="../GioHang.html">
+                <img class="cart-icon" width="25" height="25" src="https://img.icons8.com/ios/50/shopping-bag--v1.png" alt="shopping-bag--v1" />
+                <span class="cart-badge">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="employee-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Trang nhân viên</a> &gt;
+        <span>Lịch sử giao dịch</span>
+      </div>
+
+      <div class="employee-container">
+        <div class="employee-sidebar">
+          <div class="sidebar-header">
+            <div class="employee-avatar">
+              <img src="../../images/user.jpg" alt="Nguyễn Hoàng Anh Thư" />
+            </div>
+            <div class="employee-info">
+              <h3>Nguyễn Hoàng Anh Thư</h3>
+              <p>Nhân viên - Sinh viên UTE</p>
+              <span class="employee-id">ID: NV232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <ul>
+              <li>
+                <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+              </li>
+              <li>
+                <a href="DangKyThamGia.html"><i class="fas fa-user-plus"></i> Đăng ký tham gia sản xuất</a>
+              </li>
+              <li>
+                <a href="QuyDinhLamViec.html"><i class="fas fa-book"></i> Quy định làm việc</a>
+              </li>
+              <li>
+                <a href="DanhSachDonLam.html"><i class="fas fa-list"></i> Danh sách đơn làm</a>
+              </li>
+              <li>
+                <a href="DangKyDonLam.html"><i class="fas fa-edit"></i> Đăng ký đơn làm</a>
+              </li>
+              <li>
+                <a href="DangKySanPhamMoi.html"><i class="fas fa-plus-circle"></i> Đăng ký sản phẩm mới</a>
+              </li>
+              <li>
+                <a href="NopSanPham.html"><i class="fas fa-upload"></i> Nộp sản phẩm</a>
+              </li>
+              <li>
+                <a href="LichSuSanPham.html"><i class="fas fa-history"></i> Lịch sử sản phẩm nộp</a>
+              </li>
+              <li>
+                <a href="LichSuDonLam.html"><i class="fas fa-clipboard-list"></i> Lịch sử đơn làm</a>
+              </li>
+              <li>
+                <a href="ThuNhap.html"><i class="fas fa-money-bill-wave"></i> Xem thu nhập</a>
+              </li>
+              <li class="active">
+                <a href="LichSuGiaoDich.html"><i class="fas fa-exchange-alt"></i> Lịch sử giao dịch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="employee-content">
+          <div class="page-title">
+            <h1>Lịch sử giao dịch</h1>
+          </div>
+
+          <div class="transaction-overview">
+            <div class="summary-cards">
+              <div class="summary-card">
+                <div class="summary-icon">
+                  <i class="fas fa-wallet"></i>
+                </div>
+                <div class="summary-content">
+                  <h3>2.350.000₫</h3>
+                  <p>Số dư hiện tại</p>
+                </div>
+              </div>
+              <div class="summary-card">
+                <div class="summary-icon deposit">
+                  <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="summary-content">
+                  <h3>16.750.000₫</h3>
+                  <p>Tổng thu</p>
+                </div>
+              </div>
+              <div class="summary-card">
+                <div class="summary-icon withdraw">
+                  <i class="fas fa-arrow-up"></i>
+                </div>
+                <div class="summary-content">
+                  <h3>13.275.000₫</h3>
+                  <p>Tổng chi</p>
+                </div>
+              </div>
+              <div class="summary-card">
+                <div class="summary-icon pending">
+                  <i class="fas fa-hourglass-half"></i>
+                </div>
+                <div class="summary-content">
+                  <h3>1.125.000₫</h3>
+                  <p>Đang xử lý</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="transaction-filters">
+            <!-- <div class="search-filter">
+              <input type="text" id="searchInput" placeholder="Tìm kiếm theo mã giao dịch, nội dung..." />
+              <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div> -->
+            <div class="filter-selects">
+              <div class="filter-item">
+                <label for="typeFilter">Loại giao dịch:</label>
+                <select id="typeFilter">
+                  <option value="all">Tất cả</option>
+                  <option value="deposit">Thu nhập</option>
+                  <option value="withdraw">Rút tiền</option>
+                  <option value="pending">Đang xử lý</option>
+                </select>
+              </div>
+              <div class="filter-item">
+                <label for="dateFilter">Thời gian:</label>
+                <select id="dateFilter">
+                  <option value="all">Tất cả thời gian</option>
+                  <option value="thisMonth">Tháng này</option>
+                  <option value="lastMonth">Tháng trước</option>
+                  <option value="last3Months">3 tháng gần đây</option>
+                  <option value="thisYear">Năm nay</option>
+                </select>
+              </div>
+              <!-- <div class="filter-item">
+                <label for="sortOrder">Sắp xếp:</label>
+                <select id="sortOrder">
+                  <option value="newest">Mới nhất</option>
+                  <option value="oldest">Cũ nhất</option>
+                  <option value="amountHigh">Giá trị cao đến thấp</option>
+                  <option value="amountLow">Giá trị thấp đến cao</option>
+                </select>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="transaction-list">
+            <div class="transaction-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Mã giao dịch</th>
+                    <th>Ngày</th>
+                    <th>Loại</th>
+                    <th>Nội dung</th>
+                    <th>Giá trị</th>
+                    <th>Trạng thái</th>
+                    <th>Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>GD20230615001</td>
+                    <td>15/06/2023<br><span class="transaction-time">14:32:05</span></td>
+                    <td><span class="transaction-type withdraw">Rút tiền</span></td>
+                    <td>Rút tiền qua Vietcombank</td>
+                    <td class="transaction-amount negative">-1.000.000₫</td>
+                    <td><span class="status-badge status-pending">Đang xử lý</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="GD20230615001"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>GD20230605002</td>
+                    <td>05/06/2023<br><span class="transaction-time">10:15:23</span></td>
+                    <td><span class="transaction-type deposit">Thu nhập</span></td>
+                    <td>Duyệt sản phẩm: Thiệp thủ công handmade</td>
+                    <td class="transaction-amount positive">+660.000₫</td>
+                    <td><span class="status-badge status-completed">Thành công</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="GD20230605002"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>GD20230602001</td>
+                    <td>02/06/2023<br><span class="transaction-time">15:45:11</span></td>
+                    <td><span class="transaction-type deposit">Thu nhập</span></td>
+                    <td>Duyệt sản phẩm: Hộp quà handmade</td>
+                    <td class="transaction-amount positive">+255.000₫</td>
+                    <td><span class="status-badge status-completed">Thành công</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="GD20230602001"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>GD20230515003</td>
+                    <td>15/05/2023<br><span class="transaction-time">09:20:45</span></td>
+                    <td><span class="transaction-type withdraw">Rút tiền</span></td>
+                    <td>Rút tiền qua ZaloPay</td>
+                    <td class="transaction-amount negative">-2.000.000₫</td>
+                    <td><span class="status-badge status-completed">Thành công</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="GD20230515003"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>GD20230510001</td>
+                    <td>10/05/2023<br><span class="transaction-time">16:12:38</span></td>
+                    <td><span class="transaction-type deposit">Thu nhập</span></td>
+                    <td>Duyệt sản phẩm: Móc khóa handmade (20 cái)</td>
+                    <td class="transaction-amount positive">+700.000₫</td>
+                    <td><span class="status-badge status-completed">Thành công</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="GD20230510001"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>GD20230505002</td>
+                    <td>05/05/2023<br><span class="transaction-time">11:05:17</span></td>
+                    <td><span class="transaction-type deposit">Thu nhập</span></td>
+                    <td>Duyệt sản phẩm: Túi thủ công mỹ nghệ (10 cái)</td>
+                    <td class="transaction-amount positive">+700.000₫</td>
+                    <td><span class="status-badge status-completed">Thành công</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="GD20230505002"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>GD20230430001</td>
+                    <td>30/04/2023<br><span class="transaction-time">14:30:22</span></td>
+                    <td><span class="transaction-type withdraw">Rút tiền</span></td>
+                    <td>Rút tiền qua Vietcombank</td>
+                    <td class="transaction-amount negative">-1.500.000₫</td>
+                    <td><span class="status-badge status-completed">Thành công</span></td>
+                    <td>
+                      <button class="action-btn view-btn" data-id="GD20230430001"><i class="fas fa-eye"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="pagination">
+              <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transaction Detail Modal -->
+      <div class="transaction-detail-modal" id="transactionDetailModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Chi tiết giao dịch</h3>
+            <button class="close-modal-btn">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="transaction-detail-info">
+              <div class="detail-header">
+                <div class="transaction-icon withdraw">
+                  <i class="fas fa-arrow-up"></i>
+                </div>
+                <div class="transaction-status">
+                  <span class="status-badge status-pending">Đang xử lý</span>
+                </div>
+              </div>
+              
+              <div class="detail-amount">
+                <h3 class="negative">-1.000.000₫</h3>
+              </div>
+              
+              <div class="detail-grid">
+                <div class="detail-item">
+                  <div class="detail-label">Mã giao dịch:</div>
+                  <div class="detail-value">GD20230615001</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Loại giao dịch:</div>
+                  <div class="detail-value">Rút tiền</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Thời gian:</div>
+                  <div class="detail-value">15/06/2023 14:32:05</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Phương thức:</div>
+                  <div class="detail-value">Chuyển khoản ngân hàng</div>
+                </div>
+                <div class="detail-item full-width">
+                  <div class="detail-label">Nội dung:</div>
+                  <div class="detail-value">Rút tiền qua Vietcombank</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Ngân hàng:</div>
+                  <div class="detail-value">Vietcombank</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Số tài khoản:</div>
+                  <div class="detail-value">098765432112</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Tên tài khoản:</div>
+                  <div class="detail-value">NGUYEN VAN A</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Số dư trước GD:</div>
+                  <div class="detail-value">3.350.000₫</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Số dư sau GD:</div>
+                  <div class="detail-value">2.350.000₫</div>
+                </div>
+                <div class="detail-item full-width">
+                  <div class="detail-label">Ghi chú:</div>
+                  <div class="detail-value">Rút tiền thanh toán học phí</div>
+                </div>
+                <div class="detail-item full-width">
+                  <div class="detail-label">Trạng thái xử lý:</div>
+                  <div class="detail-value">
+                    <div class="process-timeline">
+                      <div class="process-step completed">
+                        <div class="step-icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="step-content">
+                          <div class="step-title">Gửi yêu cầu</div>
+                          <div class="step-time">15/06/2023 14:32:05</div>
+                        </div>
+                      </div>
+                      <div class="process-step completed">
+                        <div class="step-icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="step-content">
+                          <div class="step-title">Xác nhận yêu cầu</div>
+                          <div class="step-time">15/06/2023 14:35:22</div>
+                        </div>
+                      </div>
+                      <div class="process-step active">
+                        <div class="step-icon">
+                          <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="step-content">
+                          <div class="step-title">Đang xử lý</div>
+                          <div class="step-time">15/06/2023 14:35:22</div>
+                        </div>
+                      </div>
+                      <div class="process-step">
+                        <div class="step-icon">
+                          <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="step-content">
+                          <div class="step-title">Hoàn thành</div>
+                          <div class="step-time">--/--/---- --:--:--</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" id="closeDetailBtn">Đóng</button>
+            <button class="btn btn-danger" id="cancelTransactionBtn">Hủy yêu cầu</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/dropdown.js"></script>
+
+    <script>
+      // Search functionality
+      document.getElementById('searchInput').addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const tableRows = document.querySelectorAll('.transaction-table tbody tr');
+        
+        tableRows.forEach(row => {
+          const transactionId = row.querySelector('td:first-child').textContent.toLowerCase();
+          const content = row.querySelector('td:nth-child(4)').textContent.toLowerCase();
+          
+          if (transactionId.includes(searchTerm) || content.includes(searchTerm)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+
+      // Filter by transaction type
+      document.getElementById('typeFilter').addEventListener('change', function() {
+        const selectedType = this.value;
+        const tableRows = document.querySelectorAll('.transaction-table tbody tr');
+        
+        tableRows.forEach(row => {
+          const transactionType = row.querySelector('.transaction-type');
+          const status = row.querySelector('.status-badge');
+          
+          if (selectedType === 'all') {
+            row.style.display = '';
+          } else if (selectedType === 'deposit' && transactionType.classList.contains('deposit')) {
+            row.style.display = '';
+          } else if (selectedType === 'withdraw' && transactionType.classList.contains('withdraw')) {
+            row.style.display = '';
+          } else if (selectedType === 'pending' && status.classList.contains('status-pending')) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+
+      // Filter by date (simplified for demo)
+      document.getElementById('dateFilter').addEventListener('change', function() {
+        const selectedDate = this.value;
+        const tableRows = document.querySelectorAll('.transaction-table tbody tr');
+        
+        if (selectedDate === 'all') {
+          tableRows.forEach(row => {
+            row.style.display = '';
+          });
+        } else if (selectedDate === 'thisMonth') {
+          // Show only the most recent rows (0-3)
+          tableRows.forEach((row, index) => {
+            row.style.display = index < 3 ? '' : 'none';
+          });
+        } else if (selectedDate === 'lastMonth') {
+          // Show only rows 3-5
+          tableRows.forEach((row, index) => {
+            row.style.display = (index >= 3 && index < 5) ? '' : 'none';
+          });
+        } else if (selectedDate === 'last3Months') {
+          // Show all except last row
+          tableRows.forEach((row, index) => {
+            row.style.display = index < 6 ? '' : 'none';
+          });
+        } else if (selectedDate === 'thisYear') {
+          // Show all rows
+          tableRows.forEach(row => {
+            row.style.display = '';
+          });
+        }
+      });
+
+      // Sort functionality (simplified for demo)
+      document.getElementById('sortOrder').addEventListener('change', function() {
+        const selectedSort = this.value;
+        // In a real application, this would sort the table rows
+        // For the demo, we'll just log the selected sort option
+        console.log('Selected sort:', selectedSort);
+      });
+
+      // Transaction detail modal
+      const modal = document.getElementById('transactionDetailModal');
+      const viewButtons = document.querySelectorAll('.view-btn');
+      const closeButton = document.querySelector('.close-modal-btn');
+      const closeDetailBtn = document.getElementById('closeDetailBtn');
+      const cancelTransactionBtn = document.getElementById('cancelTransactionBtn');
+
+      viewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const transactionId = this.getAttribute('data-id');
+          
+          // Update modal UI based on transaction ID
+          document.querySelector('.detail-value:first-child').textContent = transactionId;
+          
+          // Show/hide "Hủy yêu cầu" button based on status
+          const row = this.closest('tr');
+          const status = row.querySelector('.status-badge');
+          
+          if (status.classList.contains('status-pending')) {
+            cancelTransactionBtn.style.display = 'block';
+          } else {
+            cancelTransactionBtn.style.display = 'none';
+          }
+          
+          // Update transaction icon and amount style
+          const transactionType = row.querySelector('.transaction-type');
+          const modalIcon = document.querySelector('.transaction-icon');
+          
+          if (transactionType.classList.contains('deposit')) {
+            modalIcon.className = 'transaction-icon deposit';
+            modalIcon.innerHTML = '<i class="fas fa-arrow-down"></i>';
+            document.querySelector('.detail-amount h3').className = 'positive';
+          } else {
+            modalIcon.className = 'transaction-icon withdraw';
+            modalIcon.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            document.querySelector('.detail-amount h3').className = 'negative';
+          }
+          
+          // Update status badge in modal
+          const modalStatus = document.querySelector('.transaction-status .status-badge');
+          modalStatus.className = status.className;
+          modalStatus.textContent = status.textContent;
+          
+          // Update amount in modal
+          const amount = row.querySelector('.transaction-amount').textContent;
+          document.querySelector('.detail-amount h3').textContent = amount;
+          
+          // Show the modal
+          modal.style.display = 'flex';
+        });
+      });
+
+      // Close modal
+      closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+
+      closeDetailBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+
+      // Cancel transaction button
+      cancelTransactionBtn.addEventListener('click', function() {
+        if (confirm('Bạn có chắc chắn muốn hủy yêu cầu rút tiền này không?')) {
+          alert('Yêu cầu rút tiền đã được hủy thành công.');
+          modal.style.display = 'none';
+        }
+      });
+
+      // Close modal when clicking outside
+      window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+
+      // Pagination handling
+      const paginationButtons = document.querySelectorAll('.pagination-btn');
+      
+      paginationButtons.forEach(button => {
+        if (!button.disabled) {
+          button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            paginationButtons.forEach(btn => {
+              btn.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // In a real application, this would load the next page of data
+            // For the demo, we'll just console log the page number
+            console.log('Load page:', this.textContent);
+          });
+        }
+      });
+    </script>
+  </body>
+</html> 

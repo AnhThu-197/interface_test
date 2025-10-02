@@ -1,0 +1,429 @@
+/* CSS for HuyDonHang.html */
+
+/* Breadcrumb Styles */
+.order-breadcrumb {
+  margin: 20px 0;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.order-breadcrumb a {
+  color: #333;
+  text-decoration: none;
+}
+
+.order-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.cancel-container {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 0 20px;
+}
+
+.cancel-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-icon {
+  font-size: 32px;
+  color: #d32f2f;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffebee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content h1 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.header-desc {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Cancel Content */
+.cancel-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+/* Order Preview */
+.order-preview {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.preview-header {
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.preview-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.preview-content {
+  padding: 20px;
+}
+
+.preview-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.preview-row:last-child {
+  margin-bottom: 0;
+}
+
+.preview-label {
+  font-weight: 500;
+  color: #555;
+}
+
+.preview-value {
+  color: #333;
+}
+
+.status-processing {
+  color: #f57c00;
+  font-weight: 500;
+}
+
+/* Order Products */
+.order-products {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.order-products h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #333;
+  padding: 0 20px;
+}
+
+.product-list {
+  padding: 0 20px 20px;
+}
+
+.product-item {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.product-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.product-variant {
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #666;
+}
+
+.product-price {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Cancel Form */
+.cancel-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.cancel-form h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.form-desc {
+  margin: 0 0 20px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio-option label {
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form-notice {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form-notice i {
+  color: #2196f3;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.form-notice p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  border: none;
+}
+
+.btn-back {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-back:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-cancel-confirm {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.btn-cancel-confirm:hover {
+  background-color: #c62828;
+}
+
+/* Confirmation Modal */
+.cancel-confirmation-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header i {
+  font-size: 24px;
+  color: #4caf50;
+  margin-right: 10px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.close-modal-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #999;
+  line-height: 1;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body p {
+  margin: 0 0 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+}
+
+.btn-secondary {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .cancel-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cancel-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .preview-row {
+    flex-direction: column;
+  }
+
+  .preview-value {
+    margin-top: 5px;
+  }
+} 

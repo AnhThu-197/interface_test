@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cài Đặt Vận Chuyển</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/Admin/admin-base.css" />
+    <link rel="stylesheet" href="../../css/Admin/vanchuyen.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Quản trị viên</p>
+            </a>
+            <div class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Tổng quan</a> &gt;
+        <span>Cài đặt vận chuyển</span>
+      </div>
+
+      <div class="admin-container">
+        <div class="admin-sidebar">
+          <div class="sidebar-header">
+            <div class="admin-avatar">
+              <img src="../../images/admin.jpg" alt="Admin" />
+            </div>
+            <div class="admin-info">
+              <h3>Nguyễn Thư</h3>
+              <p>Hội Sinh Viên UTE</p>
+              <span class="admin-id">ID: ADMIN232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <div class="menu-section">
+              <h4>TỔNG QUAN</h4>
+              <ul>
+                <li>
+                  <a href="Dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+                </li>
+                <li>
+                  <a href="ThongKe.html"><i class="fas fa-chart-bar"></i> Báo cáo - Thống kê</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ SẢN PHẨM</h4>
+              <ul>
+                <li>
+                  <a href="QuanLySanPham.html"><i class="fas fa-box"></i> Cập nhật sản phẩm</a>
+                </li>
+                <li>
+                  <a href="QuanLyNguyenLieu.html"><i class="fas fa-cubes"></i> Cập nhật nguyên liệu</a>
+                </li>
+                <li>
+                  <a href="QuanLyPhieuNhap.html"><i class="fas fa-clipboard-list"></i> Cập nhật phiếu nhập</a>
+                </li>
+                <li>
+                  <a href="QuanLyNhaCungCap.html"><i class="fas fa-truck"></i> Cập nhật nhà cung cấp</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ ĐƠN HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyDonHang.html"><i class="fas fa-shopping-cart"></i> Cập nhật trạng thái đơn hàng</a>
+                </li>
+                <li class="active">
+                  <a href="VanChuyen.html"><i class="fas fa-shipping-fast"></i> Cài đặt vận chuyển</a>
+                </li>
+                <li>
+                  <a href="QuanLyDonLam.html"><i class="fas fa-tasks"></i> Cập nhật đơn làm</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ NHÂN VIÊN</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyNhanVien.html"><i class="fas fa-users"></i> Cập nhật nhân viên</a>
+                </li>
+                <li>
+                  <a href="DieuKienThamGia.html"><i class="fas fa-user-check"></i> Cập nhật điều kiện tham gia</a>
+                </li>
+                <li>
+                  <a href="QuyTrinh.html"><i class="fas fa-sitemap"></i> Cập nhật quy trình làm việc</a>
+                </li>
+                <li>
+                  <a href="QuyDinh.html"><i class="fas fa-book"></i> Cập nhật quy định làm việc</a>
+                </li>
+                <li>
+                  <a href="ThanhToan.html"><i class="fas fa-money-bill-wave"></i> Thanh toán tiền công</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>KHÁC</h4>
+              <ul>
+                <li>
+                  <a href="DoiTac.html"><i class="fas fa-handshake"></i> Quản lý đối tác</a>
+                </li>
+                <li>
+                  <a href="TaiChinh.html"><i class="fas fa-chart-line"></i> Theo dõi tài chính</a>
+                </li>
+                <li>
+                  <a href="DanhGia.html"><i class="fas fa-star"></i> Phản hồi đánh giá</a>
+                </li>
+                <li>
+                  <a href="TaiKhoan.html"><i class="fas fa-user-cog"></i> Cập nhật tài khoản</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-content">
+          <div class="page-title">
+            <h1>Cài Đặt Vận Chuyển</h1>
+            <div class="action-buttons">
+              <button class="admin-btn"><i class="fas fa-plus"></i> Thêm đơn vị vận chuyển</button>
+              <!-- <button class="admin-btn admin-btn-secondary"><i class="fas fa-cog"></i> Cấu hình chung</button> -->
+            </div>
+          </div>
+
+          <!-- Tab Navigation -->
+          <!-- <div class="shipping-tabs">
+            <button class="shipping-tab active" data-tab="shipping-units">Đơn vị vận chuyển</button>
+            <button class="shipping-tab" data-tab="shipping-methods">Phương thức vận chuyển</button>
+            <button class="shipping-tab" data-tab="shipping-zones">Khu vực & Phí vận chuyển</button>
+            <button class="shipping-tab" data-tab="shipping-tracking">Theo dõi vận chuyển</button>
+            <button class="shipping-tab" data-tab="shipping-templates">Mẫu in</button>
+          </div> -->
+
+          <!-- Đơn vị vận chuyển Tab Content -->
+          <div class="tab-content active" id="shipping-units-content">
+            <div class="shipping-units-container">
+              <div class="shipping-unit-card">
+                <div class="unit-logo">
+                  <img src="../../images/ghn.webp" alt="GHN Logo">
+                </div>
+                <div class="unit-info">
+                  <h3>Giao hàng nhanh (GHN)</h3>
+                  <div class="unit-status active">
+                    <span class="status-badge">Đang hoạt động</span>
+                  </div>
+                  <p>Dịch vụ giao hàng toàn quốc, ưu tiên phủ sóng các thành phố lớn.</p>
+                </div>
+                <div class="unit-actions">
+                  <!-- <button class="admin-btn admin-btn-sm"><i class="fas fa-cog"></i> Cài đặt</button> -->
+                  <div class="toggle-switch">
+                    <input type="checkbox" id="toggle-ghn" class="toggle-input" checked>
+                    <label for="toggle-ghn" class="toggle-label"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="shipping-unit-card">
+                <div class="unit-logo">
+                  <img src="../../images/ghtk.jpg" alt="GHTK Logo">
+                </div>
+                <div class="unit-info">
+                  <h3>Giao hàng tiết kiệm (GHTK)</h3>
+                  <div class="unit-status active">
+                    <span class="status-badge">Đang hoạt động</span>
+                  </div>
+                  <p>Dịch vụ giao hàng với chi phí tiết kiệm, phù hợp cho đơn hàng không cần gấp.</p>
+                </div>
+                <div class="unit-actions">
+                  <!-- <button class="admin-btn admin-btn-sm"><i class="fas fa-cog"></i> Cài đặt</button> -->
+                  <div class="toggle-switch">
+                    <input type="checkbox" id="toggle-ghtk" class="toggle-input" checked>
+                    <label for="toggle-ghtk" class="toggle-label"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="shipping-unit-card">
+                <div class="unit-logo">
+                  <img src="../../images/viettelpost.webp" alt="VNPost Logo">
+                </div>
+                <div class="unit-info">
+                  <h3>Bưu điện Việt Nam (VNPost)</h3>
+                  <div class="unit-status inactive">
+                    <span class="status-badge">Chưa kích hoạt</span>
+                  </div>
+                  <p>Dịch vụ chuyển phát của Bưu chính Việt Nam, phủ sóng đến các vùng xa.</p>
+                </div>
+                <div class="unit-actions">
+                  <!-- <button class="admin-btn admin-btn-sm"><i class="fas fa-cog"></i> Cài đặt</button> -->
+                  <div class="toggle-switch">
+                    <input type="checkbox" id="toggle-vnpost" class="toggle-input">
+                    <label for="toggle-vnpost" class="toggle-label"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="shipping-unit-card">
+                <div class="unit-logo">
+                  <img src="../../images/viettelpost.webp" alt="Viettel Post Logo">
+                </div>
+                <div class="unit-info">
+                  <h3>Viettel Post</h3>
+                  <div class="unit-status inactive">
+                    <span class="status-badge">Chưa kích hoạt</span>
+                  </div>
+                  <p>Dịch vụ chuyển phát của Viettel, độ phủ toàn quốc và dịch vụ đa dạng.</p>
+                </div>
+                <div class="unit-actions">
+                  <!-- <button class="admin-btn admin-btn-sm"><i class="fas fa-cog"></i> Cài đặt</button> -->
+                  <div class="toggle-switch">
+                    <input type="checkbox" id="toggle-viettel" class="toggle-input">
+                    <label for="toggle-viettel" class="toggle-label"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="connect-shipping-unit">
+              <button class="admin-btn admin-btn-outline">
+                <i class="fas fa-plus-circle"></i> Kết nối đơn vị vận chuyển khác
+              </button>
+            </div> -->
+          </div>
+
+          <!-- Phương thức vận chuyển Tab Content -->
+          <div class="tab-content" id="shipping-methods-content">
+            <div class="shipping-methods-container">
+              <div class="filter-bar">
+                <div class="filter-group">
+                  <label for="shipping-unit-filter">Đơn vị vận chuyển:</label>
+                  <select id="shipping-unit-filter" class="admin-form-control">
+                    <option value="">Tất cả đơn vị</option>
+                    <option value="ghn">Giao hàng nhanh (GHN)</option>
+                    <option value="ghtk">Giao hàng tiết kiệm (GHTK)</option>
+                    <option value="vnpost">Bưu điện Việt Nam (VNPost)</option>
+                    <option value="viettel">Viettel Post</option>
+                  </select>
+                </div>
+                <div class="filter-group">
+                  <label for="shipping-status-filter">Trạng thái:</label>
+                  <select id="shipping-status-filter" class="admin-form-control">
+                    <option value="">Tất cả trạng thái</option>
+                    <option value="active">Đang hoạt động</option>
+                    <option value="inactive">Chưa kích hoạt</option>
+                  </select>
+                </div>
+                <div class="filter-group search-box">
+                  <label for="shipping-method-search">Tìm kiếm:</label>
+                  <div class="search-input-container">
+                    <input type="text" id="shipping-method-search" placeholder="Tìm phương thức vận chuyển..." class="admin-form-control">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="shipping-methods-table-container">
+                <table class="admin-table shipping-methods-table">
+                  <thead>
+                    <tr>
+                      <th width="5%">
+                        <input type="checkbox" id="select-all-methods">
+                      </th>
+                      <th width="25%">Phương thức vận chuyển</th>
+                      <th width="15%">Đơn vị vận chuyển</th>
+                      <th width="15%">Thời gian giao</th>
+                      <th width="10%">Giá gốc</th>
+                      <th width="10%">Ưu đãi</th>
+                      <th width="10%">Trạng thái</th>
+                      <th width="10%">Thao tác</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="checkbox" class="method-checkbox"></td>
+                      <td>
+                        <div class="method-name">
+                          <img src="../../images/shipping/truck-icon.png" alt="Shipping Icon" class="method-icon">
+                          <span>Chuyển phát nhanh</span>
+                        </div>
+                      </td>
+                      <td>Giao hàng nhanh (GHN)</td>
+                      <td>1-2 ngày</td>
+                      <td>35.000₫</td>
+                      <td>
+                        <span class="discount-badge">-10%</span>
+                      </td>
+                      <td><span class="status-badge status-active">Hoạt động</span></td>
+                      <td>
+                        <div class="action-buttons">
+                          <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                          <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" class="method-checkbox"></td>
+                      <td>
+                        <div class="method-name">
+                          <img src="../../images/shipping/truck-icon.png" alt="Shipping Icon" class="method-icon">
+                          <span>Tiêu chuẩn</span>
+                        </div>
+                      </td>
+                      <td>Giao hàng nhanh (GHN)</td>
+                      <td>2-3 ngày</td>
+                      <td>25.000₫</td>
+                      <td>
+                        <span class="discount-badge">-15%</span>
+                      </td>
+                      <td><span class="status-badge status-active">Hoạt động</span></td>
+                      <td>
+                        <div class="action-buttons">
+                          <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                          <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" class="method-checkbox"></td>
+                      <td>
+                        <div class="method-name">
+                          <img src="../../images/shipping/truck-icon.png" alt="Shipping Icon" class="method-icon">
+                          <span>Tiết kiệm</span>
+                        </div>
+                      </td>
+                      <td>Giao hàng tiết kiệm (GHTK)</td>
+                      <td>3-5 ngày</td>
+                      <td>20.000₫</td>
+                      <td>
+                        <span class="discount-badge">-20%</span>
+                      </td>
+                      <td><span class="status-badge status-active">Hoạt động</span></td>
+                      <td>
+                        <div class="action-buttons">
+                          <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                          <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" class="method-checkbox"></td>
+                      <td>
+                        <div class="method-name">
+                          <img src="../../images/shipping/truck-icon.png" alt="Shipping Icon" class="method-icon">
+                          <span>Hỏa tốc</span>
+                        </div>
+                      </td>
+                      <td>Giao hàng nhanh (GHN)</td>
+                      <td>Trong ngày</td>
+                      <td>60.000₫</td>
+                      <td>
+                        <span class="discount-badge">-5%</span>
+                      </td>
+                      <td><span class="status-badge status-inactive">Tạm dừng</span></td>
+                      <td>
+                        <div class="action-buttons">
+                          <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                          <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="bulk-actions">
+                <div class="selected-count">0 phương thức được chọn</div>
+                <div class="bulk-action-buttons">
+                  <select class="admin-form-control">
+                    <option value="">Thao tác nhóm</option>
+                    <option value="activate">Kích hoạt</option>
+                    <option value="deactivate">Tạm dừng</option>
+                    <option value="delete">Xóa</option>
+                  </select>
+                  <button class="admin-btn">Áp dụng</button>
+                  <button class="admin-btn admin-btn-success"><i class="fas fa-plus"></i> Thêm phương thức</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Khu vực & Phí vận chuyển Tab Content -->
+          <div class="tab-content" id="shipping-zones-content">
+            <div class="shipping-zones-container">
+              <div class="zones-map-section">
+                <h3>Bản đồ khu vực vận chuyển</h3>
+                <div class="vietnam-map">
+                  <img src="../../images/shipping/vietnam-map.png" alt="Bản đồ Việt Nam" class="map-image">
+                  <!-- Các vùng trên bản đồ sẽ được xử lý bằng JavaScript -->
+                </div>
+                <div class="map-legend">
+                  <div class="legend-item">
+                    <span class="zone-color zone-1"></span>
+                    <span>Khu vực 1: Miền Bắc</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="zone-color zone-2"></span>
+                    <span>Khu vực 2: Miền Trung</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="zone-color zone-3"></span>
+                    <span>Khu vực 3: Miền Nam</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="zone-color zone-special"></span>
+                    <span>Khu vực đặc biệt</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="shipping-zones-list">
+                <div class="zone-item">
+                  <div class="zone-header">
+                    <h3><i class="fas fa-map-marker-alt"></i> Khu vực 1: Miền Bắc</h3>
+                    <div class="zone-actions">
+                      <button class="admin-btn admin-btn-sm"><i class="fas fa-edit"></i> Sửa</button>
+                      <button class="admin-btn admin-btn-sm admin-btn-danger"><i class="fas fa-times"></i> Xóa</button>
+                    </div>
+                  </div>
+                  <div class="zone-content">
+                    <div class="zone-areas">
+                      <h4>Danh sách tỉnh/thành:</h4>
+                      <div class="area-tags">
+                        <span class="area-tag">Hà Nội</span>
+                        <span class="area-tag">Hải Phòng</span>
+                        <span class="area-tag">Lào Cai</span>
+                        <span class="area-tag">Lạng Sơn</span>
+                        <span class="area-tag">Cao Bằng</span>
+                        <span class="area-tag">Bắc Kạn</span>
+                        <span class="area-tag">Hà Giang</span>
+                        <span class="area-tag">+15 tỉnh khác</span>
+                      </div>
+                    </div>
+                    <div class="zone-rates">
+                      <h4>Biểu phí vận chuyển:</h4>
+                      <table class="rate-table">
+                        <tr>
+                          <th>Trọng lượng</th>
+                          <th>Chuyển phát nhanh</th>
+                          <th>Tiêu chuẩn</th>
+                          <th>Tiết kiệm</th>
+                        </tr>
+                        <tr>
+                          <td>&lt; 500g</td>
+                          <td>30.000₫</td>
+                          <td>22.000₫</td>
+                          <td>18.000₫</td>
+                        </tr>
+                        <tr>
+                          <td>500g - 1kg</td>
+                          <td>35.000₫</td>
+                          <td>25.000₫</td>
+                          <td>20.000₫</td>
+                        </tr>
+                        <tr>
+                          <td>1kg - 2kg</td>
+                          <td>40.000₫</td>
+                          <td>30.000₫</td>
+                          <td>25.000₫</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Các khu vực khác tương tự -->
+                <div class="zone-item">
+                  <div class="zone-header">
+                    <h3><i class="fas fa-map-marker-alt"></i> Khu vực 2: Miền Trung</h3>
+                    <div class="zone-actions">
+                      <button class="admin-btn admin-btn-sm"><i class="fas fa-edit"></i> Sửa</button>
+                      <button class="admin-btn admin-btn-sm admin-btn-danger"><i class="fas fa-times"></i> Xóa</button>
+                    </div>
+                  </div>
+                  <div class="zone-content">
+                    <div class="zone-areas">
+                      <h4>Danh sách tỉnh/thành:</h4>
+                      <div class="area-tags">
+                        <span class="area-tag">Đà Nẵng</span>
+                        <span class="area-tag">Huế</span>
+                        <span class="area-tag">Quảng Nam</span>
+                        <span class="area-tag">Quảng Ngãi</span>
+                        <span class="area-tag">Bình Định</span>
+                        <span class="area-tag">Phú Yên</span>
+                        <span class="area-tag">+10 tỉnh khác</span>
+                      </div>
+                    </div>
+                    <div class="zone-rates">
+                      <h4>Biểu phí vận chuyển:</h4>
+                      <table class="rate-table">
+                        <tr>
+                          <th>Trọng lượng</th>
+                          <th>Chuyển phát nhanh</th>
+                          <th>Tiêu chuẩn</th>
+                          <th>Tiết kiệm</th>
+                        </tr>
+                        <tr>
+                          <td>&lt; 500g</td>
+                          <td>35.000₫</td>
+                          <td>25.000₫</td>
+                          <td>20.000₫</td>
+                        </tr>
+                        <tr>
+                          <td>500g - 1kg</td>
+                          <td>40.000₫</td>
+                          <td>30.000₫</td>
+                          <td>25.000₫</td>
+                        </tr>
+                        <tr>
+                          <td>1kg - 2kg</td>
+                          <td>45.000₫</td>
+                          <td>35.000₫</td>
+                          <td>30.000₫</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="add-zone-section">
+                <button class="admin-btn admin-btn-success"><i class="fas fa-plus"></i> Thêm khu vực vận chuyển mới</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Nội dung tab theo dõi vận chuyển và tab Mẫu in tương tự -->
+          <div class="tab-content" id="shipping-tracking-content">
+            <!-- Nội dung tab theo dõi vận chuyển -->
+          </div>
+          
+          <div class="tab-content" id="shipping-templates-content">
+            <!-- Nội dung tab Mẫu in -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/components/shipping.js"></script>
+
+    <script>
+      // Tab Navigation
+      const shippingTabs = document.querySelectorAll('.shipping-tab');
+      const tabContents = document.querySelectorAll('.tab-content');
+      
+      shippingTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          const tabId = this.getAttribute('data-tab');
+          
+          // Remove active class from all tabs and contents
+          shippingTabs.forEach(t => t.classList.remove('active'));
+          tabContents.forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked tab and corresponding content
+          this.classList.add('active');
+          document.getElementById(`${tabId}-content`).classList.add('active');
+        });
+      });
+      
+      // Toggle switches
+      const toggleInputs = document.querySelectorAll('.toggle-input');
+      
+      toggleInputs.forEach(input => {
+        input.addEventListener('change', function() {
+          const card = this.closest('.shipping-unit-card');
+          const statusElem = card.querySelector('.unit-status');
+          const statusBadge = card.querySelector('.status-badge');
+          
+          if (this.checked) {
+            statusElem.classList.remove('inactive');
+            statusElem.classList.add('active');
+            statusBadge.textContent = 'Đang hoạt động';
+          } else {
+            statusElem.classList.remove('active');
+            statusElem.classList.add('inactive');
+            statusBadge.textContent = 'Chưa kích hoạt';
+          }
+        });
+      });
+      
+      // Checkbox "Select All" functionality
+      const selectAllMethods = document.getElementById('select-all-methods');
+      const methodCheckboxes = document.querySelectorAll('.method-checkbox');
+      
+      selectAllMethods.addEventListener('change', function() {
+        methodCheckboxes.forEach(checkbox => {
+          checkbox.checked = this.checked;
+        });
+        
+        updateSelectedCount();
+      });
+      
+      methodCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          updateSelectedCount();
+          
+          // Check if all checkboxes are checked
+          const allChecked = [...methodCheckboxes].every(cb => cb.checked);
+          selectAllMethods.checked = allChecked;
+        });
+      });
+      
+      function updateSelectedCount() {
+        const selectedCount = [...methodCheckboxes].filter(cb => cb.checked).length;
+        document.querySelector('.selected-count').textContent = `${selectedCount} phương thức được chọn`;
+      }
+    </script>
+  </body>
+</html> 

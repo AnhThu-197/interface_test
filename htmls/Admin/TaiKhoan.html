@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cập Nhật Tài Khoản</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/Admin/admin-base.css" />
+    <link rel="stylesheet" href="../../css/Admin/taikhoan.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Quản trị viên</p>
+            </a>
+            <div class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Dashboard quản trị viên</a> &gt;
+        <span>Cập nhật tài khoản</span>
+      </div>
+
+      <div class="admin-container">
+        <div class="admin-sidebar">
+          <div class="sidebar-header">
+            <div class="admin-avatar">
+              <img src="../../images/admin.jpg" alt="Admin" />
+            </div>
+            <div class="admin-info">
+              <h3>Nguyễn Thư</h3>
+              <p>Hội Sinh Viên UTE</p>
+              <span class="admin-id">ID: ADMIN232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <div class="menu-section">
+              <h4>TỔNG QUAN</h4>
+              <ul>
+                <li>
+                  <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+                </li>
+                <li>
+                  <a href="ThongKe.html"><i class="fas fa-chart-bar"></i> Báo cáo - Thống kê</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ SẢN PHẨM</h4>
+              <ul>
+                <li>
+                  <a href="QuanLySanPham.html"><i class="fas fa-box"></i> Cập nhật sản phẩm</a>
+                </li>
+                <li>
+                  <a href="QuanLyNguyenLieu.html"><i class="fas fa-cubes"></i> Cập nhật nguyên liệu</a>
+                </li>
+                <li>
+                  <a href="QuanLyPhieuNhap.html"><i class="fas fa-clipboard-list"></i> Cập nhật phiếu nhập</a>
+                </li>
+                <li>
+                  <a href="QuanLyNhaCungCap.html"><i class="fas fa-truck"></i> Cập nhật nhà cung cấp</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ ĐƠN HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyDonHang.html"><i class="fas fa-shopping-cart"></i> Cập nhật trạng thái đơn hàng</a>
+                </li>
+                <li>
+                  <a href="VanChuyen.html"><i class="fas fa-shipping-fast"></i> Cài đặt vận chuyển</a>
+                </li>
+                <li>
+                  <a href="QuanLyDonLam.html"><i class="fas fa-tasks"></i> Cập nhật đơn làm</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ NHÂN VIÊN</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyNhanVien.html"><i class="fas fa-users"></i> Cập nhật nhân viên</a>
+                </li>
+                <li>
+                  <a href="DieuKienThamGia.html"><i class="fas fa-user-check"></i> Cập nhật điều kiện tham gia</a>
+                </li>
+                <li>
+                  <a href="QuyTrinh.html"><i class="fas fa-sitemap"></i> Cập nhật quy trình làm việc</a>
+                </li>
+                <li>
+                  <a href="QuyDinh.html"><i class="fas fa-book"></i> Cập nhật quy định làm việc</a>
+                </li>
+                <li>
+                  <a href="ThanhToan.html"><i class="fas fa-money-bill-wave"></i> Thanh toán tiền công</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>KHÁC</h4>
+              <ul>
+                <li>
+                  <a href="DoiTac.html"><i class="fas fa-handshake"></i> Quản lý đối tác</a>
+                </li>
+                <li>
+                  <a href="TaiChinh.html"><i class="fas fa-chart-line"></i> Theo dõi tài chính</a>
+                </li>
+                <li>
+                  <a href="DanhGia.html"><i class="fas fa-star"></i> Phản hồi đánh giá</a>
+                </li>
+                <li class="active">
+                  <a href="TaiKhoan.html"><i class="fas fa-user-cog"></i> Cập nhật tài khoản</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-content">
+          <div class="page-title">
+            <h1>Cập Nhật Tài Khoản</h1>
+            <div class="action-buttons">
+              <!-- <button class="admin-btn" id="add-account-btn"><i class="fas fa-plus"></i> Thêm tài khoản mới</button> -->
+              <!-- <button class="admin-btn admin-btn-secondary"><i class="fas fa-file-export"></i> Xuất danh sách</button> -->
+            </div>
+          </div>
+
+          <!-- Tabs navigation -->
+          <div class="account-tabs">
+            <button class="account-tab active" data-tab="all">Tất cả tài khoản</button>
+            <button class="account-tab" data-tab="admin">Quản trị viên</button>
+            <button class="account-tab" data-tab="staff">Nhân viên</button>
+            <button class="account-tab" data-tab="customer">Khách hàng</button>
+          </div>
+
+          <!-- Filters section -->
+          <!-- <div class="account-filters">
+            <div class="filter-group">
+              <label for="account-status">Trạng thái:</label>
+              <select id="account-status" class="admin-form-control">
+                <option value="">Tất cả trạng thái</option>
+                <option value="active">Đang hoạt động</option>
+                <option value="locked">Tạm khóa</option>
+                <option value="inactive">Không hoạt động</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="date-created">Thời gian tạo:</label>
+              <select id="date-created" class="admin-form-control">
+                <option value="">Tất cả thời gian</option>
+                <option value="today">Hôm nay</option>
+                <option value="week">Tuần này</option>
+                <option value="month">Tháng này</option>
+                <option value="year">Năm nay</option>
+              </select>
+            </div>
+            <div class="filter-group search-box">
+              <label for="account-search">Tìm kiếm:</label>
+              <div class="search-input-container">
+                <input type="text" id="account-search" placeholder="Tìm theo ID, tên, email..." class="admin-form-control">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <div class="filter-group filter-actions">
+              <button class="admin-btn admin-btn-sm apply-filter"><i class="fas fa-filter"></i> Lọc</button>
+              <button class="admin-btn admin-btn-secondary admin-btn-sm reset-filter"><i class="fas fa-sync-alt"></i> Đặt lại</button>
+            </div>
+          </div> -->
+
+          <!-- Accounts table -->
+          <div class="accounts-table-container">
+            <table class="admin-table accounts-table">
+              <thead>
+                <tr>
+                  <th width="5%">
+                    <input type="checkbox" id="select-all-accounts">
+                  </th>
+                  <th width="8%">ID</th>
+                  <th width="15%">Họ và tên</th>
+                  <th width="15%">Email</th>
+                  <th width="10%">Số điện thoại</th>
+                  <th width="10%">Vai trò</th>
+                  <th width="10%">Trạng thái</th>
+                  <th width="12%">Ngày tạo</th>
+                  <th width="15%">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" class="account-checkbox"></td>
+                  <td>UID001</td>
+                  <td>Nguyễn Văn A</td>
+                  <td>nguyenvana@email.com</td>
+                  <td>0901234567</td>
+                  <td><span class="role-badge role-admin">Quản trị viên</span></td>
+                  <td><span class="status-badge status-active">Hoạt động</span></td>
+                  <td>15/03/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <!-- <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button> -->
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn lock-btn" title="Khóa tài khoản"><i class="fas fa-lock"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="account-checkbox"></td>
+                  <td>UID002</td>
+                  <td>Trần Thị B</td>
+                  <td>tranthib@email.com</td>
+                  <td>0912345678</td>
+                  <td><span class="role-badge role-staff">Nhân viên</span></td>
+                  <td><span class="status-badge status-active">Hoạt động</span></td>
+                  <td>20/03/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <!-- <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button> -->
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn lock-btn" title="Khóa tài khoản"><i class="fas fa-lock"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="account-checkbox"></td>
+                  <td>UID003</td>
+                  <td>Lê Văn C</td>
+                  <td>levanc@email.com</td>
+                  <td>0987654321</td>
+                  <td><span class="role-badge role-artisan">Nghệ nhân</span></td>
+                  <td><span class="status-badge status-active">Hoạt động</span></td>
+                  <td>25/03/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <!-- <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button> -->
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn lock-btn" title="Khóa tài khoản"><i class="fas fa-lock"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="account-checkbox"></td>
+                  <td>UID004</td>
+                  <td>Phạm Thị D</td>
+                  <td>phamthid@email.com</td>
+                  <td>0923456789</td>
+                  <td><span class="role-badge role-customer">Khách hàng</span></td>
+                  <td><span class="status-badge status-locked">Tạm khóa</span></td>
+                  <td>01/04/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <!-- <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button> -->
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn unlock-btn" title="Mở khóa tài khoản"><i class="fas fa-unlock"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="account-checkbox"></td>
+                  <td>UID005</td>
+                  <td>Hoàng Văn E</td>
+                  <td>hoangvane@email.com</td>
+                  <td>0934567890</td>
+                  <td><span class="role-badge role-customer">Khách hàng</span></td>
+                  <td><span class="status-badge status-inactive">Không hoạt động</span></td>
+                  <td>10/04/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <!-- <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button> -->
+                      <button class="action-btn edit-btn" title="Sửa"><i class="fas fa-edit"></i></button>
+                      <!-- <button class="action-btn activate-btn" title="Kích hoạt"><i class="fas fa-check-circle"></i></button> -->
+                      <button class="action-btn delete-btn" title="Xóa"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Bulk actions -->
+          <!-- <div class="bulk-actions">
+            <div class="selected-count">0 tài khoản được chọn</div>
+            <div class="bulk-action-buttons">
+              <select class="admin-form-control bulk-action-select">
+                <option value="">Thao tác nhóm</option>
+                <option value="activate">Kích hoạt</option>
+                <option value="lock">Khóa tài khoản</option>
+                <option value="unlock">Mở khóa tài khoản</option>
+                <option value="delete">Xóa</option>
+              </select>
+              <button class="admin-btn apply-bulk-action">Áp dụng</button>
+            </div>
+          </div> -->
+
+          <!-- Pagination -->
+          <div class="pagination-container">
+            <!-- <div class="items-per-page">
+              <span>Hiển thị</span>
+              <select id="items-per-page-select">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+              </select>
+              <span>mục mỗi trang</span>
+            </div> -->
+            <div class="pagination">
+              <button class="pagination-btn prev" disabled><i class="fas fa-chevron-left"></i></button>
+              <button class="pagination-btn page active">1</button>
+              <button class="pagination-btn page">2</button>
+              <button class="pagination-btn page">3</button>
+              <span class="pagination-ellipsis">...</span>
+              <button class="pagination-btn page">10</button>
+              <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal for adding or editing account -->
+    <div class="admin-modal" id="account-modal">
+      <div class="admin-modal-content">
+        <div class="admin-modal-header">
+          <h3 class="admin-modal-title">Thêm tài khoản mới</h3>
+          <button class="admin-modal-close">&times;</button>
+        </div>
+        <div class="admin-modal-body">
+          <form id="account-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="account-id">ID tài khoản:</label>
+                <input type="text" id="account-id" class="admin-form-control" placeholder="Tự động tạo nếu để trống">
+              </div>
+              <div class="form-group">
+                <label for="account-role">Vai trò: <span class="required">*</span></label>
+                <select id="account-role" class="admin-form-control" required>
+                  <option value="">-- Chọn vai trò --</option>
+                  <option value="admin">Quản trị viên</option>
+                  <option value="staff">Nhân viên</option>
+                  <option value="artisan">Nghệ nhân</option>
+                  <option value="customer">Khách hàng</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="account-name">Họ và tên: <span class="required">*</span></label>
+                <input type="text" id="account-name" class="admin-form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="account-email">Email: <span class="required">*</span></label>
+                <input type="email" id="account-email" class="admin-form-control" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="account-phone">Số điện thoại: <span class="required">*</span></label>
+                <input type="tel" id="account-phone" class="admin-form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="account-dob">Ngày sinh:</label>
+                <input type="date" id="account-dob" class="admin-form-control">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="account-address">Địa chỉ:</label>
+              <textarea id="account-address" class="admin-form-control" rows="2"></textarea>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="account-password">Mật khẩu: <span class="required">*</span></label>
+                <div class="password-input-container">
+                  <input type="password" id="account-password" class="admin-form-control" required>
+                  <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="account-confirm-password">Xác nhận mật khẩu: <span class="required">*</span></label>
+                <div class="password-input-container">
+                  <input type="password" id="account-confirm-password" class="admin-form-control" required>
+                  <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <!-- <div class="form-group">
+                <label for="account-image">Ảnh đại diện:</label>
+                <div class="file-upload-container">
+                  <button type="button" class="admin-btn admin-btn-secondary file-upload-btn">
+                    <i class="fas fa-upload"></i> Tải lên ảnh
+                  </button>
+                  <input type="file" id="account-image" class="file-upload-input" accept="image/*">
+                  <div class="upload-info">Hỗ trợ: JPG, PNG, WEBP. Tối đa 2MB.</div>
+                </div>
+              </div> -->
+              <div class="form-group">
+                <label for="account-status-select">Trạng thái:</label>
+                <select id="account-status-select" class="admin-form-control">
+                  <option value="active">Hoạt động</option>
+                  <option value="locked">Tạm khóa</option>
+                  <option value="inactive">Không hoạt động</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-container">
+                <input type="checkbox" id="send-notification">
+                <span class="checkmark"></span>
+                Gửi email thông báo tài khoản đến người dùng
+              </label>
+            </div>
+            
+            <div class="form-group">
+              <label for="account-notes">Ghi chú bổ sung:</label>
+              <textarea id="account-notes" class="admin-form-control" rows="2"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="admin-modal-footer">
+          <button class="admin-btn admin-btn-secondary" id="cancel-btn">Hủy</button>
+          <button class="admin-btn" id="save-account-btn">Lưu tài khoản</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="item item-1">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <img src="../../images/logohandmade.jpg" alt="" />
+          <br />
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="item">
+        <h4>VỀ CHÚNG TÔI</h4>
+        <ul>
+          <li><a href="#">Câu chuyện thương hiệu</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách và quy định chung</a></li>
+          <li><a href="#">Chính sách giao nhận thanh toán</a></li>
+          <li><a href="#">Chính sách đổi trả sản phẩm</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>MY SHOP</h4>
+        <ul>
+          <li><a href="#">Quyền lợi thành viên</a></li>
+          <li><a href="#">Thông tin thành viên</a></li>
+          <li><a href="#">Theo dõi đơn hàng</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script src="../../js/components/account.js"></script>
+
+    <script>
+      // Tab Navigation
+      const accountTabs = document.querySelectorAll('.account-tab');
+      
+      accountTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Remove active class from all tabs
+          accountTabs.forEach(t => t.classList.remove('active'));
+          
+          // Add active class to clicked tab
+          this.classList.add('active');
+          
+          // Filter table based on the selected tab
+          const tabValue = this.getAttribute('data-tab');
+          filterAccounts(tabValue);
+        });
+      });
+      
+      function filterAccounts(tabValue) {
+        const rows = document.querySelectorAll('.accounts-table tbody tr');
+        
+        rows.forEach(row => {
+          const roleCell = row.querySelector('td:nth-child(6) .role-badge');
+          
+          if (tabValue === 'all') {
+            row.style.display = '';
+          } else if (tabValue === 'admin' && roleCell.classList.contains('role-admin')) {
+            row.style.display = '';
+          } else if (tabValue === 'staff' && roleCell.classList.contains('role-staff')) {
+            row.style.display = '';
+          } else if (tabValue === 'artisan' && roleCell.classList.contains('role-artisan')) {
+            row.style.display = '';
+          } else if (tabValue === 'customer' && roleCell.classList.contains('role-customer')) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      }
+      
+      // Checkbox "Select All" functionality
+      const selectAllAccounts = document.getElementById('select-all-accounts');
+      const accountCheckboxes = document.querySelectorAll('.account-checkbox');
+      
+      selectAllAccounts.addEventListener('change', function() {
+        accountCheckboxes.forEach(checkbox => {
+          checkbox.checked = this.checked;
+        });
+        
+        updateSelectedCount();
+      });
+      
+      accountCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+          updateSelectedCount();
+          
+          // Check if all checkboxes are checked
+          const allChecked = [...accountCheckboxes].every(cb => cb.checked);
+          selectAllAccounts.checked = allChecked;
+        });
+      });
+      
+      function updateSelectedCount() {
+        const selectedCount = [...accountCheckboxes].filter(cb => cb.checked).length;
+        document.querySelector('.selected-count').textContent = `${selectedCount} tài khoản được chọn`;
+      }
+      
+      // Modal Functionality
+      const modal = document.getElementById('account-modal');
+      const addAccountBtn = document.getElementById('add-account-btn');
+      const cancelBtn = document.getElementById('cancel-btn');
+      const closeModalBtn = document.querySelector('.admin-modal-close');
+      const editBtns = document.querySelectorAll('.edit-btn');
+      
+      // Open modal when "Add Account" button is clicked
+      addAccountBtn.addEventListener('click', function() {
+        // Reset form
+        document.getElementById('account-form').reset();
+        document.querySelector('.admin-modal-title').textContent = 'Thêm tài khoản mới';
+        
+        // Ensure all fields are editable for adding new account
+        document.getElementById('account-id').readOnly = false;
+        document.getElementById('account-role').disabled = false;
+        document.getElementById('account-status-select').disabled = false;
+        document.getElementById('account-address').readOnly = false;
+        
+        document.getElementById('account-name').readOnly = false;
+        document.getElementById('account-email').readOnly = false;
+        document.getElementById('account-phone').readOnly = false;
+        document.getElementById('account-dob').readOnly = false;
+        
+        // Remove any read-only styling
+        document.getElementById('account-name').classList.remove('readonly-field');
+        document.getElementById('account-email').classList.remove('readonly-field');
+        document.getElementById('account-phone').classList.remove('readonly-field');
+        document.getElementById('account-dob').classList.remove('readonly-field');
+        
+        // Show password fields for new account
+        document.getElementById('account-password').parentNode.parentNode.style.display = '';
+        document.getElementById('account-confirm-password').parentNode.parentNode.style.display = '';
+        
+        // Show modal
+        modal.style.display = 'block';
+      });
+      
+      // Close modal when Cancel button is clicked
+      cancelBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+      
+      // Close modal when X button is clicked
+      closeModalBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+      
+      // Close modal when clicking outside modal content
+      window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+      
+      // Edit button functionality
+      editBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Change modal title
+          document.querySelector('.admin-modal-title').textContent = 'Chỉnh sửa tài khoản';
+          
+          // Get the row data
+          const row = this.closest('tr');
+          const id = row.cells[1].textContent;
+          const name = row.cells[2].textContent;
+          const email = row.cells[3].textContent;
+          const phone = row.cells[4].textContent;
+          
+          // Get role
+          const roleBadge = row.querySelector('.role-badge');
+          let role = '';
+          if (roleBadge.classList.contains('role-admin')) {
+            role = 'admin';
+          } else if (roleBadge.classList.contains('role-staff')) {
+            role = 'staff';
+          } else if (roleBadge.classList.contains('role-artisan')) {
+            role = 'artisan';
+          } else if (roleBadge.classList.contains('role-customer')) {
+            role = 'customer';
+          }
+          
+          // Get status
+          const statusBadge = row.querySelector('.status-badge');
+          let status = 'active';
+          if (statusBadge.classList.contains('status-locked')) {
+            status = 'locked';
+          } else if (statusBadge.classList.contains('status-inactive')) {
+            status = 'inactive';
+          }
+          
+          // Populate form with data
+          document.getElementById('account-id').value = id;
+          document.getElementById('account-name').value = name;
+          document.getElementById('account-email').value = email;
+          document.getElementById('account-phone').value = phone;
+          document.getElementById('account-role').value = role;
+          document.getElementById('account-status-select').value = status;
+          
+          // Hide password fields for edit mode
+          document.getElementById('account-password').parentNode.parentNode.style.display = 'none';
+          document.getElementById('account-confirm-password').parentNode.parentNode.style.display = 'none';
+          
+          // Make only specific fields editable in edit mode
+          // Allow editing: ID, role, status, address
+          // Make read-only: name, email, phone, DOB
+          document.getElementById('account-id').readOnly = false;
+          document.getElementById('account-role').disabled = false;
+          document.getElementById('account-status-select').disabled = false;
+          document.getElementById('account-address').readOnly = false;
+          
+          // Make other fields read-only
+          document.getElementById('account-name').readOnly = true;
+          document.getElementById('account-email').readOnly = true;
+          document.getElementById('account-phone').readOnly = true;
+          document.getElementById('account-dob').readOnly = true;
+          
+          // Apply read-only styling
+          document.getElementById('account-name').classList.add('readonly-field');
+          document.getElementById('account-email').classList.add('readonly-field');
+          document.getElementById('account-phone').classList.add('readonly-field');
+          document.getElementById('account-dob').classList.add('readonly-field');
+          
+          // Show modal
+          modal.style.display = 'block';
+        });
+      });
+      
+      // Toggle password visibility
+      const togglePasswordBtns = document.querySelectorAll('.toggle-password');
+      
+      togglePasswordBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const passwordInput = this.previousElementSibling;
+          
+          // Toggle type attribute
+          if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            this.innerHTML = '<i class="fas fa-eye-slash"></i>';
+          } else {
+            passwordInput.type = 'password';
+            this.innerHTML = '<i class="fas fa-eye"></i>';
+          }
+        });
+      });
+      
+      // File upload styling
+      const fileInput = document.getElementById('account-image');
+      const fileButton = document.querySelector('.file-upload-btn');
+      
+      fileButton.addEventListener('click', function() {
+        fileInput.click();
+      });
+      
+      fileInput.addEventListener('change', function() {
+        if (this.files.length > 0) {
+          const fileName = this.files[0].name;
+          document.querySelector('.upload-info').textContent = `Đã chọn: ${fileName}`;
+        }
+      });
+    </script>
+  </body>
+</html> 

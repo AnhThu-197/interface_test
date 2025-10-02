@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Toán Tiền Công</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/Admin/admin-base.css" />
+    <link rel="stylesheet" href="../../css/Admin/thanhtoan.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Quản trị viên</p>
+            </a>
+            <div class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Tổng quan</a> &gt;
+        <span>Thanh toán tiền công</span>
+      </div>
+
+      <div class="admin-container">
+        <div class="admin-sidebar">
+          <div class="sidebar-header">
+            <div class="admin-avatar">
+              <img src="../../images/admin.jpg" alt="Admin" />
+            </div>
+            <div class="admin-info">
+              <h3>Nguyễn Thư</h3>
+              <p>Hội Sinh Viên UTE</p>
+              <span class="admin-id">ID: ADMIN232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <div class="menu-section">
+              <h4>TỔNG QUAN</h4>
+              <ul>
+                <li>
+                  <a href="Dashboard.html"><i class="fas fa-home"></i> Tổng quan</a>
+                </li>
+                <li>
+                  <a href="ThongKe.html"><i class="fas fa-chart-bar"></i> Báo cáo - Thống kê</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ SẢN PHẨM</h4>
+              <ul>
+                <li>
+                  <a href="QuanLySanPham.html"><i class="fas fa-box"></i> Cập nhật sản phẩm</a>
+                </li>
+                <li>
+                  <a href="QuanLyNguyenLieu.html"><i class="fas fa-cubes"></i> Cập nhật nguyên liệu</a>
+                </li>
+                <li>
+                  <a href="QuanLyPhieuNhap.html"><i class="fas fa-clipboard-list"></i> Cập nhật phiếu nhập</a>
+                </li>
+                <li>
+                  <a href="QuanLyNhaCungCap.html"><i class="fas fa-truck"></i> Cập nhật nhà cung cấp</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ ĐƠN HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyDonHang.html"><i class="fas fa-shopping-cart"></i> Cập nhật trạng thái đơn hàng</a>
+                </li>
+                <li>
+                  <a href="VanChuyen.html"><i class="fas fa-shipping-fast"></i> Cài đặt vận chuyển</a>
+                </li>
+                <li>
+                  <a href="QuanLyDonLam.html"><i class="fas fa-tasks"></i> Cập nhật đơn làm</a>
+                </li>
+                <li>
+                  <a href="QuanLyDoiTra.html"><i class="fas fa-exchange-alt"></i> Quản lý đơn đổi trả</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ NHÂN VIÊN</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyNhanVien.html"><i class="fas fa-users"></i> Cập nhật nhân viên</a>
+                </li>
+                <li>
+                  <a href="DieuKienThamGia.html"><i class="fas fa-user-check"></i> Cập nhật điều kiện tham gia</a>
+                </li>
+                <li>
+                  <a href="QuyTrinh.html"><i class="fas fa-sitemap"></i> Cập nhật quy trình làm việc</a>
+                </li>
+                <li>
+                  <a href="QuyDinh.html"><i class="fas fa-book"></i> Cập nhật quy định làm việc</a>
+                </li>
+                <li class="active">
+                  <a href="ThanhToan.html"><i class="fas fa-money-bill-wave"></i> Thanh toán tiền công</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>KHÁC</h4>
+              <ul>
+                <li>
+                  <a href="DoiTac.html"><i class="fas fa-handshake"></i> Quản lý đối tác</a>
+                </li>
+                <li>
+                  <a href="TaiChinh.html"><i class="fas fa-chart-line"></i> Theo dõi tài chính</a>
+                </li>
+                <li>
+                  <a href="DanhGia.html"><i class="fas fa-star"></i> Phản hồi đánh giá</a>
+                </li>
+                <li>
+                  <a href="TaiKhoan.html"><i class="fas fa-user-cog"></i> Cập nhật tài khoản</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-content">
+          <div class="page-title">
+            <h1>Thanh Toán Tiền Công</h1>
+            <div class="action-buttons">
+              <!-- <button class="admin-btn" id="create-payment-btn"><i class="fas fa-plus"></i> Tạo đợt thanh toán mới</button> -->
+              <!-- <button class="admin-btn admin-btn-secondary"><i class="fas fa-file-export"></i> Xuất báo cáo</button> -->
+            </div>
+          </div>
+
+          <!-- Payment period selector -->
+          <div class="payment-period">
+            <div class="period-selector">
+              <label for="payment-month">Kỳ thanh toán:</label>
+              <div class="date-selector">
+                <select id="payment-month" class="admin-form-control">
+                  <option value="6">Tháng 6/2025</option>
+                  <option value="5">Tháng 5/2025</option>
+                  <option value="4">Tháng 4/2025</option>
+                  <option value="3">Tháng 3/2025</option>
+                </select>
+                <button class="admin-btn admin-btn-sm view-period-btn">Xem</button>
+              </div>
+            </div>
+            <div class="filter-group">
+              <label for="payment-status">Trạng thái:</label>
+              <select id="payment-status" class="admin-form-control">
+                <option value="">Tất cả trạng thái</option>
+                <option value="pending">Chờ thanh toán</option>
+                <option value="processing">Đang xử lý</option>
+                <option value="completed">Đã thanh toán</option>
+                <option value="rejected">Đã hủy</option>
+              </select>
+            </div>
+            <div class="period-status">
+              <div class="status-item">
+                <span class="label">Trạng thái:</span>
+                <span class="value status-badge status-processing">Đang xử lý</span>
+              </div>
+              <div class="status-item">
+                <span class="label">Tiến độ:</span>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 65%;"></div>
+                </div>
+                <span class="progress-text">65%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Statistics -->
+          <div class="payment-stats">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-users"></i></div>
+              <div class="stat-info">
+                <h3>Tổng số người</h3>
+                <p class="stat-value">24</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+              <div class="stat-info">
+                <h3>Đã thanh toán</h3>
+                <p class="stat-value">15</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-clock"></i></div>
+              <div class="stat-info">
+                <h3>Chờ thanh toán</h3>
+                <p class="stat-value">9</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon money-icon"><i class="fas fa-money-bill-wave"></i></div>
+              <div class="stat-info">
+                <h3>Tổng tiền công</h3>
+                <p class="stat-value">32,450,000đ</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filters section -->
+          <div class="payment-filters">
+            <!-- <div class="filter-group">
+              <label for="payment-type">Loại nhân viên:</label>
+              <select id="payment-type" class="admin-form-control">
+                <option value="">Tất cả</option>
+                <option value="artisan">Nghệ nhân</option>
+                <option value="staff">Nhân viên</option>
+                <option value="temp">Thời vụ</option>
+                <option value="collaborator">Cộng tác viên</option>
+              </select>
+            </div> -->
+            <!-- <div class="filter-group search-box">
+              <label for="payment-search">Tìm kiếm:</label>
+              <div class="search-input-container">
+                <input type="text" id="payment-search" placeholder="Tìm theo tên, mã nhân viên..." class="admin-form-control">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+              </div>
+            </div> -->
+            <!-- <div class="filter-group filter-actions">
+              <button class="admin-btn admin-btn-sm apply-filter"><i class="fas fa-filter"></i> Lọc</button>
+              <button class="admin-btn admin-btn-secondary admin-btn-sm reset-filter"><i class="fas fa-sync-alt"></i> Đặt lại</button>
+            </div> -->
+          </div>
+
+          <!-- Payment table -->
+          <div class="payments-table-container">
+            <table class="admin-table payments-table">
+              <thead>
+                <tr>
+                  <th width="5%">
+                    <input type="checkbox" id="select-all-payments">
+                  </th>
+                  <th width="7%">Mã NV</th>
+                  <th width="15%">Họ và tên</th>
+                  <th width="10%">Sản phẩm</th>
+                  <th width="10%">Số giờ</th>
+                  <th width="12%">Tổng thành tiền</th>
+                  <th width="10%">Trạng thái</th>
+                  <th width="16%">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" class="payment-checkbox"></td>
+                  <td>NTN001</td>
+                  <td>Nguyễn Thị Nghệ</td>
+                  <td>12</td>
+                  <td>85</td>
+                  <td>2,550,000đ</td>
+                  <td><span class="status-badge status-completed">Đã thanh toán</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Chỉnh sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn receipt-btn" title="Biên lai"><i class="fas fa-file-invoice"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In phiếu"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="payment-checkbox"></td>
+                  <td>NTM002</td>
+                  <td>Nguyễn Thành Minh</td>
+                  <td>9</td>
+                  <td>78</td>
+                  <td>2,100,000đ</td>
+                  <td><span class="status-badge status-completed">Đã thanh toán</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Chỉnh sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn receipt-btn" title="Biên lai"><i class="fas fa-file-invoice"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In phiếu"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="payment-checkbox"></td>
+                  <td>LVT003</td>
+                  <td>Lê Văn Thợ</td>
+                  <td>0</td>
+                  <td>160</td>
+                  <td>4,800,000đ</td>
+                  <td><span class="status-badge status-completed">Đã thanh toán</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Chỉnh sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn receipt-btn" title="Biên lai"><i class="fas fa-file-invoice"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In phiếu"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="payment-checkbox"></td>
+                  <td>TTA004</td>
+                  <td>Trần Thị An</td>
+                  <td>14</td>
+                  <td>92</td>
+                  <td>2,950,000đ</td>
+                  <td><span class="status-badge status-pending">Chờ thanh toán</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Chỉnh sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn pay-btn" title="Thanh toán"><i class="fas fa-credit-card"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In phiếu"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="payment-checkbox"></td>
+                  <td>PVB005</td>
+                  <td>Phạm Văn Bàn</td>
+                  <td>0</td>
+                  <td>160</td>
+                  <td>4,800,000đ</td>
+                  <td><span class="status-badge status-pending">Chờ thanh toán</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Chỉnh sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn pay-btn" title="Thanh toán"><i class="fas fa-credit-card"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In phiếu"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="payment-checkbox"></td>
+                  <td>NVT006</td>
+                  <td>Nguyễn Văn Tâm</td>
+                  <td>7</td>
+                  <td>42</td>
+                  <td>1,250,000đ</td>
+                  <td><span class="status-badge status-processing">Đang xử lý</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Chỉnh sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn approve-btn" title="Duyệt"><i class="fas fa-check"></i></button>
+                      <!-- <button class="action-btn reject-btn" title="Từ chối"><i class="fas fa-times"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="payment-checkbox"></td>
+                  <td>TTH007</td>
+                  <td>Trần Thị Hoa</td>
+                  <td>10</td>
+                  <td>75</td>
+                  <td>2,200,000đ</td>
+                  <td><span class="status-badge status-processing">Đang xử lý</span></td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Chỉnh sửa"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn approve-btn" title="Duyệt"><i class="fas fa-check"></i></button>
+                      <!-- <button class="action-btn reject-btn" title="Từ chối"><i class="fas fa-times"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="6" class="text-right"><strong>Tổng cộng:</strong></td>
+                  <td><strong>20,650,000đ</strong></td>
+                  <td colspan="2"></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <!-- Bulk actions -->
+          <!-- <div class="bulk-actions">
+            <div class="selected-count">0 người được chọn</div>
+            <div class="bulk-action-buttons">
+              <select class="admin-form-control bulk-action-select">
+                <option value="">Thao tác nhóm</option>
+                <option value="pay">Thanh toán</option>
+                <option value="approve">Duyệt</option>
+                <option value="reject">Từ chối</option>
+                <option value="print">In phiếu</option>
+                <option value="export">Xuất Excel</option>
+              </select>
+              <button class="admin-btn apply-bulk-action">Áp dụng</button>
+            </div>
+          </div> -->
+
+          <!-- Pagination -->
+          <div class="pagination-container">
+            <!-- <div class="pagination-info">Hiển thị 1-7 của 24 người</div> -->
+            <div class="pagination">
+              <!-- <button class="pagination-btn" disabled><i class="fas fa-angle-double-left"></i></button> -->
+              <button class="pagination-btn" disabled><i class="fas fa-angle-left"></i></button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">...</button>
+              <button class="pagination-btn">10</button>
+              <button class="pagination-btn"><i class="fas fa-angle-right"></i></button>
+              <!-- <button class="pagination-btn"><i class="fas fa-angle-double-right"></i></button> -->
+            </div>
+            <!-- <div class="pagination-options">
+              <label for="rows-per-page">Hiển thị:</label>
+              <select id="rows-per-page" class="admin-form-control">
+                <option value="7">7</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+              </select>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- View Payment Details Modal -->
+    <div class="modal" id="view-payment-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Chi Tiết Thanh Toán</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="payment-detail-header">
+            <div class="employee-info">
+              <h3>Nguyễn Thị Nghệ - NTN001</h3>
+              <p>Nghệ nhân | Chuyên môn: Thêu thủ công</p>
+              <span class="status-badge status-completed">Đã thanh toán</span>
+            </div>
+            <div class="payment-info">
+              <p><strong>Kỳ thanh toán:</strong> Tháng 6/2023</p>
+              <p><strong>Ngày thanh toán:</strong> 05/07/2023</p>
+              <p><strong>Phương thức:</strong> Chuyển khoản ngân hàng</p>
+            </div>
+          </div>
+
+          <div class="payment-detail-content">
+            <div class="payment-section">
+              <h4>Thông tin sản phẩm làm việc</h4>
+              <table class="detail-table">
+                <thead>
+                  <tr>
+                    <th width="5%">STT</th>
+                    <th width="10%">Mã SP</th>
+                    <th width="25%">Tên sản phẩm</th>
+                    <th width="10%">Số lượng</th>
+                    <th width="15%">Đơn giá (VNĐ)</th>
+                    <th width="15%">Thành tiền (VNĐ)</th>
+                    <th width="20%">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>SP001</td>
+                    <td>Túi thêu hoa sen</td>
+                    <td>5</td>
+                    <td>150,000</td>
+                    <td>750,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>SP005</td>
+                    <td>Ví cầm tay thêu tay</td>
+                    <td>3</td>
+                    <td>200,000</td>
+                    <td>600,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>SP012</td>
+                    <td>Khăn thêu hoa cúc</td>
+                    <td>4</td>
+                    <td>100,000</td>
+                    <td>400,000</td>
+                    <td>Hoàn thành sớm 2 ngày</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="5" class="text-right"><strong>Tổng tiền sản phẩm:</strong></td>
+                    <td><strong>1,750,000</strong></td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="payment-section">
+              <h4>Thông tin thời gian làm việc</h4>
+              <table class="detail-table">
+                <thead>
+                  <tr>
+                    <th width="20%">Loại thời gian</th>
+                    <th width="20%">Số giờ</th>
+                    <th width="20%">Đơn giá (VNĐ/giờ)</th>
+                    <th width="20%">Thành tiền (VNĐ)</th>
+                    <th width="20%">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Giờ làm tiêu chuẩn</td>
+                    <td>75</td>
+                    <td>30,000</td>
+                    <td>2,250,000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Giờ làm ngoài giờ</td>
+                    <td>10</td>
+                    <td>45,000</td>
+                    <td>450,000</td>
+                    <td>Làm thêm ngày Chủ nhật</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3" class="text-right"><strong>Tổng tiền công theo giờ:</strong></td>
+                    <td><strong>2,700,000</strong></td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="payment-section bonus-section">
+              <h4>Thưởng và khấu trừ</h4>
+              <table class="detail-table">
+                <thead>
+                  <tr>
+                    <th width="40%">Mô tả</th>
+                    <th width="30%">Số tiền (VNĐ)</th>
+                    <th width="30%">Ghi chú</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bonus-row">
+                    <td>Thưởng chất lượng sản phẩm xuất sắc</td>
+                    <td>+200,000</td>
+                    <td>Đánh giá 5 sao từ khách hàng</td>
+                  </tr>
+                  <tr class="bonus-row">
+                    <td>Thưởng hoàn thành sớm thời hạn</td>
+                    <td>+100,000</td>
+                    <td>Hoàn thành trước 2 ngày</td>
+                  </tr>
+                  <tr class="deduction-row">
+                    <td>Ứng trước</td>
+                    <td>-500,000</td>
+                    <td>Ứng ngày 15/06/2023</td>
+                  </tr>
+                  <tr class="deduction-row">
+                    <td>Khấu trừ bảo hiểm</td>
+                    <td>-200,000</td>
+                    <td>BHXH, BHYT</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="text-right"><strong>Tổng cộng thưởng/phạt:</strong></td>
+                    <td><strong>-400,000</strong></td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="payment-summary">
+              <div class="summary-row">
+                <span class="summary-label">Tổng tiền sản phẩm:</span>
+                <span class="summary-value">1,750,000đ</span>
+              </div>
+              <div class="summary-row">
+                <span class="summary-label">Tổng tiền công theo giờ:</span>
+                <span class="summary-value">2,700,000đ</span>
+              </div>
+              <div class="summary-row">
+                <span class="summary-label">Thưởng/Phạt:</span>
+                <span class="summary-value">-400,000đ</span>
+              </div>
+              <div class="summary-row subtotal">
+                <span class="summary-label">Tổng cộng trước thuế:</span>
+                <span class="summary-value">4,050,000đ</span>
+              </div>
+              <div class="summary-row">
+                <span class="summary-label">Thuế thu nhập cá nhân (5%):</span>
+                <span class="summary-value">-202,500đ</span>
+              </div>
+              <div class="summary-row total">
+                <span class="summary-label">Thực nhận:</span>
+                <span class="summary-value">3,847,500đ</span>
+              </div>
+            </div>
+
+            <div class="payment-notes">
+              <h4>Ghi chú thanh toán</h4>
+              <p>Chuyển khoản qua ngân hàng Vietcombank, số tài khoản: 1234567890, chủ tài khoản: Nguyễn Thị Nghệ.</p>
+              <p>Đã chuyển khoản vào ngày 05/07/2023, mã giao dịch: VCB12345678.</p>
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <div class="action-buttons-left">
+              <button class="admin-btn admin-btn-outline history-btn"><i class="fas fa-history"></i> Lịch sử thanh toán</button>
+            </div>
+            <div class="action-buttons-right">
+              <button class="admin-btn admin-btn-secondary close-modal-btn">Đóng</button>
+              <button class="admin-btn admin-btn-outline edit-payment-btn"><i class="fas fa-edit"></i> Chỉnh sửa</button>
+              <button class="admin-btn admin-btn-outline print-payment-btn"><i class="fas fa-print"></i> In phiếu</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script>
+      // JavaScript functionality would be implemented here
+    </script>
+  </body>
+</html> 

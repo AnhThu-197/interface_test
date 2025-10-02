@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hệ thống cửa hàng</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../css/hethongcuahang.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head1">
+        <ul class="head1top">
+          <li class="head1top_list head1top_list1">Nhập ANHTHU để giảm 100k</li>
+          <li class="head1top_list">Mua online nhận tại cửa hàng gần nhất</li>
+          <li class="head1top_list">Freeship toàn quốc hóa đơn trên 299k</li>
+        </ul>
+      </div>
+      <div class="head2">
+        <div>
+          <a href="../trangchu.html">
+            <img class="logo-trangchu" src="../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="breadcrumb">
+      <a href="../trangchu.html">Trang chủ</a> >
+      <span>Hệ thống cửa hàng</span>
+    </div>
+
+    <div class="store-system-container">
+      <h1>Tìm Cửa Hàng Gần Bạn</h1>
+
+      <div class="store-filters">
+        <div class="filter-group">
+          <label for="province">Tỉnh/Thành phố</label>
+          <select id="province">
+            <option value="">Chọn tỉnh/thành phố</option>
+            <option value="hanoi">Hà Nội</option>
+            <option value="hcm">Hồ Chí Minh</option>
+            <option value="danang">Đà Nẵng</option>
+            <option value="haiphong">Hải Phòng</option>
+            <option value="cantho">Cần Thơ</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="district">Quận/huyện</label>
+          <select id="district">
+            <option value="">Chọn quận/huyện</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="store-list">
+        <div class="store-item" data-province="danang" data-district="haichau">
+          <div class="store-info">
+            <h3>Cửa hàng Hải Châu</h3>
+            <p><strong>Địa chỉ:</strong> 48 Cao Thắng, Hải Châu, Đà Nẵng</p>
+            <p><strong>Điện thoại:</strong> 0333072198</p>
+            <p><strong>Giờ mở cửa:</strong> 8:00 - 22:00</p>
+          </div>
+          <div class="store-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.2059169145404!2d108.21334745984778!3d16.076753144171505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421847f0e66a0b%3A0x4afe3695acd0878b!2zS2hvYSBDw7RuZyBuZ2jhu4cgLSDEkOG6oWkgaOG7jWMgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1745148026866!5m2!1svi!2s"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="store-item" data-province="danang" data-district="lienchieu">
+          <div class="store-info">
+            <h3>Cửa hàng Liên Chiểu</h3>
+            <p><strong>Địa chỉ:</strong> 147 Tô Hiệu, Liên Chiểu, Đà Nẵng</p>
+            <p><strong>Điện thoại:</strong> 0333072198</p>
+            <p><strong>Giờ mở cửa:</strong> 8:00 - 22:00</p>
+          </div>
+          <div class="store-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.924036961757!2d108.2208473!3d16.0677394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421833d5d2d3b1%3A0x5c5c5c5c5c5c5c5c!2s147%20T%C3%B4%20Hi%E1%BB%87u%2C%20Li%C3%AAn%20Chi%E1%BB%83u%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng!5e0!3m2!1svi!2s!4v1630000000000!5m2!1svi!2s"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        
+        <div class="store-item" data-province="hanoi" data-district="hoankiem">
+          <div class="store-info">
+            <h3>Cửa hàng Hoàn Kiếm</h3>
+            <p><strong>Địa chỉ:</strong> 25 Hàng Đào, Hoàn Kiếm, Hà Nội</p>
+            <p><strong>Điện thoại:</strong> 0866123456</p>
+            <p><strong>Giờ mở cửa:</strong> 8:00 - 21:30</p>
+          </div>
+          <div class="store-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0967432119906!2d105.84794481493341!3d21.030810885994616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7aea2ae7b7%3A0x78459ac9bdcf5083!2zMjUgSMOgbmcgxJDDoG8sIEjDoG5nIMSQw6BvLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1630000000000!5m2!1sen!2s"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        
+        <div class="store-item" data-province="hcm" data-district="quan1">
+          <div class="store-info">
+            <h3>Cửa hàng Quận 1</h3>
+            <p><strong>Địa chỉ:</strong> 42 Nguyễn Huệ, Quận 1, TP Hồ Chí Minh</p>
+            <p><strong>Điện thoại:</strong> 0868123789</p>
+            <p><strong>Giờ mở cửa:</strong> 8:30 - 22:00</p>
+          </div>
+          <div class="store-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.395943333801!2d106.70134531471168!3d10.774518692323764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4670379e07%3A0x9a92687d1334882f!2zNDIgTmd1eeG7hW4gSHXhu4csIELhur9uIE5naMOpLCBRdeG6rW4gMSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1630000000000!5m2!1sen!2s"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        
+        <!-- Thông báo không tìm thấy cửa hàng -->
+        <div class="no-results" style="display: none;">
+          <i class="fas fa-store-slash"></i>
+          <p>Không tìm thấy cửa hàng nào phù hợp với bộ lọc bạn đã chọn.</p>
+          <p>Vui lòng thử lại với tiêu chí khác hoặc liên hệ hotline: <strong>1800 6868</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/utils/cart.js"></script>
+    <script src="../js/components/hethongcuahang.js"></script>
+  </body>
+</html>

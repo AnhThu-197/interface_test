@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Đơn Đổi Trả</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/Navbar/navbar.css" />
+    <link rel="stylesheet" href="../../css/Admin/admin-base.css" />
+    <link rel="stylesheet" href="../../css/Admin/doitra.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../../trangchu.html">
+            <img class="logo-trangchu" src="../../images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <button class="search-button">
+              <img width="18" height="18" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="search--v1" />
+            </button>
+            <input id="search-text" type="text" placeholder="Tìm kiếm" />
+            <button class="search-button">
+              <img class="search-button-vid" src="../../images/scan-image.gif" alt="" />
+            </button>
+          </form>
+          <div id="store">
+            <img width="28" height="28" src="https://img.icons8.com/wired/64/online-store.png" alt="online-store" />
+            <a href="../HeThongCuaHang.html">
+              <p>Hệ thống cửa hàng</p>
+            </a>
+          </div>
+          <div id="news">
+            <img width="25" height="25" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png" alt="external-newspaper-communication-nawicon-detailed-outline-nawicon" />
+            <a href="../../trangchu.html#MAGAZINE">
+              <p>Danh mục</p>
+            </a>
+          </div>
+          <div id="login">
+            <img width="28" height="28" src="https://img.icons8.com/parakeet-line/48/user-male-circle.png" alt="user-male-circle" />
+            <a href="../ThongTinCaNhan.html">
+              <p>Quản trị viên</p>
+            </a>
+            <div class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="admin-breadcrumb">
+        <a href="../../trangchu.html">Trang chủ</a> &gt;
+        <a href="Dashboard.html">Dashboard quản trị viên</a> &gt;
+        <span>Quản lý đơn đổi trả</span>
+      </div>
+
+      <div class="admin-container">
+        <div class="admin-sidebar">
+          <div class="sidebar-header">
+            <div class="admin-avatar">
+              <img src="../../images/admin.jpg" alt="Admin" />
+            </div>
+            <div class="admin-info">
+              <h3>Nguyễn Thư</h3>
+              <p>Hội Sinh Viên UTE</p>
+              <span class="admin-id">ID: ADMIN232240</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-menu">
+            <div class="menu-section">
+              <h4>TỔNG QUAN</h4>
+              <ul>
+                <li>
+                  <a href="Dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+                </li>
+                <li>
+                  <a href="ThongKe.html"><i class="fas fa-chart-bar"></i> Báo cáo - Thống kê</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ SẢN PHẨM</h4>
+              <ul>
+                <li>
+                  <a href="QuanLySanPham.html"><i class="fas fa-box"></i> Cập nhật sản phẩm</a>
+                </li>
+                <li>
+                  <a href="QuanLyNguyenLieu.html"><i class="fas fa-cubes"></i> Cập nhật nguyên liệu</a>
+                </li>
+                <li>
+                  <a href="QuanLyPhieuNhap.html"><i class="fas fa-clipboard-list"></i> Cập nhật phiếu nhập</a>
+                </li>
+                <li>
+                  <a href="QuanLyNhaCungCap.html"><i class="fas fa-truck"></i> Cập nhật nhà cung cấp</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ ĐƠN HÀNG</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyDonHang.html"><i class="fas fa-shopping-cart"></i> Cập nhật trạng thái đơn hàng</a>
+                </li>
+                <li>
+                  <a href="VanChuyen.html"><i class="fas fa-shipping-fast"></i> Cài đặt vận chuyển</a>
+                </li>
+                <li>
+                  <a href="QuanLyDonLam.html"><i class="fas fa-tasks"></i> Cập nhật đơn làm</a>
+                </li>
+                <li class="active">
+                  <a href="QuanLyDoiTra.html"><i class="fas fa-exchange-alt"></i> Quản lý đơn đổi trả</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>QUẢN LÝ NHÂN VIÊN</h4>
+              <ul>
+                <li>
+                  <a href="QuanLyNhanVien.html"><i class="fas fa-users"></i> Cập nhật nhân viên</a>
+                </li>
+                <li>
+                  <a href="DieuKienThamGia.html"><i class="fas fa-user-check"></i> Cập nhật điều kiện tham gia</a>
+                </li>
+                <li>
+                  <a href="QuyTrinh.html"><i class="fas fa-sitemap"></i> Cập nhật quy trình làm việc</a>
+                </li>
+                <li>
+                  <a href="QuyDinh.html"><i class="fas fa-book"></i> Cập nhật quy định làm việc</a>
+                </li>
+                <li>
+                  <a href="ThanhToan.html"><i class="fas fa-money-bill-wave"></i> Thanh toán tiền công</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="menu-section">
+              <h4>KHÁC</h4>
+              <ul>
+                <li>
+                  <a href="DoiTac.html"><i class="fas fa-handshake"></i> Quản lý đối tác</a>
+                </li>
+                <li>
+                  <a href="TaiChinh.html"><i class="fas fa-chart-line"></i> Theo dõi tài chính</a>
+                </li>
+                <li>
+                  <a href="DanhGia.html"><i class="fas fa-star"></i> Phản hồi đánh giá</a>
+                </li>
+                <li>
+                  <a href="TaiKhoan.html"><i class="fas fa-user-cog"></i> Cập nhật tài khoản</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-content">
+          <div class="page-title">
+            <h1>Quản Lý Đơn Đổi Trả</h1>
+            <!-- <div class="action-buttons">
+              <button class="admin-btn" id="print-btn"><i class="fas fa-print"></i> In báo cáo</button>
+              <button class="admin-btn admin-btn-secondary"><i class="fas fa-file-export"></i> Xuất danh sách</button>
+            </div> -->
+          </div>
+
+          <!-- Tabs navigation -->
+          <div class="return-tabs">
+            <button class="return-tab active" data-tab="all">Tất cả đơn</button>
+            <button class="return-tab" data-tab="pending">Chờ xử lý</button>
+            <button class="return-tab" data-tab="processing">Đang xử lý</button>
+            <button class="return-tab" data-tab="completed">Đã hoàn thành</button>
+            <button class="return-tab" data-tab="rejected">Đã từ chối</button>
+          </div>
+
+          <!-- Filters section -->
+          <!-- <div class="return-filters">
+            <div class="filter-group">
+              <label for="return-type">Loại yêu cầu:</label>
+              <select id="return-type" class="admin-form-control">
+                <option value="">Tất cả loại</option>
+                <option value="exchange">Đổi hàng</option>
+                <option value="return">Trả hàng/Hoàn tiền</option>
+                <option value="refund">Hoàn tiền không trả hàng</option>
+                <option value="repair">Sửa chữa</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="return-status">Trạng thái:</label>
+              <select id="return-status" class="admin-form-control">
+                <option value="">Tất cả trạng thái</option>
+                <option value="pending">Chờ xử lý</option>
+                <option value="confirmed">Đã xác nhận</option>
+                <option value="processing">Đang xử lý</option>
+                <option value="shipping">Đang vận chuyển</option>
+                <option value="completed">Đã hoàn thành</option>
+                <option value="rejected">Đã từ chối</option>
+              </select>
+            </div>
+            <div class="filter-group date-filter">
+              <label for="date-range">Thời gian:</label>
+              <select id="date-range" class="admin-form-control">
+                <option value="">Tất cả thời gian</option>
+                <option value="today">Hôm nay</option>
+                <option value="yesterday">Hôm qua</option>
+                <option value="last7days">7 ngày qua</option>
+                <option value="last30days">30 ngày qua</option>
+                <option value="custom">Tùy chỉnh...</option>
+              </select>
+            </div>
+            <div class="filter-group search-box">
+              <label for="return-search">Tìm kiếm:</label>
+              <div class="search-input-container">
+                <input type="text" id="return-search" placeholder="Tìm theo mã đơn, khách hàng..." class="admin-form-control">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <div class="filter-group filter-actions">
+              <button class="admin-btn admin-btn-sm apply-filter"><i class="fas fa-filter"></i> Lọc</button>
+              <button class="admin-btn admin-btn-secondary admin-btn-sm reset-filter"><i class="fas fa-sync-alt"></i> Đặt lại</button>
+            </div>
+          </div> -->
+
+          <!-- Return Statistics -->
+          <div class="return-stats">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-exchange-alt"></i></div>
+              <div class="stat-info">
+                <h3>Tổng đơn đổi trả</h3>
+                <p class="stat-value">126</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-clock"></i></div>
+              <div class="stat-info">
+                <h3>Chờ xử lý</h3>
+                <p class="stat-value">18</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-sync"></i></div>
+              <div class="stat-info">
+                <h3>Đang xử lý</h3>
+                <p class="stat-value">24</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon warning-icon"><i class="fas fa-exclamation-triangle"></i></div>
+              <div class="stat-info">
+                <h3>Quá hạn</h3>
+                <p class="stat-value">5</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Returns table -->
+          <div class="returns-table-container">
+            <table class="admin-table returns-table">
+              <thead>
+                <tr>
+                  <th width="5%">
+                    <input type="checkbox" id="select-all-returns">
+                  </th>
+                  <th width="10%">Mã đơn</th>
+                  <th width="15%">Khách hàng</th>
+                  <th width="10%">Ngày yêu cầu</th>
+                  <th width="12%">Loại yêu cầu</th>
+                  <th width="10%">Giá trị (VNĐ)</th>
+                  <th width="12%">Trạng thái</th>
+                  <th width="10%">Hạn xử lý</th>
+                  <th width="16%">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" class="return-checkbox"></td>
+                  <td><a href="#" class="return-id">RT001238</a></td>
+                  <td>Nguyễn Văn A</td>
+                  <td>12/06/2023</td>
+                  <td><span class="type-badge type-exchange">Đổi hàng</span></td>
+                  <td>450,000</td>
+                  <td><span class="status-badge status-pending">Chờ xử lý</span></td>
+                  <td>19/06/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn approve-btn" title="Phê duyệt"><i class="fas fa-check"></i></button>
+                      <button class="action-btn reject-btn" title="Từ chối"><i class="fas fa-times"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In đơn"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="return-checkbox"></td>
+                  <td><a href="#" class="return-id">RT001237</a></td>
+                  <td>Trần Thị B</td>
+                  <td>11/06/2023</td>
+                  <td><span class="type-badge type-return">Trả hàng/Hoàn tiền</span></td>
+                  <td>780,000</td>
+                  <td><span class="status-badge status-processing">Đang xử lý</span></td>
+                  <td>18/06/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Cập nhật"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn complete-btn" title="Hoàn thành"><i class="fas fa-check-double"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In đơn"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="return-checkbox"></td>
+                  <td><a href="#" class="return-id">RT001235</a></td>
+                  <td>Lê Văn C</td>
+                  <td>10/06/2023</td>
+                  <td><span class="type-badge type-repair">Sửa chữa</span></td>
+                  <td>250,000</td>
+                  <td><span class="status-badge status-shipping">Đang vận chuyển</span></td>
+                  <td>17/06/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Cập nhật"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn complete-btn" title="Hoàn thành"><i class="fas fa-check-double"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In đơn"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="return-checkbox"></td>
+                  <td><a href="#" class="return-id">RT001234</a></td>
+                  <td>Phạm Thị D</td>
+                  <td>09/06/2023</td>
+                  <td><span class="type-badge type-refund">Hoàn tiền</span></td>
+                  <td>370,000</td>
+                  <td><span class="status-badge status-completed">Đã hoàn thành</span></td>
+                  <td>16/06/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn duplicate-btn" title="Nhân bản"><i class="fas fa-copy"></i></button>
+                      <button class="action-btn review-btn" title="Đánh giá"><i class="fas fa-star"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In đơn"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="return-checkbox"></td>
+                  <td><a href="#" class="return-id">RT001232</a></td>
+                  <td>Hoàng Văn E</td>
+                  <td>08/06/2023</td>
+                  <td><span class="type-badge type-exchange">Đổi hàng</span></td>
+                  <td>620,000</td>
+                  <td><span class="status-badge status-rejected">Đã từ chối</span></td>
+                  <td>15/06/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn duplicate-btn" title="Nhân bản"><i class="fas fa-copy"></i></button>
+                      <button class="action-btn review-btn" title="Đánh giá"><i class="fas fa-star"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In đơn"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr class="overdue-row">
+                  <td><input type="checkbox" class="return-checkbox"></td>
+                  <td><a href="#" class="return-id">RT001230</a></td>
+                  <td>Vũ Thị F</td>
+                  <td>07/06/2023</td>
+                  <td><span class="type-badge type-return">Trả hàng/Hoàn tiền</span></td>
+                  <td>940,000</td>
+                  <td><span class="status-badge status-processing">Đang xử lý</span></td>
+                  <td>14/06/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn edit-btn" title="Cập nhật"><i class="fas fa-edit"></i></button>
+                      <button class="action-btn complete-btn" title="Hoàn thành"><i class="fas fa-check-double"></i></button>
+                      <!-- <button class="action-btn alert-btn" title="Quá hạn"><i class="fas fa-exclamation-circle"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" class="return-checkbox"></td>
+                  <td><a href="#" class="return-id">RT001228</a></td>
+                  <td>Đặng Văn G</td>
+                  <td>06/06/2023</td>
+                  <td><span class="type-badge type-refund">Hoàn tiền</span></td>
+                  <td>500,000</td>
+                  <td><span class="status-badge status-completed">Đã hoàn thành</span></td>
+                  <td>13/06/2023</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="action-btn view-btn" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+                      <button class="action-btn duplicate-btn" title="Nhân bản"><i class="fas fa-copy"></i></button>
+                      <button class="action-btn review-btn" title="Đánh giá"><i class="fas fa-star"></i></button>
+                      <!-- <button class="action-btn print-btn" title="In đơn"><i class="fas fa-print"></i></button> -->
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Bulk actions -->
+          <!-- <div class="bulk-actions">
+            <div class="selected-count">0 đơn đổi trả được chọn</div>
+            <div class="bulk-action-buttons">
+              <select class="admin-form-control bulk-action-select">
+                <option value="">Thao tác nhóm</option>
+                <option value="approve">Phê duyệt</option>
+                <option value="reject">Từ chối</option>
+                <option value="export">Xuất Excel</option>
+                <option value="print">In đơn</option>
+              </select>
+              <button class="admin-btn apply-bulk-action">Áp dụng</button>
+            </div>
+          </div> -->
+
+          <!-- Pagination -->
+          <div class="pagination-container">
+            <!-- <div class="pagination-info">Hiển thị 1-7 của 126 đơn đổi trả</div> -->
+            <div class="pagination">
+              <!-- <button class="pagination-btn" disabled><i class="fas fa-angle-double-left"></i></button> -->
+              <button class="pagination-btn" disabled><i class="fas fa-angle-left"></i></button>
+              <button class="pagination-btn active">1</button>
+              <button class="pagination-btn">2</button>
+              <button class="pagination-btn">3</button>
+              <button class="pagination-btn">...</button>
+              <button class="pagination-btn">10</button>
+              <button class="pagination-btn"><i class="fas fa-angle-right"></i></button>
+              <!-- <button class="pagination-btn"><i class="fas fa-angle-double-right"></i></button> -->
+            </div>
+            <!-- <div class="pagination-options">
+              <label for="rows-per-page">Hiển thị:</label>
+              <select id="rows-per-page" class="admin-form-control">
+                <option value="7">7</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+              </select>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- View Return Details Modal -->
+    <div class="modal" id="view-return-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Chi Tiết Đơn Đổi Trả</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="return-detail-header">
+            <div class="return-basic-info">
+              <h3>Đơn đổi trả #RT001238</h3>
+              <span class="status-badge status-pending">Chờ xử lý</span>
+            </div>
+            <div class="return-date-info">
+              <p><strong>Ngày yêu cầu:</strong> 12/06/2023</p>
+              <p><strong>Hạn xử lý:</strong> 19/06/2023</p>
+            </div>
+          </div>
+
+          <div class="return-info-section">
+            <div class="return-info-row">
+              <div class="return-info-column">
+                <h4>Thông tin khách hàng</h4>
+                <div class="info-group">
+                  <p><strong>Họ tên:</strong> Nguyễn Văn A</p>
+                  <p><strong>Điện thoại:</strong> 0912345678</p>
+                  <p><strong>Email:</strong> nguyen.van.a@email.com</p>
+                  <p><strong>Địa chỉ:</strong> 123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh</p>
+                </div>
+              </div>
+              <div class="return-info-column">
+                <h4>Thông tin đơn hàng gốc</h4>
+                <div class="info-group">
+                  <p><strong>Mã đơn hàng:</strong> <a href="#" class="link-text">DH00587</a></p>
+                  <p><strong>Ngày mua:</strong> 05/06/2023</p>
+                  <p><strong>Trạng thái:</strong> Đã giao hàng</p>
+                  <p><strong>Phương thức thanh toán:</strong> Thanh toán khi nhận hàng (COD)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="return-detail-section">
+            <h4>Thông tin yêu cầu đổi trả</h4>
+            <div class="return-reason">
+              <p><strong>Loại yêu cầu:</strong> <span class="type-badge type-exchange">Đổi hàng</span></p>
+              <p><strong>Lý do:</strong> Sản phẩm bị lỗi</p>
+              <p><strong>Mô tả chi tiết:</strong> Sản phẩm bị nứt ở góc phải. Khách hàng muốn đổi sản phẩm mới cùng loại.</p>
+            </div>
+            
+            <div class="return-items">
+              <h5>Sản phẩm đổi trả</h5>
+              <table class="detail-table">
+                <thead>
+                  <tr>
+                    <th width="10%">STT</th>
+                    <th width="15%">Mã SP</th>
+                    <th width="35%">Tên sản phẩm</th>
+                    <th width="10%">SL</th>
+                    <th width="15%">Đơn giá (VNĐ)</th>
+                    <th width="15%">Thành tiền (VNĐ)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>SP00123</td>
+                    <td>Hộp quà handmade vintage</td>
+                    <td>1</td>
+                    <td>350,000</td>
+                    <td>350,000</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>SP00456</td>
+                    <td>Thiệp chúc mừng handmade</td>
+                    <td>2</td>
+                    <td>50,000</td>
+                    <td>100,000</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="5" class="text-right"><strong>Tổng giá trị đổi trả:</strong></td>
+                    <td><strong>450,000</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            
+            <div class="return-evidence">
+              <h5>Hình ảnh/Chứng từ đính kèm</h5>
+              <div class="evidence-images">
+                <div class="evidence-image">
+                  <img src="../../images/return-evidence-1.jpg" alt="Hình ảnh sản phẩm lỗi">
+                </div>
+                <div class="evidence-image">
+                  <img src="../../images/return-evidence-2.jpg" alt="Hình ảnh sản phẩm lỗi">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="return-actions-section">
+            <div class="return-action-form">
+              <h4>Xử lý yêu cầu</h4>
+              <div class="form-group">
+                <label for="action-status">Cập nhật trạng thái:</label>
+                <select id="action-status" class="admin-form-control">
+                  <option value="pending">Chờ xử lý</option>
+                  <option value="confirmed">Xác nhận</option>
+                  <option value="processing">Đang xử lý</option>
+                  <option value="shipping">Đang vận chuyển</option>
+                  <option value="completed">Hoàn thành</option>
+                  <option value="rejected">Từ chối</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="action-notes">Ghi chú xử lý:</label>
+                <textarea id="action-notes" class="admin-form-control" rows="3" placeholder="Nhập ghi chú xử lý..."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="customer-notification">Thông báo cho khách hàng:</label>
+                <textarea id="customer-notification" class="admin-form-control" rows="3" placeholder="Nhập nội dung thông báo cho khách hàng...">Kính gửi quý khách, chúng tôi đã nhận được yêu cầu đổi trả của quý khách. Yêu cầu của quý khách đang được xử lý. Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất.</textarea>
+              </div>
+              <div class="form-actions">
+                <div class="action-checkboxes">
+                  <label class="checkbox-container">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Gửi email thông báo
+                  </label>
+                  <label class="checkbox-container">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Gửi SMS thông báo
+                  </label>
+                </div>
+                <div class="action-buttons-right">
+                  <button class="admin-btn admin-btn-secondary close-modal-btn">Đóng</button>
+                  <button class="admin-btn admin-btn-danger reject-return-btn">Từ chối</button>
+                  <button class="admin-btn approve-return-btn">Phê duyệt</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="return-history">
+              <h4>Lịch sử xử lý</h4>
+              <div class="history-timeline">
+                <div class="timeline-item">
+                  <div class="timeline-point"></div>
+                  <div class="timeline-content">
+                    <div class="timeline-time">12/06/2023 10:35</div>
+                    <div class="timeline-title">Tạo yêu cầu đổi trả</div>
+                    <div class="timeline-desc">Khách hàng tạo yêu cầu đổi trả sản phẩm</div>
+                    <div class="timeline-user">bởi: Nguyễn Văn A (Khách hàng)</div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-point"></div>
+                  <div class="timeline-content">
+                    <div class="timeline-time">12/06/2023 11:20</div>
+                    <div class="timeline-title">Tiếp nhận yêu cầu</div>
+                    <div class="timeline-desc">Yêu cầu đã được tiếp nhận và đang chờ xử lý</div>
+                    <div class="timeline-user">bởi: Hệ thống</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../js/utils/dataLoader.js"></script>
+    <script src="../../js/utils/productUtils.js"></script>
+    <script src="../../js/utils/searchUtils.js"></script>
+    <script src="../../js/utils/message.js"></script>
+    <script src="../../js/utils/auth.js"></script>
+    <script src="../../js/utils/cart.js"></script>
+    <script>
+      // JavaScript functionality would be implemented here
+    </script>
+  </body>
+</html> 

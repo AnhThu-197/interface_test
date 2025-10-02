@@ -1,0 +1,224 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "maSanPham": "SP01",
+      "tenSanPham": "Bộ Khay Gốm Nghệ Thuật \"Thiên Nhiên & Giấc Mơ\"",
+      "maThuongHieu": "TH01",
+      "tenThuongHieu": "Gốm",
+      "gia": 250000,
+      "moTa": "Bộ gồm 5 khay thủ công được trang trí với các chủ đề khác nhau: \"Ocean Waves\" (sóng biển), \"Lilac Dream\" (giấc mơ tím), \"Sakura\" (hoa anh đào), \"Foot Spirits\" (tinh linh chân), \"Jellyfish\" (sứa), và \"Totoro\" (nhân vật hoạt hình). Mỗi khay được vẽ tay với chi tiết tinh xảo như cát, sóng, hoa, và nhân vật",
+      "soLuongTon": 50,
+      "soLuongBan": 120,
+      "hinhAnh": "/images/handmade1.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM01",
+      "tenDanhMuc": "Gốm",
+      "thuocTinh": {
+        "chatLieu": "Gốm hoặc nhựa resin",
+        "mauSac": "Đa sắc (xanh, tím, hồng, xanh lá, be)",
+        "kichThuoc": "Nhỏ (đường kính ~10-12cm)"
+      }
+    },
+    {
+      "id": 2,
+      "maSanPham": "SP02",
+      "tenSanPham": "Hộp Quà \"Lời Chúc Tốt Lành\"",
+      "maThuongHieu": "TH02",
+      "tenThuongHieu": "Hộp Quà",
+      "gia": 80000,
+      "moTa": "Một bộ quà tinh tế bao gồm một hộp kem màu hồng pastel với dòng chữ \"Do good and good will come to you\" và một postcard được trang trí với hình ảnh nghệ thuật nhiều màu sắc, được buộc bằng dây ruy băng hồng và nơ vàng.",
+      "soLuongTon": 75,
+      "soLuongBan": 98,
+      "hinhAnh": "/images/handmade2.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM02",
+      "tenDanhMuc": "Hộp",
+      "thuocTinh": {
+        "chatLieu": "Hộp kem (kim loại), postcard (giấy), ruy băng (vải)",
+        "mauSac": "Hồng, vàng, be, trắng, kem",
+        "kichThuoc": "Nhỏ gọn (hộp kem ~5-7cm đường kính, postcard ~10x15cm)"
+      }
+    },
+    {
+      "id": 3,
+      "maSanPham": "SP03",
+      "tenSanPham": "Hộp Đèn Chiếu \"Mơ Mộng\"",
+      "maThuongHieu": "TH03",
+      "tenThuongHieu": "Đèn ngủ",
+      "gia": 220000,
+      "moTa": "Hộp đèn vuông được trang trí với các hình dán phát sáng (sao, tim, động vật), tạo ra hiệu ứng chiếu hình đa màu sắc lên tường khi bật đèn. Thiết kế dễ thương, phù hợp làm đồ chơi hoặc đèn ngủ",
+      "soLuongTon": 30,
+      "soLuongBan": 45,
+      "hinhAnh": "/images/handmade3.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM03",
+      "tenDanhMuc": "Đèn ngủ",
+      "thuocTinh": {
+        "chatLieu": "Giấy hoặc nhựa, đèn LED bên trong",
+        "mauSac": "Đa sắc (vàng, xanh, hồng, cam)",
+        "kichThuoc": "Nhỏ (~8-10cm mỗi cạnh)"
+      }
+    },
+    {
+      "id": 4,
+      "maSanPham": "SP04",
+      "tenSanPham": "Hộp Đèn \"Đêm Đầy Sao\"",
+      "maThuongHieu": "TH03",
+      "tenThuongHieu": "Đèn ngủ",
+      "gia": 180000,
+      "moTa": "Hộp đèn hình lập phương tái hiện bức tranh \"Đêm Đầy Sao\" của Van Gogh, với hiệu ứng ánh sáng vàng lấp lánh mô phỏng sao trời, mang lại không gian nghệ thuật và ấm cúng.",
+      "soLuongTon": 100,
+      "soLuongBan": 67,
+      "hinhAnh": "/images/handmade4.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM03",
+      "tenDanhMuc": "Đèn ngủ",
+      "thuocTinh": {
+        "chatLieu": "Thủy tinh hoặc nhựa trong suốt, đèn LED",
+        "mauSac": "Xanh dương, vàng",
+        "kichThuoc": "Trung bình (~20-22cm mỗi cạnh)"
+      }
+    },
+    {
+      "id": 5,
+      "maSanPham": "SP05",
+      "tenSanPham": "Đĩa CD Trang Trí \"Hoa Thiên Nhiên\"",
+      "maThuongHieu": "TH04",
+      "tenThuongHieu": "Đĩa CD",
+      "gia": 59000,
+      "moTa": "Đĩa CD CD cũ được tái chế, vẽ tay với hình ảnh hoa lavender và hoa tulip, kết hợp với bướm và các chi tiết nhỏ xinh, tạo thành vật dụng trang trí độc đáo, phù hợp làm đồ trang trí hoặc làm quà tặng",
+      "soLuongTon": 40,
+      "soLuongBan": 82,
+      "hinhAnh": "/images/handmade5.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM04",
+      "tenDanhMuc": "Đĩa CD",
+      "thuocTinh": {
+        "chatLieu": "Nhựa CD, sơn acrylic",
+        "mauSac": "Tím, hồng, xanh lá, ánh kim",
+        "kichThuoc": "Tiêu chuẩn CD (~12cm đường kính)"
+      }
+    },
+    {
+      "id": 6,
+      "maSanPham": "SP06",
+      "tenSanPham": "Lọ Hoa Cọ Trang Điểm \"Hoa Tulip\"",
+      "maThuongHieu": "TH05",
+      "tenThuongHieu": "Lọ hoa",
+      "gia": 120000,
+      "moTa": "Lọ hoa hình hoa tulip màu hồng với đế xanh lá, được sử dụng để đựng cọ trang điểm. Thiết kế độc đáo, mang phong cách nghệ thuật, phù hợp với không gian làm đẹp",
+      "soLuongTon": 90,
+      "soLuongBan": 75,
+      "hinhAnh": "/images/handmade6.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM05",
+      "tenDanhMuc": "Lọ hoa",
+      "thuocTinh": {
+        "chatLieu": "Gốm, sơn acrylic",
+        "mauSac": "Hồng, xanh lá",
+        "kichThuoc": "Trung bình (~10-12cm chiều cao)"
+      }
+    },
+    {
+      "id": 7,
+      "maSanPham": "SP07",
+      "tenSanPham": "Bộ Chai Nghệ Thuật \"Hương Sắc Thiên Nhiên\"",
+      "maThuongHieu": "TH055",
+      "tenThuongHieu": "Lọ hoa",
+      "gia": 195000,
+      "moTa": "Bộ gồm 8 chai thủy tinh được sơn và trang trí thủ công với các chủ đề như hoa hồng, mặt trăng, cây cỏ, và bức tượng cổ điển. Một số chai được đính ngọc trai giả và ruy băng, tạo cảm giác vintage và nghệ thuật",
+      "soLuongTon": 65,
+      "soLuongBan": 115,
+      "hinhAnh": "/images/handmade7.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM06",
+      "tenDanhMuc": "Lọ hoa",
+      "thuocTinh": {
+        "chatLieu": "Thủy tinh, sơn, ngọc trai giả, ruy băng (vải)",
+        "mauSac": "Hồng, xanh, trắng, tím pastel",
+        "kichThuoc": "Nhỏ đến trung bình (~15-20cm chiều cao)"
+      }
+    },
+    {
+      "id": 8,
+      "maSanPham": "SP08",
+      "tenSanPham": "Hộp Trang Sức \"Ký Ức Tuổi Thơ\"",
+      "maThuongHieu": "TH06",
+      "tenThuongHieu": "Hộp trang sức",
+      "gia": 399000,
+      "moTa": "Hộp trang sức nhỏ được trang trí thủ công với hình ảnh em bé dễ thương, bao quanh bởi các chi tiết như ngọc trai giả, ruy băng, và sticker hình thú bông, trái tim. Phong cách ngọt ngào, phù hợp để lưu giữ kỷ niệm",
+      "soLuongTon": 65,
+      "soLuongBan": 115,
+      "hinhAnh": "/images/handmade8.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM03",
+      "tenDanhMuc": "Hộp",
+      "thuocTinh": {
+        "chatLieu": "Gỗ hoặc nhựa, ngọc trai giả, sticker (giấy)",
+        "mauSac": "Hồng, trắng, đa sắc (sticker)",
+        "kichThuoc": "Lớn (~30x25x10cm)"
+      }
+    },
+    {
+      "id": 9,
+      "maSanPham": "SP09",
+      "tenSanPham": "Túi Đan Móc \"Hoa Tulip\"",
+      "maThuongHieu": "TH07",
+      "tenThuongHieu": "Túi đan móc",
+      "gia": 155000,
+      "moTa": "Túi nhỏ đan móc bằng len trắng, điểm nhấn là dây đeo và nơ hồng phấn, cùng nhãn \"Handmade with Love\". Thiết kế nhẹ nhàng, phù hợp để đựng các vật dụng cá nhân nhỏ",
+      "soLuongTon": 65,
+      "soLuongBan": 115,
+      "hinhAnh": "/images/handmade9.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM07",
+      "tenDanhMuc": "Túi",
+      "thuocTinh": {
+        "chatLieu": "Len, vải (nơ)",
+        "mauSac": "Trắng, hồng",
+        "kichThuoc": "Vừa (~30x20cm)"
+      }
+    },
+    {
+      "id": 10,
+      "maSanPham": "SP10",
+      "tenSanPham": "Phong Bì \"Tháng Sáu Rực Rỡ\"",
+      "maThuongHieu": "TH08",
+      "tenThuongHieu": "Phong bì",
+      "gia": 68000,
+      "moTa": "Phong bì kraft được trang trí thủ công với hình thỏ lớn, hoa anh đào, và các chi tiết như ruy băng, sticker trái tim, và chữ \"April\". Phía sau là một trang giấy ghi chú với các họa tiết dễ thương, tạo cảm giác ấm áp",
+      "soLuongTon": 65,
+      "soLuongBan": 115,
+      "hinhAnh": "/images/handmade10.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM08",
+      "tenDanhMuc": "Phong bì",
+      "thuocTinh": {
+        "chatLieu": "Giấy kraft, giấy ghi chú, sticker (giấy), ruy băng (vải)",
+        "mauSac": "Nâu, hồng, trắng",
+        "kichThuoc": "Trung bình (~15x20cm)"
+      }
+    },
+    {
+      "id": 11,
+      "maSanPham": "SP11",
+      "tenSanPham": "Hộp Quà \"Tình Yêu Nhẹ Nhàng\"",
+      "maThuongHieu": "TH02",
+      "tenThuongHieu": "Hộp quà",
+      "gia": 195000,
+      "moTa": "Bộ ba hộp quà được gói bằng giấy hồng phấn với các họa tiết chấm bi và ô vuông, buộc bằng ruy băng trắng tinh tế. Mỗi hộp có thẻ ghi chú với dòng chữ \"TO:\" và \"FROM:\", mang phong cách tối giản nhưng đầy cảm xúc",
+      "soLuongTon": 65,
+      "soLuongBan": 115,
+      "hinhAnh": "/images/handmade11.jpg",
+      "trangThaiSP": "Còn hàng",
+      "maDanhMuc": "DM02",
+      "tenDanhMuc": "Hộp",
+      "thuocTinh": {
+        "chatLieu": "Giấy hồng phấn, ruy băng trắng, thẻ ghi chú (giấy)",
+        "mauSac": "Hồng phấn, trắng",
+        "kichThuoc": "Nhỏ (~10x15cm)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="../css/chitietsanpham.css" />
+    <link rel="stylesheet" href="../css/Navbar/navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="head2">
+        <div>
+          <a href="../trangchu.html">
+            <img width="250" height="200" class="logo-trangchu" src="/images/logohandmade.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="head2--list">
+          <form action="" id="search-box">
+            <buttom class="search-bottom">
+              <img
+                width="18"
+                height="18"
+                src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+                alt="search--v1"
+              />
+            </buttom>
+            <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" />
+            <button class="search-bottom">
+              <img class="search-bottom-vid" src="../images/scan-image.gif" alt="" srcset="" />
+            </button>
+          </form>
+          <div id="store">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/wired/64/online-store.png"
+              alt="online-store"
+            />
+            <a href="HeThongCuaHang.html"><p>Hệ thống cửa hàng</p></a>
+          </div>
+          <div id="news">
+            <img
+              width="25"
+              height="25"
+              src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/external-newspaper-communication-nawicon-detailed-outline-nawicon.png"
+              alt="external-newspaper-communication-nawicon-detailed-outline-nawicon"
+            />
+            <a href="../trangchu.html#MAGAZINE"><p>Danh mục</p></a>
+          </div>
+          <div id="login">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/parakeet-line/48/user-male-circle.png"
+              alt="user-male-circle"
+            />
+            <a href="Login.html"><p>Đăng nhập</p></a>
+            <div class="cart-container">
+              <a href="GioHang.html">
+                <img
+                  class="cart-icon"
+                  width="25"
+                  height="25"
+                  src="https://img.icons8.com/ios/50/shopping-bag--v1.png"
+                  alt="shopping-bag--v1"
+                />
+                <span class="cart-badge">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="product-detail">
+      <div class="breadcrumb">
+        <a href="../trangchu.html">Trang chủ</a> >
+        <a href="TrangHang.html" class="product-category">Top sản phẩm bán chạy</a> >
+        <span class="product-name">Tên sản phẩm</span>
+      </div>
+
+      <div class="product-container">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img src="" alt="Product Image" id="main-product-image" />
+          </div>
+          <div class="thumbnail-list">
+            <!-- Thumbnails will be added dynamically -->
+          </div>
+        </div>
+
+        <div class="product-info">
+          <div class="brand-container">
+            <div class="product-brand"></div>
+            <a href="ChiaseSanPham.html" class="share-product-btn">
+              <i class="fas fa-share-alt"></i>
+              Chia sẻ
+            </a>
+          </div>
+          <h1 class="product-title"></h1>
+          <div class="product-rating">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="review-count">(125 đánh giá)</span>
+          </div>
+
+          <div class="product-price">
+            <span class="current-price"></span>
+            <span class="original-price"></span>
+            <span class="discount-badge"></span>
+          </div>
+
+          <div class="product-meta">
+            <div class="meta-item">
+              <span class="label">Đã bán:</span>
+              <span class="value origin"></span>
+            </div>
+            <div class="meta-item">
+              <span class="label">Kho:</span>
+              <span class="value sku"></span>
+            </div>
+          </div>
+
+          <div class="quantity-selector">
+            <span class="label">Số lượng:</span>
+            <div class="quantity-controls">
+              <button class="quantity-btn minus">-</button>
+              <input type="text" value="1" class="quantity-input" />
+              <button class="quantity-btn plus">+</button>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <button class="add-to-cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              Thêm vào giỏ hàng
+            </button>
+            <button class="buy-now-btn">Mua ngay</button>
+          </div>
+
+          <div class="product-benefits">
+            <div class="benefit-item">
+              <i class="fas fa-medal"></i>
+              <span>Cam kết hàng chính hãng</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-truck"></i>
+              <span>Miễn phí giao hàng 24h</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-undo"></i>
+              <span>Đổi/trả hàng trong 7 ngày</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="description">Giới thiệu</button>
+          <button class="tab-btn" data-tab="ingredients">Chất liệu</button>
+          <button class="tab-btn" data-tab="usage">Hướng dẫn sử dụng</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="description">
+            <!-- Product description will be added dynamically -->
+          </div>
+          <div class="tab-pane" id="ingredients">
+            <!-- Product ingredients will be added dynamically -->
+          </div>
+          <div class="tab-pane" id="usage">
+            <!-- Usage instructions will be added dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Thêm phần đánh giá sản phẩm -->
+      <div class="product-reviews">
+        <h2>Đánh giá từ khách hàng</h2>
+        <div class="reviews-summary">
+          <div class="rating-display">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-value">4.5/5</span>
+            <span class="review-count">(125 đánh giá)</span>
+          </div>
+        </div>
+
+        <div class="reviews-list">
+          <!-- Review item 1 -->
+          <div class="review-item">
+            <div class="reviewer-info">
+              <img src="../images/avt1.webp" alt="Avatar" class="reviewer-avatar" />
+              <div class="reviewer-details">
+                <h4 class="reviewer-name">Hồng Hạnh</h4>
+                <div class="reviewer-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="review-date">22/05/2023</span>
+              </div>
+            </div>
+            <div class="review-content">
+              <p>Sản phẩm rất tốt, chất lượng vượt quá mong đợi. Đóng gói cẩn thận, giao hàng nhanh. Mình rất hài lòng và chắc chắn sẽ mua lại.</p>
+              <div class="review-images">
+                <img src="../images/fb1.webp" alt="Review image" />
+                <img src="../images/fb2.webp" alt="Review image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Review item 2 -->
+          <div class="review-item">
+            <div class="reviewer-info">
+              <img src="../images/avt2.webp" alt="Avatar" class="reviewer-avatar" />
+              <div class="reviewer-details">
+                <h4 class="reviewer-name">Minh Dũng</h4>
+                <div class="reviewer-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <span class="review-date">15/05/2023</span>
+              </div>
+            </div>
+            <div class="review-content">
+              <p>Sản phẩm khá tốt, đúng như mô tả. Tuy nhiên phần đóng gói có thể cải thiện thêm.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-more-reviews">
+          <a href="XemDanhGia.html" class="view-more-btn" id="viewMoreReviewsBtn">Xem thêm đánh giá</a>
+        </div>
+      </div>
+
+      <div class="related-products">
+        <h2>Sản phẩm liên quan</h2>
+        <div class="product-grid">
+          <!-- Related products will be added dynamically -->
+        </div>
+      </div>
+    </main>
+    
+
+    <script src="../js/utils/cart.js"></script>
+    <script src="../js/utils/message.js"></script>
+    <script src="../js/utils/productUtils.js"></script>
+    <script src="../js/utils/searchUtils.js"></script>
+    <script src="../js/components/chitietsanpham.js"></script>
+  </body>
+</html>
